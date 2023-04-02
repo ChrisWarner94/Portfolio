@@ -11,10 +11,14 @@
 
 .heading-banner {
     display: flex;
+    justify-content: left;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 
 .picture-profile {
     border-radius: 50%;
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
+    padding-left: 5%;
 }
