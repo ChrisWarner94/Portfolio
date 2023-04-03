@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
+.logo {}
+
 .container {
     margin: 5%;
 
@@ -7,13 +9,17 @@
 
 .heading {
     font-family: 'Titillium Web', sans-serif;
+    color: green;
+    font-size: 500%;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .heading-banner {
     display: flex;
     justify-content: left;
     padding-left: 10%;
-    padding-top: 10%;
+    padding-top: 3%;
 }
 
 .picture-profile {
@@ -21,4 +27,39 @@
     height: 5%;
     width: 5%;
     padding-left: 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 200%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .heading {
+        font-size: 300%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .heading {
+        font-size: 300%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .heading {
+        font-size: 400%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .heading {
+        font-size: 500%;
+    }
 }
