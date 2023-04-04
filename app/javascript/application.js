@@ -1,4 +1,4 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
-import "custom/home"
+import "custom/home" // calls custom js file from import map
