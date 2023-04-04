@@ -1,18 +1,26 @@
-const headingUpper = "Hello, I'm Chris";
-const headinglower = "I build things for the web";
-const speed = 50; // speed milleseconds
-let count = 0;
-let printedText;
+const headingOne = "Hello, I'm Chris"
+const headingTwo = "I build things for the web"
 
-typeEffect(headingUpper, "headingUpper");
-
-function typeEffect(printedText, target) {
-    if (count < printedText.length) {
-        document.getElementById(target).innerHTML += printedText.charAt(count);
-        count++;
-        setTimeout(typeEffect, speed);
-        // console.log(typeof printedText);
-    }
+function typeEffect(element, text) {
+    return new Promise((resolve) => {
+        let i = 0;
+        function type() {
+            const char = text.charAt(i);
+            element.textContent += char;
+            i++;
+            if (i > text.length - 1) {
+                resolve();
+            } else {
+                setTimeout(type, 35);
+            }
+        }
+        type();
+    });
 }
 
-console.log("connected")
+async function runTypeEffect() {
+    await typeEffect(headingUpper, headingOne);
+    await typeEffect(headingLower, headingTwo);
+}
+
+runTypeEffect();
