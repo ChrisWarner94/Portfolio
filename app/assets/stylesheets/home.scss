@@ -58,6 +58,11 @@
     .heading {
         font-size: 300%;
     }
+
+    .heading-banner {
+        padding-top: 5%;
+        padding-left: 10%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -65,11 +70,21 @@
     .heading {
         font-size: 400%;
     }
+
+    .heading-banner {
+        padding-top: 5%;
+        padding-left: 10%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .heading {
         font-size: 500%;
+    }
+
+    .heading-banner {
+        padding-top: 5%;
+        padding-left: 15%;
     }
 }
