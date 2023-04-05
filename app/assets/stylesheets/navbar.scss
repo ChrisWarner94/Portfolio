@@ -5,6 +5,13 @@
     height: 3rem;
     padding-top: 0.15%;
     padding-left: 0.5%;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+}
+
+.logo:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .navbar-container {
@@ -60,7 +67,7 @@
 
 }
 
-// Media Queries
+//---------------------------- Media Queries ----------------------------//
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
