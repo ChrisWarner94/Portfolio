@@ -65,7 +65,6 @@
 .nav-link-hover:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
 }
 
 //---------------------------- Media Queries ----------------------------//
@@ -95,8 +94,8 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navlinks {
-        display: none;
+    .navlinks li {
+        font-size: 110%;
     }
 
     .logo {
