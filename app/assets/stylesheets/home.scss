@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
+html {
+    scroll-behavior: smooth
+}
+
 .body {
     margin-left: 0;
     margin-right: 0;
@@ -29,6 +33,7 @@
 
 .section {
     height: 95vh;
+
 }
 
 
