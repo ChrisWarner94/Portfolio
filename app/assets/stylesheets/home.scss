@@ -3,6 +3,7 @@
 .body {
     margin-left: 0;
     margin-right: 0;
+
 }
 
 .container {
@@ -24,12 +25,14 @@
     margin-top: 8%;
 }
 
-.picture-profile {
-    border-radius: 50%;
-    height: 5%;
-    width: 5%;
-    padding-left: 5%;
+// sections of the homepage
+
+.section {
+    height: 100vh;
 }
+
+
+// ------------------------------------------ Media Queries ------------------------------------------ //
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
