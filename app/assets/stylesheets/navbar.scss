@@ -13,7 +13,8 @@
 }
 
 .navlinks {
-    margin: autogit;
+    margin: auto;
+    display: flex;
 }
 
 .navlinks ul {
@@ -59,12 +60,30 @@
     transform-origin: bottom left;
 }
 
+.CV-link {
+    align-items: right;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.CV-button {
+    background-color: green;
+    border-radius: 5%;
+    color: white;
+
+
+}
+
 //---------------------------- Media Queries ----------------------------//
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .navlinks {
-        display: none;
+        font-size: 60%;
+
+        li {
+            padding-right: 2rem;
+        }
     }
 
 }
@@ -72,8 +91,11 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     .navlinks {
-        display: none;
+        font-size: 80%;
 
+        li {
+            padding-right: 3rem;
+        }
     }
 
 }
@@ -81,7 +103,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navlinks li {
-        font-size: 110%;
+        font-size: 100%;
     }
 
 }

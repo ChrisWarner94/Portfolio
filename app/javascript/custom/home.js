@@ -1,7 +1,8 @@
 const headingOne = "Hello, I'm Chris"
 const headingTwo = "I build things for the web"
+const intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-function typeEffect(element, text) {
+function typeEffect(element, text, speed) {
     return new Promise((resolve) => {
         let i = 0;
         function type() {
@@ -11,7 +12,7 @@ function typeEffect(element, text) {
             if (i > text.length - 1) {
                 resolve();
             } else {
-                setTimeout(type, 35);
+                setTimeout(type, speed);
             }
         }
         type();
@@ -19,8 +20,9 @@ function typeEffect(element, text) {
 }
 
 async function runTypeEffect() {
-    await typeEffect(headingUpper, headingOne);
-    await typeEffect(headingLower, headingTwo);
+    await typeEffect(headingUpper, headingOne, 35);
+    await typeEffect(headingLower, headingTwo, 45);
+    await typeEffect(introText, intro, 1);
 }
 
 runTypeEffect();

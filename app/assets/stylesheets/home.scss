@@ -29,11 +29,24 @@ html {
     margin-top: 8%;
 }
 
+.intro-text {
+    margin-right: 25rem;
+    padding-left: 15%;
+    justify-content: left;
+
+}
+
+.intro {
+    font-family: 'Titillium Web', sans-serif;
+    color: green;
+    font-size: 130%;
+
+}
+
 // sections of the homepage
 
 .section {
     height: 95vh;
-
 }
 
 
@@ -47,6 +60,11 @@ html {
 
     .heading-banner {
         padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    .intro-text {
+        margin-right: 5rem;
     }
 }
 
@@ -58,6 +76,7 @@ html {
 
     .heading-banner {
         padding-top: 5%;
+        padding-left: 5%;
     }
 }
 
@@ -80,7 +99,7 @@ html {
     }
 
     .heading-banner {
-        padding-top: 5%;
+        padding-top: 2%;
         padding-left: 10%;
     }
 }
@@ -92,7 +111,7 @@ html {
     }
 
     .heading-banner {
-        padding-top: 5%;
+        padding-top: 1%;
         padding-left: 15%;
     }
 }
