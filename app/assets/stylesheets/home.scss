@@ -4,6 +4,8 @@ html {
     scroll-behavior: smooth
 }
 
+// ----------------------------------------  Home Section ----------------------------------------   //
+
 #sectionHome {
     margin-left: 15%;
     margin-top: 5%;
@@ -53,6 +55,17 @@ html {
     height: 95vh;
 }
 
+// ----------------------------------------  About Section ----------------------------------------   //
+
+.aboutContainer {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.image {
+    height: 25rem;
+}
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
 

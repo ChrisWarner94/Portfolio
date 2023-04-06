@@ -7,7 +7,7 @@ function typeEffect(element, text, speed) {
         let i = 0;
         function type() {
             const char = text.charAt(i);
-            element.textContent += char;
+            element.innerHTML += char;
             i++;
             if (i > text.length - 1) {
                 resolve();
