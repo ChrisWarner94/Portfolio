@@ -15,14 +15,16 @@
 .navlinks {
     margin: auto;
     display: flex;
+
+    ul {
+        padding-left: 0;
+        vertical-align: middle;
+        width: auto;
+
+    }
 }
 
-.navlinks ul {
-    padding-left: 0;
-    vertical-align: middle;
-    width: auto;
 
-}
 
 .navlinks li {
     right: 0;
@@ -32,6 +34,7 @@
     padding-right: 5rem;
     font-family: 'Titillium Web', sans-serif;
     color: green;
+    align-items: center;
 }
 
 //underlining hover effect for nav links
