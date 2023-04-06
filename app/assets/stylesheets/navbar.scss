@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 
-.logo {
-    height: 3rem;
-    padding-top: 0.25%;
-    padding-left: 0.5%;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: transform 0.3s;
-}
-
-.logo:hover {
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-}
-
 .navbar-container {
     top: 0;
     width: 100%;
@@ -76,10 +63,6 @@
         display: none;
     }
 
-    .logo {
-        height: 2rem;
-        padding-top: 0.2rem;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -89,10 +72,6 @@
 
     }
 
-    .logo {
-        height: 2rem;
-        padding-top: 0.2rem;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -101,10 +80,6 @@
         font-size: 110%;
     }
 
-    .logo {
-        height: 2rem;
-        padding-top: 0.2rem;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -113,9 +88,6 @@
         font-size: 130%;
     }
 
-    .logo {
-        height: 3rem;
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
