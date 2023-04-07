@@ -56,6 +56,11 @@ body {
 
 }
 
+.aboutText {
+    font-family: 'Titillium Web', sans-serif;
+    color: $secondary-yellow;
+}
+
 .intro {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary-grey;
@@ -72,8 +77,8 @@ body {
 // ----------------------------------------  About Section ----------------------------------------   //
 
 .aboutContainer {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     margin: auto;
     padding-top: 10rem;
 }
