@@ -7,7 +7,14 @@ $white: #FFFFFF;
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    scrollbar-color: $secondary-yellow $primary-blue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-yellow;
+    border: 3px solid $primary-blue;
+    border-radius: 10px;
 }
 
 #top-tag {
@@ -16,6 +23,10 @@ html {
 
 body {
     background-color: $primary-blue;
+}
+
+.scrollable-element {
+    scrollbar-color: red yellow;
 }
 
 // ----------------------------------------  Home Section ----------------------------------------   //
@@ -97,6 +108,9 @@ body {
     width: 60%;
     font-size: 120%;
 }
+
+.stack-container {}
+
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
 
