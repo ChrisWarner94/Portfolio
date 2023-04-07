@@ -62,16 +62,16 @@ html {
 // ----------------------------------------  About Section ----------------------------------------   //
 
 .aboutContainer {
-    display: flex;
     padding-left: 5rem;
     padding-right: 5rem;
-    margin: auto;
+
     padding-top: 10rem;
 }
 
 .image {
     height: 15rem;
     border-radius: 5%;
+    margin: auto;
 }
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
@@ -98,6 +98,10 @@ html {
         margin-top: 5%;
     }
 
+    .image {
+        height: 5rem;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -119,6 +123,14 @@ html {
         margin-left: 5%;
         margin-top: 5%;
     }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+    .image {
+        height: 5rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -135,6 +147,12 @@ html {
     .text-left-padding {
         padding-left: 5%;
     }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+
 
 
 }
@@ -154,6 +172,10 @@ html {
         margin-left: 15%;
         margin-top: 5%;
     }
+
+    .aboutContainer {
+        display: flex;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -165,5 +187,9 @@ html {
     .heading-banner {
         padding-top: 1%;
 
+    }
+
+    .aboutContainer {
+        display: flex;
     }
 }
