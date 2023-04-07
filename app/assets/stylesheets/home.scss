@@ -77,15 +77,25 @@ body {
 // ----------------------------------------  About Section ----------------------------------------   //
 
 .aboutContainer {
-    padding-left: 15rem;
-    padding-right: 15rem;
+
+    margin-left: 15%;
     margin: auto;
     padding-top: 10rem;
+    width: 70%;
 }
 
 .image {
     height: 15rem;
-    border-radius: 5%;
+
+}
+
+.profile-picture {
+    border-radius: 15%;
+}
+
+.aboutText {
+    padding-left: 3rem;
+    width: 60%
 }
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
