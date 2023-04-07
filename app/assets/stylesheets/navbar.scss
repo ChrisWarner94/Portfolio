@@ -1,3 +1,8 @@
+$primary-blue: #14213d;
+$secondary-yellow: #FCA311;
+$tertiary-grey: #E5E5E5;
+$white: #FFFFFF;
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 
@@ -33,7 +38,6 @@
     font-size: 150%;
     padding-right: 5rem;
     font-family: 'Titillium Web', sans-serif;
-    color: green;
     align-items: center;
 }
 
@@ -41,7 +45,7 @@
 .nav-link-hover {
     display: inline-block;
     position: relative;
-    color: green;
+    color: $tertiary-grey;
     text-decoration: none;
 }
 
@@ -53,7 +57,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: green;
+    background-color: $secondary-yellow;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
@@ -63,26 +67,14 @@
     transform-origin: bottom left;
 }
 
-.CV-link {
-    align-items: right;
-    vertical-align: middle;
-    width: 100%;
-}
 
-.CV-button {
-    background-color: green;
-    border-radius: 5%;
-    color: white;
-
-
-}
 
 //---------------------------- Media Queries ----------------------------//
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .navlinks {
-        font-size: 60%;
+        font-size: 50%;
 
         li {
             padding-right: 2rem;

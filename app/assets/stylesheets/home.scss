@@ -1,7 +1,32 @@
+// colours
+$primary-blue: #14213d;
+$secondary-yellow: #FCA311;
+$tertiary-grey: #E5E5E5;
+$white: #FFFFFF;
+// imports
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    scrollbar-color: $secondary-yellow $primary-blue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-yellow;
+    border: 3px solid $primary-blue;
+    border-radius: 10px;
+}
+
+#top-tag {
+    top: 0;
+}
+
+body {
+    background-color: $primary-blue;
+}
+
+.scrollable-element {
+    scrollbar-color: red yellow;
 }
 
 // ----------------------------------------  Home Section ----------------------------------------   //
@@ -23,7 +48,7 @@ html {
 
 .heading {
     font-family: 'Titillium Web', sans-serif;
-    color: green;
+    color: $secondary-yellow;
     font-size: 500%;
     margin-bottom: 0;
     margin-top: 0;
@@ -42,9 +67,11 @@ html {
 
 }
 
+
+
 .intro {
     font-family: 'Titillium Web', sans-serif;
-    color: green;
+    color: $tertiary-grey;
     font-size: 130%;
 
 }
@@ -53,22 +80,37 @@ html {
 
 .section {
     height: 95vh;
-    padding-top: 5%;
 }
 
 // ----------------------------------------  About Section ----------------------------------------   //
 
 .aboutContainer {
-    display: flex;
-    padding-left: 5rem;
-    padding-right: 5rem;
+
+    margin-left: 15%;
     margin: auto;
+    padding-top: 10rem;
+    width: 70%;
 }
 
 .image {
     height: 15rem;
-    border-radius: 5%;
+
 }
+
+.profile-picture {
+    border-radius: 15%;
+}
+
+.aboutText {
+    font-family: 'Titillium Web', sans-serif;
+    color: $secondary-yellow;
+    padding-left: 3rem;
+    width: 60%;
+    font-size: 120%;
+}
+
+.stack-container {}
+
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
 
@@ -94,6 +136,16 @@ html {
         margin-top: 5%;
     }
 
+    .image {
+        height: 5rem;
+        display: flex;
+    }
+
+    .profile-picture {
+        margin: auto;
+        height: 5rem;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -115,6 +167,19 @@ html {
         margin-left: 5%;
         margin-top: 5%;
     }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+    .image {
+        height: 5rem;
+        display: flex;
+    }
+
+    .profile-picture {
+        height: 10rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -130,6 +195,14 @@ html {
 
     .text-left-padding {
         padding-left: 5%;
+    }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+    .profile-picture {
+        height: 15rem;
     }
 
 
@@ -150,6 +223,14 @@ html {
         margin-left: 15%;
         margin-top: 5%;
     }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+    .profile-picture {
+        height: 15rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -161,5 +242,13 @@ html {
     .heading-banner {
         padding-top: 1%;
 
+    }
+
+    .aboutContainer {
+        display: flex;
+    }
+
+    .profile-picture {
+        height: 15rem;
     }
 }
