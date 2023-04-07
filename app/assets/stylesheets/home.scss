@@ -1,3 +1,9 @@
+// colours
+$primary-blue: #14213d;
+$secondary-yellow: #FCA311;
+$tertiary-grey: #E5E5E5;
+$white: #FFFFFF;
+// imports
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 html {
@@ -6,6 +12,10 @@ html {
 
 #top-tag {
     top: 0;
+}
+
+body {
+    background-color: $primary-blue;
 }
 
 // ----------------------------------------  Home Section ----------------------------------------   //
@@ -27,7 +37,7 @@ html {
 
 .heading {
     font-family: 'Titillium Web', sans-serif;
-    color: green;
+    color: $secondary-yellow;
     font-size: 500%;
     margin-bottom: 0;
     margin-top: 0;
@@ -48,7 +58,7 @@ html {
 
 .intro {
     font-family: 'Titillium Web', sans-serif;
-    color: green;
+    color: $tertiary-grey;
     font-size: 130%;
 
 }
@@ -64,14 +74,13 @@ html {
 .aboutContainer {
     padding-left: 5rem;
     padding-right: 5rem;
-
+    margin: auto;
     padding-top: 10rem;
 }
 
 .image {
     height: 15rem;
     border-radius: 5%;
-    margin: auto;
 }
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
@@ -99,6 +108,12 @@ html {
     }
 
     .image {
+        height: 5rem;
+        display: flex;
+    }
+
+    .profile-picture {
+        margin: auto;
         height: 5rem;
     }
 
@@ -130,6 +145,11 @@ html {
 
     .image {
         height: 5rem;
+        display: flex;
+    }
+
+    .profile-picture {
+        height: 10rem;
     }
 }
 
@@ -152,7 +172,9 @@ html {
         display: flex;
     }
 
-
+    .profile-picture {
+        height: 15rem;
+    }
 
 
 }
@@ -176,6 +198,10 @@ html {
     .aboutContainer {
         display: flex;
     }
+
+    .profile-picture {
+        height: 15rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -191,5 +217,9 @@ html {
 
     .aboutContainer {
         display: flex;
+    }
+
+    .profile-picture {
+        height: 15rem;
     }
 }
