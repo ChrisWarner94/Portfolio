@@ -109,7 +109,14 @@ body {
     font-size: 120%;
 }
 
-.stack-container {}
+.stack-container {
+    background-color: #E5E5E5;
+}
+
+.stack-image {
+    height: 3rem;
+    padding-left: 3rem;
+}
 
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
