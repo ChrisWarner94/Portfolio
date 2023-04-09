@@ -105,7 +105,7 @@ body {
 .stack-container {
     margin-top: 5rem;
     display: flex;
-    justify-content: center;
+    justify-items: center;
 }
 
 .tech-card {
@@ -185,7 +185,6 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-items: center;
         margin-top: 2rem;
     }
 
@@ -338,5 +337,10 @@ body {
 
     .profile-picture {
         height: 15rem;
+    }
+
+    .stack-container {
+        display: flex;
+        justify-content: center;
     }
 }
