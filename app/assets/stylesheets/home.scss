@@ -80,10 +80,9 @@ body {
 
 
 .aboutContainer {
-    margin-left: 15%;
     margin: auto;
     padding-top: 10rem;
-    width: 70%;
+    width: 9 0%;
 }
 
 .image {
@@ -100,6 +99,7 @@ body {
     padding-left: 3rem;
     width: 60%;
     font-size: 120%;
+    text-align: center;
 }
 
 .stack-container {
@@ -183,7 +183,9 @@ body {
     .aboutText {
         width: 100%;
         padding-left: 0;
-        font-size: 70%;
+        padding-right: 2rem;
+        font-size: 80%;
+        margin: auto;
     }
 
     .stack-container {
@@ -262,7 +264,8 @@ body {
     .image {
         height: 5rem;
         display: flex;
-        padding-top: 2rem;
+        padding-top: 1rem;
+        margin-left: 3rem;
     }
 
     .profile-picture {
@@ -319,7 +322,7 @@ body {
 
     .image {
         padding-top: 2rem;
-        padding-left: 0;
+        padding-left: 0.5rem;
     }
 
     .tech-image {
@@ -370,6 +373,7 @@ body {
 
     .image {
         padding-top: 2rem;
+        padding-left: 2rem;
     }
 
     .tech-image {
@@ -402,6 +406,7 @@ body {
 
     .profile-picture {
         height: 15rem;
+        margin-left: 10rem;
     }
 
     .stack-container {
