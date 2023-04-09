@@ -21,6 +21,17 @@
       </div>
     </div>
     <div class="stack-container">
+      <%# calls each tech within database making a card comprimising of name and image allocated within images/stack %>
+      <% @technologies.each do |tech|  %>
+        <div class="tech-card">
+          <div class="tech-name">
+            <%= tech.name %>
+          </div>
+          <div class ="tech-image-container">
+            <%= image_tag tech.logo, class: "tech-image"%>
+          </div>
+        </div>
+      <% end %>
     </div>
   </section>
   <section class="section" id="sectionExperience">
