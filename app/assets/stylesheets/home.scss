@@ -191,6 +191,8 @@ body {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         margin-top: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 
     .aboutContainer {
@@ -202,16 +204,16 @@ body {
     }
 
     .tech-name {
-        font-size: 60%;
+        font-size: 80%;
     }
 
     .tech-image {
-        width: 30%;
+        width: 40%;
         padding-top: 5%;
     }
 
     .tech-card {
-        width: 4rem;
+        width: 5rem;
         border-radius: 10%;
     }
 
@@ -229,7 +231,12 @@ body {
 
     .heading-banner {
         padding-top: 5%;
+        margin-left: 5%;
 
+    }
+
+    .intro-text {
+        margin-left: 5%;
     }
 
     .text-left-padding {
@@ -264,19 +271,19 @@ body {
 
     .stack-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .tech-image {
-        width: 40%;
+        width: 50%;
     }
 
     .tech-card {
-        width: 5rem;
+        width: 6rem;
     }
 
     .tech-name {
-        font-size: 70%;
+        font-size: 80%;
     }
 }
 
@@ -298,6 +305,7 @@ body {
     .aboutContainer {
         display: flex;
         padding-top: 4rem;
+        width: 90%
     }
 
     .profile-picture {
@@ -306,11 +314,12 @@ body {
 
     .stack-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     .image {
         padding-top: 2rem;
+        padding-left: 0;
     }
 
     .tech-image {
@@ -322,7 +331,7 @@ body {
     }
 
     .tech-name {
-        font-size: 70%;
+        font-size: 80%;
     }
 }
 
@@ -355,19 +364,24 @@ body {
 
     .stack-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 3rem;
+    }
+
+    .image {
+        padding-top: 2rem;
     }
 
     .tech-image {
-        width: 50%;
+        width: 45%;
     }
 
     .tech-card {
-        width: 6rem;
+        width: 5rem;
     }
 
     .tech-name {
-        font-size: 80%;
+        font-size: 90%;
     }
 }
 
