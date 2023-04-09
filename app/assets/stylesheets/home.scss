@@ -113,6 +113,7 @@ body {
     border-radius: 15%;
     margin: 0.25rem;
     width: 7rem;
+    box-shadow: 3px 3px $secondary-yellow;
 }
 
 .tech-name {
@@ -168,6 +169,10 @@ body {
     .image {
         height: 5rem;
         display: flex;
+    }
+
+    .aboutContainer {
+        padding-top: 3rem;
     }
 
     .profile-picture {
@@ -237,7 +242,7 @@ body {
     }
 
     .aboutContainer {
-        padding-top: 2rem;
+        padding-top: 4rem;
         display: flex;
     }
 
@@ -250,6 +255,7 @@ body {
     .image {
         height: 5rem;
         display: flex;
+        padding-top: 2rem;
     }
 
     .profile-picture {
@@ -283,6 +289,7 @@ body {
 
     .aboutContainer {
         display: flex;
+        padding-top: 4rem;
     }
 
     .profile-picture {
@@ -292,6 +299,10 @@ body {
     .stack-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        padding-top: 2rem;
     }
 
 
