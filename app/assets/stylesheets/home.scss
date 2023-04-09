@@ -123,6 +123,18 @@ body {
 
 }
 
+.stack-image {
+    height: 2rem;
+    width: 1rem;
+}
+
+.tech-image-container {
+    margin: auto;
+    align-content: center;
+    display: flex;
+
+}
+
 
 
 
@@ -160,18 +172,7 @@ body {
         height: 5rem;
     }
 
-    .stack-container {
-        display: flex;
-    }
 
-    .tech-image-container {
-        margin: auto;
-        align-content: center;
-        display: flex;
-
-    }
-
-    .tech-image {}
 
 }
 
