@@ -105,12 +105,12 @@ body {
 .stack-container {
     margin-top: 5rem;
     display: flex;
-    margin: auto;
+    justify-content: center;
 }
 
 .tech-card {
     background-color: #E5E5E5;
-    border-radius: 3%;
+    border-radius: 15%;
     margin: 0.25rem;
     width: 7rem;
 }
@@ -125,6 +125,7 @@ body {
 .tech-image {
     width: 50%;
     padding-top: 15%;
+    padding-bottom: 5%;
 }
 
 .tech-image-container {
