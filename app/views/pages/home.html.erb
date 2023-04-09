@@ -21,19 +21,15 @@
       </div>
     </div>
     <div class="stack-container">
-      <%= image_tag("stack/cSharp.svg", class:"stack-image") %>
-      <%= image_tag("stack/ruby.svg", class:"stack-image") %>
-      <%= image_tag("stack/javascript.svg", class:"stack-image") %>
-      <%= image_tag("stack/css.svg", class:"stack-image") %>
-      <%= image_tag("stack/html.svg", class:"stack-image") %>
-      <%= image_tag("stack/rails.svg", class:"stack-image") %>
-      <%= image_tag("stack/postgresql.svg", class:"stack-image") %>
-      <%= image_tag("stack/sqlite.svg", class:"stack-image") %>
-      <%= image_tag("stack/git.svg", class:"stack-image") %>
-      <%= image_tag("stack/github.svg", class:"stack-image") %>
-      <%= image_tag("stack/sass.svg", class:"stack-image") %>
-      <%= image_tag("stack/bootstrap.svg", class:"stack-image") %>
-      <%= image_tag("stack/heroku.svg", class:"stack-image") %>
+      <% @technologies.each do |tech|  %>
+        <div class="tech-card">
+          <div class="tech-name">
+            <%= tech.name %>
+          </div>
+          <div class = "tech-image"></div>
+          <%= image_tag tech.logo , crop: :fit%>
+        </div>
+      <% end %>
     </div>
   </section>
   <section class="section" id="sectionExperience">
