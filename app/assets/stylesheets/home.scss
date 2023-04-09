@@ -238,6 +238,13 @@ body {
 
     .aboutContainer {
         padding-top: 2rem;
+        display: flex;
+    }
+
+    .aboutText {
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 85%;
     }
 
     .image {
