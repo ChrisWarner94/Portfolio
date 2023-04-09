@@ -26,8 +26,9 @@
           <div class="tech-name">
             <%= tech.name %>
           </div>
-          <div class = "tech-image"></div>
-          <%= image_tag tech.logo , crop: :fit%>
+          <div class ="tech-image">
+            <%= image_tag tech.logo, class: "tech-image"%>
+          </div>
         </div>
       <% end %>
     </div>
