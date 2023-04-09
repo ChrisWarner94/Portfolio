@@ -134,6 +134,10 @@ body {
     padding-top: 5%;
 }
 
+#sectionHome {
+    margin-top: 0;
+}
+
 
 
 
@@ -184,9 +188,28 @@ body {
         justify-content: center;
     }
 
+    .aboutContainer {
+        padding-top: 3rem;
+    }
+
     .tech-image {
         width: 30%;
     }
+
+    .tech-name {
+        font-size: 60%;
+    }
+
+    .tech-image {
+        width: 30%;
+        padding-top: 5%;
+    }
+
+    .tech-card {
+        width: 4rem;
+    }
+
+
 
 
 
