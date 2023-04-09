@@ -108,6 +108,21 @@ body {
     display: flex;
 }
 
+.tech-card {
+
+    padding-left: 3rem;
+
+    justify-content: center;
+    background-color: #E5E5E5;
+    border-radius: 5%;
+}
+
+.tech-name {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: $secondary-yellow;
+}
+
 .tech-image {
 
     height: 100%;
@@ -115,11 +130,7 @@ body {
 
 }
 
-.tech-card {
-    height: 3rem;
-    padding-left: 3rem;
-    width: 5rem;
-}
+
 
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
