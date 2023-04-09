@@ -105,23 +105,25 @@ body {
 .stack-container {
     margin-top: 5rem;
     display: flex;
+    margin: auto;
 }
 
 .tech-card {
-
+    background-color: #E5E5E5;
     border-radius: 3%;
-    margin: 1%;
+    margin: 0.25rem;
     width: 7rem;
 }
 
 .tech-name {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
-    color: $secondary-yellow;
+    color: $primary-blue;
+    font-size: 120%;
 }
 
 .tech-image {
-    width: 40%;
+    width: 50%;
     padding-top: 15%;
 }
 

@@ -37,7 +37,7 @@ technology_five = Technology.create!(
 )
 
 technology_six = Technology.create!(
-    name: "Ruby-On-Rails",
+    name: "Rails",
     logo: "stack/rails.svg"
 )
 
