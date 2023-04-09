@@ -1,10 +1,15 @@
 // colours
+
 $primary-blue: #14213d;
 $secondary-yellow: #FCA311;
 $tertiary-grey: #E5E5E5;
 $white: #FFFFFF;
+
 // imports
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+// page rules 
 
 html {
     scroll-behavior: smooth;
@@ -119,7 +124,6 @@ body {
 
 .tech-image-container {
     margin: auto;
-    align-content: center;
     display: flex;
     justify-content: center;
 }
