@@ -186,6 +186,7 @@ body {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
+        margin-top: 2rem;
     }
 
     .aboutContainer {
@@ -207,6 +208,7 @@ body {
 
     .tech-card {
         width: 4rem;
+        border-radius: 10%;
     }
 
 
