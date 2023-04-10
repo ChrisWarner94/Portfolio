@@ -80,28 +80,7 @@ body {
 
 
 
-.aboutContainer {
-    margin: auto;
-    padding-top: 10rem;
-    width: 9 0%;
-}
 
-.image {
-    height: 15rem;
-}
-
-.profile-picture {
-    border-radius: 15%;
-}
-
-.aboutText {
-    font-family: 'Titillium Web', sans-serif;
-    color: $secondary-yellow;
-    padding-left: 3rem;
-    width: 60%;
-    font-size: 120%;
-    text-align: center;
-}
 
 .stack-container {
     margin-top: 5rem;
@@ -172,22 +151,7 @@ body {
         display: flex;
     }
 
-    .aboutContainer {
-        padding-top: 3rem;
-    }
 
-    .profile-picture {
-        margin: auto;
-        height: 5rem;
-    }
-
-    .aboutText {
-        width: 90%;
-        padding-left: 0;
-        padding-right: 2rem;
-        font-size: 80%;
-        margin: auto;
-    }
 
     .stack-container {
         display: grid;
@@ -198,9 +162,6 @@ body {
         margin-right: auto;
     }
 
-    .aboutContainer {
-        padding-top: 3rem;
-    }
 
     .tech-image {
         width: 20%;
@@ -251,28 +212,6 @@ body {
         margin-top: 5%;
     }
 
-    .aboutContainer {
-        padding-top: 4rem;
-        display: flex;
-    }
-
-    .aboutText {
-        width: 100%;
-        padding-left: 2rem;
-        font-size: 85%;
-    }
-
-    .image {
-        height: 5rem;
-        display: flex;
-        padding-top: 1rem;
-        margin-left: 3rem;
-    }
-
-    .profile-picture {
-        height: 10rem;
-    }
-
     .stack-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -306,15 +245,6 @@ body {
         padding-left: 5%;
     }
 
-    .aboutContainer {
-        display: flex;
-        padding-top: 4rem;
-        width: 90%
-    }
-
-    .profile-picture {
-        height: 15rem;
-    }
 
     .stack-container {
         display: grid;
@@ -358,13 +288,6 @@ body {
         margin-top: 5%;
     }
 
-    .aboutContainer {
-        display: flex;
-    }
-
-    .profile-picture {
-        height: 15rem;
-    }
 
     .stack-container {
         display: grid;
@@ -401,17 +324,10 @@ body {
 
     }
 
-    .aboutContainer {
-        display: flex;
-    }
-
-    .profile-picture {
-        height: 15rem;
-        margin-left: 10rem;
-    }
 
     .stack-container {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
