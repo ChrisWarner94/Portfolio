@@ -28,7 +28,6 @@ body {
 // ----------------------------------------  Home Section ----------------------------------------   //
 
 #sectionHome {
-    margin-left: 15%;
     margin-top: 5%;
 }
 
@@ -53,8 +52,9 @@ body {
 
 .heading-banner {
     display: flex;
-    justify-content: left;
-    margin-top: 8%;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-text {

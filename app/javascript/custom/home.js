@@ -1,6 +1,6 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer."
-const intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const intro = "Hello there! I'm thrilled to welcome you to my profile site. I'm a Full Stack Web Developer who has recently completed an intensive coding program, where I gained expertise in both front-end and back-end development. I'm passionate about creating visually appealing and user-friendly web applications that provide meaningful experiences to users. With a keen eye for design and a knack for problem-solving, I enjoy bringing ideas to life using the latest web technologies and techniques. Take a moment to explore my profile site and learn more about my skills. Let's connect and create some amazing web solutions together! Welcome to my world of web development possibilities!"
 
 function typeEffect(element, text, speed) {
     return new Promise((resolve) => {
