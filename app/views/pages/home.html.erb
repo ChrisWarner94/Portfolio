@@ -38,8 +38,9 @@
     <a href="">section2</a>
     <div class="projectsContainer">
       <%# for each project do %>
-        <%# <%= @user[0] %>
-
+        <%= @language.each do |key,value| %>
+          <%= key %>
+        <% end  %>
       </div>
     </section>
     <section class="section" id="sectionContact">
