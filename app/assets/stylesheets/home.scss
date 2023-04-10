@@ -109,18 +109,18 @@ body {
 }
 
 .tech-card {
-    background-color: #E5E5E5;
+    background-color: $primary-blue;
     border-radius: 15%;
     margin: 0.25rem;
     width: 7rem;
-    box-shadow: 3px 3px $secondary-yellow;
+    // box-shadow: 3px 3px $secondary-yellow;
 }
 
 .tech-name {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
-    color: $primary-blue;
-    font-size: 120%;
+    color: $secondary-yellow;
+    font-size: 150%;
 }
 
 .tech-image {
@@ -206,7 +206,7 @@ body {
     }
 
     .tech-name {
-        font-size: 80%;
+        font-size: 120%;
     }
 
     .tech-image {
@@ -286,7 +286,7 @@ body {
     }
 
     .tech-name {
-        font-size: 80%;
+        font-size: 120%;
     }
 }
 
@@ -334,7 +334,7 @@ body {
     }
 
     .tech-name {
-        font-size: 80%;
+        font-size: 115%;
     }
 }
 
@@ -385,7 +385,7 @@ body {
     }
 
     .tech-name {
-        font-size: 90%;
+        font-size: 140%;
     }
 }
 

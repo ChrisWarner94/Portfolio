@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
     def home
         @technologies = Technology.all
-        image_class = "stack-image"
+        @projects = Project.all
     end
     
 end
