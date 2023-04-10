@@ -37,16 +37,13 @@
   <section class="section" id="sectionProjects">
     <a href="">section2</a>
     <div class="projectsContainer">
-      <%# for each project do %>
-        <%# <%= @repos[0] %> %>
-        <%= @commits %>
-        <%# <%= @languages.each do |key,value| %>
-          <%# <%= key %>
+      <% @repos.each do%>
+        <%= @repos[:name] %>
 
-          <%# <% end  %>
-        </div>
-      </section>
-      <section class="section" id="sectionContact">
-        <a href="">section 4</a>
-      </section>
+      <% end %>
     </div>
+  </section>
+  <section class="section" id="sectionContact">
+    <a href="">section 4</a>
+  </section>
+</div>
