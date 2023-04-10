@@ -40,6 +40,7 @@ body {
 
 .container {
     margin: 1%;
+    width: 100vw;
 }
 
 .heading {
@@ -181,7 +182,7 @@ body {
     }
 
     .aboutText {
-        width: 100%;
+        width: 90%;
         padding-left: 0;
         padding-right: 2rem;
         font-size: 80%;
@@ -190,11 +191,11 @@ body {
 
     .stack-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         margin-top: 2rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .aboutContainer {
@@ -202,7 +203,7 @@ body {
     }
 
     .tech-image {
-        width: 30%;
+        width: 20%;
     }
 
     .tech-name {
@@ -282,7 +283,7 @@ body {
     }
 
     .tech-card {
-        width: 6rem;
+        width: 5rem;
     }
 
     .tech-name {
