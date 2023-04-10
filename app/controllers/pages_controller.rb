@@ -9,10 +9,15 @@ class PagesController < ApplicationController
     @repos = repos 
 
     # pull languages included in each repo
-    url = "https://api.github.com/repos/ChrisWarner94/Recipeasy/languages"
+    url = "https://api.github.com/repos/ChrisWarner94/Recipeasy/languages" # eachdo |key, value| key for language name watch out for shell
     language_serialized = URI.open(url).read
-    language = JSON.parse(language_serialized)
+    languages = JSON.parse(language_serialized)
     @languages = languages 
+
+    url = 'https://api.github.com/repos/ChrisWarner94/Recipeasy/commits' # date for time and date
+    commits_serialized = URI.open(url).read
+    commits = JSON.parse(commits_serialized)
+    @commits = commits 
   end
 end
 
