@@ -3,7 +3,7 @@ class Project < ApplicationRecord
         response = HTTParty.get("https://api.github.com/users/#{ChrisWarner94}/repos")
         
         response.each do |repo|
-
+            puts repo
             
         end
         
