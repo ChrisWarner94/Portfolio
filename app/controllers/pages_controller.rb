@@ -11,9 +11,9 @@ class PagesController < ApplicationController
     # API call
     call_url = 'https://api.github.com/repos/ChrisWarner94/Recipeasy/commits'
     commits_serialized = URI.open(call_url).read
-    @commits = JSON.parse(commits_serialized)
+    @commits = JSON.parse(commits_serialized) 
     
-    # loops through each instance in @commits and cleans the data and passes it as an array to @commit details array
+    # loops through each instance in @commits and accesses/cleans the data and passes it as an array to @commit details array
     @commits.each do |commit|
       commit_date_time = format_date(commit["commit"]["author"]["date"])
       commit_owner = commit["commit"]["author"]["name"]
@@ -30,6 +30,15 @@ class PagesController < ApplicationController
   private # ------------------------------------------ private methods ------------------------------------------ #
 
   def format_date(date_unformatted)
+    #"2023-04-05T11:13:49Z" Github API date return for reference
+    
+    # Gets the first ten chars of date_formatted starting from index 0
+    date = date_unformatted[0, 10]
+    year, month, day = date.split("-")
+    time = date_unformatted[11, 8]
+
+    date_time = "#{day}-#{month}-#{year} #{time}"
+
 
   end
 end
