@@ -16,11 +16,6 @@ html {
     scrollbar-color: $secondary-yellow $white;
 }
 
-
-#top-tag {
-    top: -20;
-}
-
 body {
     background-color: $primary-blue;
     margin: 0;
@@ -33,7 +28,6 @@ body {
 }
 
 // ----------------------------------------  Home Section ----------------------------------------   //
-
 
 
 #sectionHome {
@@ -76,6 +70,44 @@ body {
     font-size: 120%;
 }
 
+
+
+// ----------------------------------------  Project Section ----------------------------------------   //
+
+.skills-container {
+    text-align: center;
+    justify-content: space-between;
+    color: $primary-blue;
+
+}
+
+.skills-list {
+
+    ul {
+        color: $primary-blue;
+    }
+}
+
+#sectionProjects {
+    background-color: #E5E5E5;
+
+}
+
+.projectsContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.Recipeasy-card {
+    padding-left: 1rem;
+    width: 70%;
+    background-color: $primary-blue;
+    height: 28rem;
+    border-radius: 1%;
+}
+
 .skills-container {
     text-align: center;
 }
@@ -84,14 +116,10 @@ body {
     text-align: center;
 }
 
-// ----------------------------------------  Project Section ----------------------------------------   //
-
-#sectionProjects {
-    background-color: #E5E5E5;
-
+.skills-list {
+    display: grid;
+    padding-left: 15rem;
 }
-
-.projectsContainer {}
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
 
