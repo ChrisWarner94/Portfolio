@@ -110,11 +110,11 @@ body {
 }
 
 .git-box {
-    padding-left: 3rem;
-    width: 50%;
+    width: 40%;
     background-color: $primary-blue;
     height: 28rem;
     border-radius: 1%;
+    overflow: auto;
 
 }
 
