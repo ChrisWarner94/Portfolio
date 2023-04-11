@@ -98,14 +98,24 @@ body {
     width: 90%;
     margin: auto;
     padding-top: 3%;
+    justify-content: space-between;
 }
 
 .Recipeasy-card {
     padding-left: 1rem;
-    width: 60%;
+    width: 50%;
     background-color: $primary-blue;
     height: 28rem;
     border-radius: 1%;
+}
+
+.git-box {
+    padding-left: 3rem;
+    width: 50%;
+    background-color: $primary-blue;
+    height: 28rem;
+    border-radius: 1%;
+
 }
 
 .skills-container {
