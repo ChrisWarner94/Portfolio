@@ -21,13 +21,7 @@ $white: #FFFFFF;
 .navlinks {
     margin: auto;
     display: flex;
-
-    ul {
-        padding-left: 0;
-        vertical-align: middle;
-        width: auto;
-
-    }
+    justify-content: space-between;
 }
 
 
