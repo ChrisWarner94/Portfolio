@@ -119,9 +119,26 @@ body {
 }
 
 .commit-cards-container {
-    margin: 5%;
-    width: 80%;
+    margin: auto;
+    width: 95%;
+}
+
+.card-container {
+    margin: 3%;
+}
+
+.commit-card {
+    background-color: #E5E5E5;
+    border-radius: 1%;
+    margin: auto;
+    width: 85%;
     height: 20%;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+
+    #commmit-owner {}
+
 }
 
 .skills-container {
