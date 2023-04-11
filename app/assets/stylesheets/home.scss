@@ -26,6 +26,12 @@ body {
     margin: 0;
 }
 
+// sections of the homepage
+
+.section {
+    height: 95vh;
+}
+
 // ----------------------------------------  Home Section ----------------------------------------   //
 
 #sectionHome {
@@ -61,7 +67,10 @@ body {
     margin: auto;
 }
 
-
+.skillsText {
+    font-family: 'Titillium Web', sans-serif;
+    color: $secondary-yellow;
+}
 
 .intro {
     font-family: 'Titillium Web', sans-serif;
@@ -69,10 +78,12 @@ body {
     font-size: 120%;
 }
 
-// sections of the homepage
+.skills-container {
+    text-align: center;
+}
 
-.section {
-    height: 95vh;
+.skills {
+    text-align: center;
 }
 
 // ----------------------------------------  Project Section ----------------------------------------   //

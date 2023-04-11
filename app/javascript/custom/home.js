@@ -1,5 +1,6 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
+const skills = "Ruby   C#   Javascript   HTML5   CSS3   Ruby-On-Rails   PostgreSQL   SQLite   Git   Github   SCSS   Bootstrap   Heroku"
 
 
 function typeEffect(element, text, speed) {
@@ -44,7 +45,8 @@ function fadeIn(element, speed) {
 async function runTypeEffect() {
     await typeEffect(headingUpper, headingOne, 55);
     await typeEffect(headingLower, headingTwo, 55);
-    await fadeIn(introText, 20)
+    await fadeIn(introText, 20);
+    await typeEffect(skillsText, skills, 20);
 }
 
 runTypeEffect();
