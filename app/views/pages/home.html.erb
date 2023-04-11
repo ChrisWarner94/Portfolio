@@ -15,10 +15,22 @@
       <div class="Recipeasy-card">
       </div>
       <div class="git-box" style=>
-
-        <%= @commit_details %>
+        <div class="commit-cards-container">
+          <% @commit_details.each do |commit| %>
+            <div class= "commit-card">
+              <div class="commit-content" id="commit-owner">
+                <%= commit[0] %>
+              </div>
+              <div class="commit-content" id="commit-date">
+                <%= commit[1] %>
+              </div>
+              <div class="commit-content" id="commit-message">
+                <%= commit[2] %>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
-
     </section>
     <section class="section" id="sectionContact">
       <a href="">section 4</a>
