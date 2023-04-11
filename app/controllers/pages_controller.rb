@@ -36,9 +36,7 @@ class PagesController < ApplicationController
     # Gets the first ten chars of date_formatted starting from index 0
     date = date_unformatted[0, 10]
     year, month, day = date.split("-")
-    time = date_unformatted[11, 8]
-
-    date_time = "#{day}-#{month}-#{year} #{time}"
+    date_time = "#{day}-#{month}-#{year}"
 
 
   end

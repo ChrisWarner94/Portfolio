@@ -74,6 +74,10 @@ body {
 
 // ----------------------------------------  Project Section ----------------------------------------   //
 
+#sectionProjects {
+    margin-top: 0;
+}
+
 .skills-container {
     text-align: center;
     justify-content: space-between;
@@ -111,8 +115,8 @@ body {
 
 .git-box {
     width: 40%;
-    background-color: $primary-blue;
-    height: 28rem;
+    background-color: $tertiary-grey;
+    height: 40rem;
     border-radius: 1%;
     overflow: auto;
 
@@ -128,7 +132,7 @@ body {
 }
 
 .commit-card {
-    background-color: #E5E5E5;
+    background-color: $primary-blue;
     border-radius: 1%;
     margin: auto;
     width: 85%;
@@ -136,15 +140,29 @@ body {
     padding-bottom: 1rem;
     margin-top: 1rem;
     font-family: 'Titillium Web', sans-serif;
+    box-shadow: 3px 3px 3px;
 
-    #commmit-owner {}
 
+
+}
+
+#commit-message {
+    color: $secondary-yellow;
 }
 
 .skills-container {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 0.25rem;
+    color: #E5E5E5;
+
 }
 
 .skills {
