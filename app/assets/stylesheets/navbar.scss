@@ -5,6 +5,10 @@ $white: #FFFFFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
+.icon {
+    color: $tertiary-grey;
+}
+
 .link {
     display: flex;
     width: 18rem;
@@ -26,8 +30,8 @@ $white: #FFFFFF;
     display: flex;
     position: sticky; // spacing required
     background-color: #14213d;
-
-
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .links-container {
@@ -36,21 +40,22 @@ $white: #FFFFFF;
     justify-content: space-evenly;
     width: 65%;
 
-    li {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 200%;
-        font-family: 'Titillium Web', sans-serif;
-        text-decoration: none;
-    }
+
 }
 
+li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 200%;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+}
 
 
 //underlining hover effect for nav links
 .nav-link-hover {
     position: relative;
-    color: $tertiary-grey;
+    color: $secondary-yellow;
     text-decoration: none;
 }
 
@@ -77,30 +82,41 @@ $white: #FFFFFF;
 //---------------------------- Media Queries ----------------------------//
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .link {
+        width: 7rem;
+    }
+
+    li {
+        font-size: 130%;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .navlinks {
-        font-size: 80%;
-    }
 
+    .link {
+        width: 11rem;
+    }
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navlinks li {
-        font-size: 100%;
+    .link {
+        width: 13rem;
     }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .navlinks li {
-        font-size: 130%;
+    li {
+        font-size: 17 0%;
     }
 
+    .link {
+        width: 14rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

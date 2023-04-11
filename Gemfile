@@ -32,6 +32,9 @@ gem 'jbuilder'
 # Use Sass to process CSS
 gem 'sassc-rails'
 
+# import font awesome for HTML
+gem "font-awesome-sass", "~> 6.4.0"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

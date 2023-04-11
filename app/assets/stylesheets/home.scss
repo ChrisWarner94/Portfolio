@@ -18,7 +18,7 @@ html {
 
 
 #top-tag {
-    top: 0;
+    top: -20;
 }
 
 body {
@@ -28,8 +28,9 @@ body {
 
 // ----------------------------------------  Home Section ----------------------------------------   //
 
-
-
+#sectionHome {
+    margin-top: -40rem;
+}
 
 .container {
     margin: 3%;
@@ -41,6 +42,9 @@ body {
     font-size: 500%;
     margin-bottom: 0;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-banner {
@@ -50,8 +54,9 @@ body {
 }
 
 .intro-text {
-    justify-content: left;
-    width: 80%;
+    text-align: center;
+    width: 72%;
+    margin: auto;
 }
 
 
@@ -59,7 +64,7 @@ body {
 .intro {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary-grey;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 // sections of the homepage
@@ -74,7 +79,7 @@ body {
 
 
 
-.stack-container {
+.stackContainer {
     margin-top: 5rem;
     display: flex;
     justify-items: center;
@@ -99,6 +104,7 @@ body {
     width: 50%;
     padding-top: 15%;
     padding-bottom: 5%;
+
 }
 
 .tech-image-container {
@@ -122,19 +128,12 @@ body {
         font-size: 200%;
     }
 
-    .heading-banner {
-        padding-top: 5%;
-
-    }
-
     .intro-text {
-        justify-content: left;
         width: 90%;
-
     }
 
     #sectionHome {
-        margin-left: 5%;
+
         margin-top: 5%;
     }
 
@@ -145,7 +144,7 @@ body {
 
 
 
-    .stack-container {
+    .stackContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
@@ -156,7 +155,7 @@ body {
 
 
     .tech-image {
-        width: 20%;
+        display: none;
     }
 
     .tech-name {
@@ -173,6 +172,9 @@ body {
         border-radius: 10%;
     }
 
+    .intro {
+        font-size: 130%;
+    }
 
 
 
@@ -187,24 +189,15 @@ body {
 
     .heading-banner {
         padding-top: 5%;
-        margin-left: 5%;
-
     }
 
-    .intro-text {
-        margin-left: 5%;
-    }
-
-    .text-left-padding {
-        padding-left: 5%;
-    }
 
     #sectionHome {
-        margin-left: 5%;
+
         margin-top: 5%;
     }
 
-    .stack-container {
+    .stackContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -220,6 +213,10 @@ body {
     .tech-name {
         font-size: 120%;
     }
+
+    .intro {
+        font-size: 140%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -233,19 +230,10 @@ body {
 
     }
 
-    .text-left-padding {
-        padding-left: 5%;
-    }
 
-
-    .stack-container {
+    .stackContainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .image {
-        padding-top: 2rem;
-        padding-left: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .tech-image {
@@ -258,6 +246,10 @@ body {
 
     .tech-name {
         font-size: 115%;
+    }
+
+    .intro {
+        font-size: 150%;
     }
 }
 
@@ -276,21 +268,17 @@ body {
     }
 
     #sectionHome {
-        margin-left: 15%;
+
         margin-top: 5%;
     }
 
 
-    .stack-container {
+    .stackContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         margin-top: 3rem;
     }
 
-    .image {
-        padding-top: 2rem;
-        padding-left: 2rem;
-    }
 
     .tech-image {
         width: 45%;
@@ -303,6 +291,10 @@ body {
     .tech-name {
         font-size: 140%;
     }
+
+    .intro {
+        font-size: 140%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -311,15 +303,13 @@ body {
         font-size: 500%;
     }
 
-    .heading-banner {
-        padding-top: 1%;
-
-    }
-
-
-    .stack-container {
+    .stackContainer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .intro {
+        font-size: 180%;
     }
 }

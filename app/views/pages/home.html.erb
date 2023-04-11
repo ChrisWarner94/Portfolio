@@ -1,7 +1,6 @@
-<a id="top-tag"></a>
 <div class="container">
   <section class="section" id="sectionHome">
-    <div class="heading-banner text-padding-left">
+    <div class="heading-banner ">
       <div>
         <h1 class="heading" id="headingUpper"></h1>
         <h2 class="heading" id="headingLower"></h2>
@@ -10,22 +9,6 @@
     <div class="intro-text">
       <h3 class="intro" id="introText"></h3>
     </div>
-    <div class="stack-container">
-      <%# calls each tech within database making a card comprimising of name and image allocated within images/stack %>
-      <% @technologies.each do |tech|  %>
-        <div class="tech-card">
-          <div class="tech-name">
-            <%= tech.name %>
-          </div>
-          <div class ="tech-image-container">
-            <%= image_tag tech.logo, class: "tech-image"%>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </section>
-  <section class="section" id="sectionAbout">
-
   </section>
   <section class="section" id="sectionProjects">
     <a href="">section2</a>
@@ -37,6 +20,19 @@
       <div class ="project-description">
       </div>
       <div class ="project-image"></div>
+    </div>
+    <div class="stackContainer">
+      <%# calls each tech within database making a card comprimising of name and image allocated within images/stack %>
+      <% @technologies.each do |tech|  %>
+        <div class="tech-card">
+          <div class="tech-name">
+            <%= tech.name %>
+          </div>
+          <div class ="tech-image-container">
+            <%= image_tag tech.logo, class: "tech-image"%>
+          </div>
+        </div>
+      <% end %>
     </div>
   </section>
   <section class="section" id="sectionContact">
