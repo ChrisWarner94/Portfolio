@@ -5,40 +5,50 @@ $white: #FFFFFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
+.link {
+    display: flex;
+    width: 18rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-list {
+    margin: 0%;
+    padding-left: 0px;
+    display: flex;
+
+}
 
 .navbar-container {
     top: 0;
     width: 100%;
     height: 5%;
     display: flex;
-    justify-content: space-between;
     position: sticky; // spacing required
     background-color: #14213d;
 
 
 }
 
-.navlinks {
+.links-container {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 65%;
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 200%;
+        font-family: 'Titillium Web', sans-serif;
+        text-decoration: none;
+    }
 }
 
 
-
-.navlinks li {
-    right: 0;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 150%;
-    padding-right: 5rem;
-    font-family: 'Titillium Web', sans-serif;
-    align-items: center;
-}
 
 //underlining hover effect for nav links
 .nav-link-hover {
-    display: inline-block;
     position: relative;
     color: $tertiary-grey;
     text-decoration: none;
@@ -67,25 +77,12 @@ $white: #FFFFFF;
 //---------------------------- Media Queries ----------------------------//
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .navlinks {
-        font-size: 50%;
-
-        li {
-            padding-right: 2rem;
-        }
-    }
-
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     .navlinks {
         font-size: 80%;
-
-        li {
-            padding-right: 3rem;
-        }
     }
 
 }
