@@ -23,7 +23,7 @@ html {
 
 body {
     background-color: $primary-blue;
-    max-width: 100%;
+    margin: 0;
 }
 
 // ----------------------------------------  Home Section ----------------------------------------   //
@@ -32,9 +32,11 @@ body {
     margin-top: -40rem;
 }
 
-.container {
-    margin: 3%;
+#sectionHome {
+    margin-top: 0;
 }
+
+
 
 .heading {
     font-family: 'Titillium Web', sans-serif;
@@ -73,52 +75,14 @@ body {
     height: 95vh;
 }
 
-// ----------------------------------------  About Section ----------------------------------------   //
+// ----------------------------------------  Project Section ----------------------------------------   //
 
-
-
-
-
-.stackContainer {
-    margin-top: 5rem;
-    display: flex;
-    justify-items: center;
+#sectionProjects {
+    background-color: #E5E5E5;
+    border-radius: 1%;
 }
 
-.tech-card {
-    background-color: $primary-blue;
-    border-radius: 15%;
-    margin: 0.25rem;
-    width: 7rem;
-    // box-shadow: 3px 3px $secondary-yellow;
-}
-
-.tech-name {
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: $secondary-yellow;
-    font-size: 150%;
-}
-
-.tech-image {
-    width: 50%;
-    padding-top: 15%;
-    padding-bottom: 5%;
-
-}
-
-.tech-image-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-#sectionHome {
-    margin-top: 0;
-}
-
-
-
+.projectsContainer {}
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
 

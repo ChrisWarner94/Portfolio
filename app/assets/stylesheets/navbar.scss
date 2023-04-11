@@ -25,13 +25,14 @@ $white: #FFFFFF;
 
 .navbar-container {
     top: 0;
-    width: 100%;
     height: 5%;
     display: flex;
     position: sticky; // spacing required
     background-color: #14213d;
     margin-top: 2%;
     margin-bottom: 3%;
+    z-index: 100;
+
 }
 
 .links-container {

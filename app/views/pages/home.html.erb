@@ -11,10 +11,8 @@
     </div>
   </section>
   <section class="section" id="sectionProjects">
-    <a href="">section2</a>
     <div class="projectsContainer">
-      <%= @display_projects %>
-      <div class="project-card">
+      <div class="Recipeasy-card">
         <div class ="project-name"></div>
       </div>
       <div class ="project-description">
@@ -22,17 +20,6 @@
       <div class ="project-image"></div>
     </div>
     <div class="stackContainer">
-      <%# calls each tech within database making a card comprimising of name and image allocated within images/stack %>
-      <% @technologies.each do |tech|  %>
-        <div class="tech-card">
-          <div class="tech-name">
-            <%= tech.name %>
-          </div>
-          <div class ="tech-image-container">
-            <%= image_tag tech.logo, class: "tech-image"%>
-          </div>
-        </div>
-      <% end %>
     </div>
   </section>
   <section class="section" id="sectionContact">
