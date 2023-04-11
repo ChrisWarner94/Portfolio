@@ -102,7 +102,7 @@ body {
 
 .Recipeasy-card {
     padding-left: 1rem;
-    width: 70%;
+    width: 60%;
     background-color: $primary-blue;
     height: 28rem;
     border-radius: 1%;
@@ -110,6 +110,8 @@ body {
 
 .skills-container {
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .skills {
@@ -117,8 +119,10 @@ body {
 }
 
 .skills-list {
-    display: grid;
-    padding-left: 15rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 80%;
 }
 
 // ------------------------------------------ Media Queries ------------------------------------------ //
