@@ -44,7 +44,7 @@ function fadeIn(element, speed) {
 async function runTypeEffect() {
     await typeEffect(headingUpper, headingOne, 35);
     await typeEffect(headingLower, headingTwo, 35);
-    await fadeIn(introText, 20);
+    await fadeIn(introText, 6);
 }
 
 runTypeEffect();

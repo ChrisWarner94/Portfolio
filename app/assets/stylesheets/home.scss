@@ -131,16 +131,36 @@ body {
         vertical-align: middle;
         margin-bottom: 8%;
     }
+
+
 }
 
 .git-box {
-    width: 40%;
+    width: 90%;
     background-color: $tertiary-grey;
     height: 40rem;
     border-radius: 1%;
     overflow: auto;
     scrollbar-color: $secondary-yellow $tertiary-grey;
 
+
+}
+
+.stack {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+    margin-left: 2.2rem;
+    text-align: center;
+}
+
+.stack-card {
+    border-radius: 2%;
+    background-color: $primary-blue;
+    color: $secondary-yellow;
+    box-shadow: 2px 2px 2px black;
+    padding: 0.35rem;
+    margin-bottom: 0.35rem;
 
 }
 
