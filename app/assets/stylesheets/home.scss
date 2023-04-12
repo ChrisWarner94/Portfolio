@@ -27,6 +27,8 @@ body {
     height: 95vh;
 }
 
+
+
 // ----------------------------------------  Home Section ----------------------------------------   //
 
 
@@ -99,19 +101,30 @@ body {
 
 .projectsContainer {
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding-top: 3%;
     justify-content: space-between;
 }
 
 .Recipeasy-card {
-    padding-left: 1rem;
     width: 50%;
     background-color: $primary-blue;
-    height: 28rem;
+    height: 50rem;
     border-radius: 1%;
-    box-shadow: 3px 3px 3px;
+
+    .fit-image {
+        width: 100%;
+    }
+
+    .description {
+        width: 60%;
+        margin-right: auto;
+        padding-left: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        color: $secondary-yellow;
+        font-size: 75%;
+    }
 }
 
 .git-box {
@@ -120,6 +133,8 @@ body {
     height: 40rem;
     border-radius: 1%;
     overflow: auto;
+    scrollbar-color: $secondary-yellow $tertiary-grey;
+
 
 }
 
@@ -139,16 +154,43 @@ body {
     width: 85%;
     height: 20%;
     padding-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-family: 'Titillium Web', sans-serif;
-    box-shadow: 3px 3px 3px;
-
+    box-shadow: 3px 3px 3px black;
 
 
 }
 
+.git-log-title {
+    text-align: center;
+    width: 72%;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    color: #14213d;
+    font-size: 200%;
+
+}
+
+.commit-card {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.commit-card:hover {
+    top: -0.75rem;
+}
+
+.git-box a {
+    text-decoration: none;
+}
+
+
+
 #commit-message {
     color: $secondary-yellow;
+
+
 }
 
 .skills-container {

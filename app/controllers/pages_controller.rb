@@ -19,10 +19,12 @@ class PagesController < ApplicationController
       commit_date_time = format_date(commit["commit"]["author"]["date"])
       commit_owner = commit["commit"]["author"]["name"]
       commit_message = commit["commit"]["message"]
+      commit_url = commit["html_url"]
 
       details_array << commit_date_time
       details_array << commit_owner
       details_array << commit_message
+      details_array << commit_url
       @commit_details << details_array
 
     end  
