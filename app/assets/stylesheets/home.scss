@@ -103,14 +103,14 @@ body {
     display: flex;
     width: 95%;
     margin: auto;
-    padding-top: 3%;
+    padding-top: 1%;
     justify-content: space-between;
 }
 
 .Recipeasy-card {
-    width: 50%;
+    width: 60%;
     background-color: $primary-blue;
-    height: 50rem;
+    height: 52rem;
     border-radius: 1%;
 
     .fit-image {
@@ -118,12 +118,18 @@ body {
     }
 
     .description {
-        width: 60%;
-        margin-right: auto;
-        padding-left: 1rem;
+        width: 90%;
         font-family: 'Titillium Web', sans-serif;
         color: $secondary-yellow;
-        font-size: 75%;
+        font-size: 85%;
+        font-family: 'Titillium Web', sans-serif;
+        color: $secondary-yellow;
+        margin: auto;
+        padding-top: 1rem;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 8%;
     }
 }
 
