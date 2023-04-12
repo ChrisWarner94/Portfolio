@@ -14,15 +14,6 @@
  *= require_self
  */
 
-// colour-assignments
-
-$primary-blue: #14213d;
-$secondary-yellow: #FCA311;
-$tertiary-grey: #E5E5E5;
-$white: #FFFFFF;
-
 // imports
-
-@import "font-awesome";
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&family=Titillium+Web:wght@600&display=swap');
+@import "config/_fonts";
+@import "config/_colours.scss";

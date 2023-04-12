@@ -1,9 +1,4 @@
-$primary-blue: #14213d;
-$secondary-yellow: #FCA311;
-$tertiary-grey: #E5E5E5;
-$white: #FFFFFF;
-
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import "config/colours";
 
 .icon {
     color: $tertiary-grey;
