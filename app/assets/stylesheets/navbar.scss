@@ -29,9 +29,9 @@ $white: #FFFFFF;
     display: flex;
     position: sticky; // spacing required
     background-color: #14213d;
-    margin-top: 2%;
     margin-bottom: 3%;
     z-index: 100;
+    padding-bottom: 0.25rem;
 
 }
 
@@ -50,6 +50,7 @@ li {
     font-size: 200%;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
+    padding-top: 5%;
 }
 
 

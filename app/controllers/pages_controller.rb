@@ -1,41 +1,46 @@
-
+require 'open-uri'
 
 class PagesController < ApplicationController
   def home
-    @technologies = Technology.all
     
-    # projects_array = []
-
-    # # pull public repos from github 
+    # arrays need for hangling github api data and cleansing
     
-    # call_url = "https://api.github.com/users/ChrisWarner94/repos"
-    # repos_serialized = URI.open(call_url).read
-    # repos = JSON.parse(repos_serialized)
-    # @repos = repos 
+    @commit_details = []
+    
 
-    # repos.each do |repo|
+    # API call
+    call_url = 'https://api.github.com/repos/ChrisWarner94/Recipeasy/commits'
+    commits_serialized = URI.open(call_url).read
+    @commits = JSON.parse(commits_serialized) 
+    
+    # loops through each instance in @commits and accesses/cleans the data and passes it as an array to @commit details array
+    @commits.each do |commit|
+      details_array = []
+      commit_date_time = format_date(commit["commit"]["author"]["date"])
+      commit_owner = commit["commit"]["author"]["name"]
+      commit_message = commit["commit"]["message"]
+      commit_url = commit["html_url"]
 
-    #     repository = Project.new(
-    #         name: repo["name"],
-    #         url: repo["html_url"],
-    #         description: [:description]
-    #     )
-    #     projects_array << repository
-    #     @display_projects = projects_array.last(3)
-    # end
+      details_array << commit_date_time
+      details_array << commit_owner
+      details_array << commit_message
+      details_array << commit_url
+      @commit_details << details_array
 
-    # @projects = projects_array
+    end  
+  end
 
-    # # pull languages included in each repo
-    # call_url = "https://api.github.com/repos/ChrisWarner94/Recipeasy/languages" # eachdo |key, value| key for language name watch out for shell
-    # language_serialized = URI.open(call_url).read
-    # languages = JSON.parse(language_serialized)
-    # @languages = languages 
+  private # ------------------------------------------ private methods ------------------------------------------ #
 
-    # call_url = 'https://api.github.com/repos/ChrisWarner94/Recipeasy/commits' # date for time and date
-    # commits_serialized = URI.open(call_url).read
-    # commits = JSON.parse(commits_serialized)
-    # @commits = commits 
+  def format_date(date_unformatted)
+    #"2023-04-05T11:13:49Z" Github API date return for reference
+    
+    # Gets the first ten chars of date_formatted starting from index 0
+    date = date_unformatted[0, 10]
+    year, month, day = date.split("-")
+    date_time = "#{day}-#{month}-#{year}"
+
+
   end
 end
 
