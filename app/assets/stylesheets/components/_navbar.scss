@@ -19,15 +19,15 @@
 }
 
 .navbar-container {
-
+    width: 100%;
     display: flex;
-    position: sticky; // spacing required
     background-color: #14213d;
     margin-bottom: 3%;
     z-index: 100;
     padding-bottom: 0.25rem;
-    position: sticky;
+    position: fixed;
     top: 0;
+    transition: top 0.5s;
 
 }
 

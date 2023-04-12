@@ -47,6 +47,17 @@ const headingTwo = "Full-Stack Developer"
 //     await fadeIn(introText, 6);
 // }
 
+// on scroll will call method
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar-container").style.top = "0";
+    } else {
+        document.getElementById("navbar-container").style.top = "-10%";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 runTypeEffect();
 
