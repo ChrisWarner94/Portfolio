@@ -47,6 +47,7 @@ const headingTwo = "Full-Stack Developer"
 //     await fadeIn(introText, 6);
 // }
 
+
 runTypeEffect();
 
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
