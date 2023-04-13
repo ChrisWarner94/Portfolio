@@ -13,6 +13,7 @@ section {
 html,
 body {
     height: 100%;
+    background-color: $tertiary-grey;
 }
 
 section {
@@ -29,11 +30,20 @@ section {
     display: flex;
 }
 
-fonts #nameheading,
-#jobtitleheading {
+.homeleftpanel {
+    padding-top: 7%;
+}
+
+.homeheading {
     color: $primary-blue;
     font-family: 'Titillium Web', sans-serif;
     font-size: 500%;
 }
 
-#introtext {}
+#introtext {
+    padding-top: 3%;
+    width: 60%;
+    font-size: 210%;
+    color: $secondary-yellow;
+    font-family: 'Noto Sans Miao', sans-serif;
+}
