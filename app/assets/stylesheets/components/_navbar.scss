@@ -1,5 +1,6 @@
 @import "config/colours";
 
+
 .icon {
     color: $tertiary-grey;
 }
@@ -100,6 +101,10 @@ li {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .link {
         width: 13rem;
+    }
+
+    li {
+        font-size: 150%;
     }
 }
 

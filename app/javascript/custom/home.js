@@ -47,7 +47,7 @@ const headingTwo = "Full-Stack Developer"
 //     await fadeIn(introText, 6);
 // }
 
-// on scroll will call method
+// method for navbar hiding and displaying based on user scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -61,6 +61,8 @@ window.onscroll = function () {
 
 runTypeEffect();
 
+
+// method for the smooth scroll to anchor on navlink click
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
 for (let item of anchorlinks) {
@@ -75,3 +77,5 @@ for (let item of anchorlinks) {
         e.preventDefault()
     })
 }
+
+
