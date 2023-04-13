@@ -51,3 +51,14 @@ section {
 .stackrow {
     display: flex;
 }
+
+.stackcard {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin: 1px;
+}
+
+.fourcardcontainer {
+    display: flex;
+}
