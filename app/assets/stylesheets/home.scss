@@ -1,5 +1,7 @@
 @import "config/colours";
 
+
+// determines page lay out in regards to sections 
 html,
 body,
 section {
@@ -16,10 +18,5 @@ section {
     min-height: 100%;
     max-height: 100%;
     box-sizing: border-box;
-    background: #DEF;
     overflow: hidden;
-}
-
-section:nth-of-type(2) {
-    background: #FED;
 }
