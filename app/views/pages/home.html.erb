@@ -35,6 +35,14 @@
     <div class="homerightpanel">
       <div class="stackpanel">
         <% @technologies.each do |tech| %>
+          <div class="techcard">
+            <div class="techname">
+              <%= tech.name %>
+            </div>
+            <div class="techlogo">
+              <%= image_tag (tech.logo), class: "techlogo"%>
+            </div>
+          </div>
         <% end  %>
       </div>
     </div>

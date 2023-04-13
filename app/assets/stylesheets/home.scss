@@ -47,3 +47,32 @@ section {
     color: $secondary-yellow;
     font-family: 'Varela Round', sans-serif;
 }
+
+.techlogo {
+    height: 2.5rem;
+
+    padding-right: 1rem;
+}
+
+.techname {
+    padding-right: 2rem;
+    width: 12rem;
+    margin-top: 1%;
+    font-size: 200%;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.techcard {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+.stackpanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 9rem;
+    margin-right: 6rem;
+
+}
