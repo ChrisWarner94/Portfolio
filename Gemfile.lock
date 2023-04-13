@@ -226,7 +226,7 @@ DEPENDENCIES
   capybara
   debug
   font-awesome-sass (~> 6.4.0)
-  hamburgers (>= 1.1.3)
+  hamburgers (~> 1.1, >= 1.1.3)
   importmap-rails
   jbuilder
   puma (~> 5.0)

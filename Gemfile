@@ -36,7 +36,7 @@ gem 'sassc-rails'
 gem "font-awesome-sass", "~> 6.4.0"
 
 # Hamburger menu gem [https://www.rubydoc.info/gems/hamburgers/1.1.3]
-
+gem 'hamburgers', '~> 1.1', '>= 1.1.3'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
