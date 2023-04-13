@@ -20,3 +20,10 @@ section {
     box-sizing: border-box;
     overflow: hidden;
 }
+
+//container for sections to provide margin - not in use for home section due to navbar 
+
+.section-container {
+    margin: 2%;
+    background-color: black;
+}
