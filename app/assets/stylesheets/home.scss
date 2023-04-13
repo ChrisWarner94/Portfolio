@@ -47,30 +47,3 @@ section {
     color: $secondary-yellow;
     font-family: 'Orbitron', sans-serif;
 }
-
-.stackrow {
-    display: flex;
-}
-
-.stackcard {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    margin: 1px;
-}
-
-.fourcardcontainer {
-    display: flex;
-}
-
-#stackname {
-    width: 8rem;
-
-}
-
-#stackimage {}
-
-.image {
-    height: 100%;
-    width: 100;
-}
