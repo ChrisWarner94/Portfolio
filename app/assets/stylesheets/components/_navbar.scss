@@ -19,10 +19,8 @@
 
 .navbar-container {
     width: 100%;
-    height: 5%;
     display: flex;
     background-color: #14213d;
-    z-index: 100;
     position: fixed;
     top: 0;
     transition: top 0.5s;
@@ -34,7 +32,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 65%;
-
+    margin-bottom: 2%;
+    margin-top: 2%;
 
 }
 
@@ -116,4 +115,13 @@ li {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    li {
+        font-size: 170%;
+    }
+
+    .links-container {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
