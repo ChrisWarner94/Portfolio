@@ -1,9 +1,5 @@
-$primary-blue: #14213d;
-$secondary-yellow: #FCA311;
-$tertiary-grey: #E5E5E5;
-$white: #FFFFFF;
+@import "config/colours";
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 
 .icon {
     color: $tertiary-grey;
@@ -20,18 +16,15 @@ $white: #FFFFFF;
     margin: 0%;
     padding-left: 0px;
     display: flex;
-
 }
 
 .navbar-container {
-    top: 0;
-    height: 5%;
+    width: 100%;
     display: flex;
-    position: sticky; // spacing required
     background-color: #14213d;
-    margin-bottom: 3%;
-    z-index: 100;
-    padding-bottom: 0.25rem;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s;
 
 }
 
@@ -40,17 +33,18 @@ $white: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
     width: 65%;
-
+    margin-bottom: 2%;
+    margin-top: 2%;
 
 }
 
 li {
     display: inline-block;
     vertical-align: middle;
-    font-size: 200%;
+    font-size: 100%;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
-    padding-top: 5%;
+
 }
 
 
@@ -90,7 +84,7 @@ li {
     }
 
     li {
-        font-size: 130%;
+        font-size: 100%;
     }
 }
 
@@ -108,12 +102,16 @@ li {
     .link {
         width: 13rem;
     }
+
+    li {
+        font-size: 150%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     li {
-        font-size: 17 0%;
+        font-size: 170%;
     }
 
     .link {
@@ -122,4 +120,13 @@ li {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    li {
+        font-size: 170%;
+    }
+
+    .links-container {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
