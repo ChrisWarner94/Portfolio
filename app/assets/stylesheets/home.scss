@@ -22,15 +22,18 @@ section {
     overflow: hidden;
 }
 
-//container for sections to provide margin - not in use for home section due to navbar 
-
-.section-container {
-    margin: 2%;
-    background-color: black;
-}
 
 // container for all pages
-.page-container {
-    margin: 3%;
+.pagecontainer {
+    margin: 5%;
     display: flex;
 }
+
+fonts #nameheading,
+#jobtitleheading {
+    color: $primary-blue;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 500%;
+}
+
+#introtext {}

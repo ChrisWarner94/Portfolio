@@ -12,13 +12,13 @@
     justify-content: center;
 }
 
-.link-list {
+.linklist {
     margin: 0%;
     padding-left: 0px;
     display: flex;
 }
 
-.navbar-container {
+.navbarcontainer {
     width: 100%;
     display: flex;
     background-color: #14213d;
@@ -28,7 +28,7 @@
 
 }
 
-.links-container {
+.linkscontainer {
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -49,13 +49,13 @@ li {
 
 
 //underlining hover effect for nav links
-.nav-link-hover {
+.navlinkhover {
     position: relative;
     color: $secondary-yellow;
     text-decoration: none;
 }
 
-.nav-link-hover::after {
+.navlinkhover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -68,7 +68,7 @@ li {
     transition: transform 0.15s ease-out;
 }
 
-.nav-link-hover:hover::after {
+.navlinkhover:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -125,7 +125,7 @@ li {
         font-size: 170%;
     }
 
-    .links-container {
+    .linkscontainer {
         margin-top: 1%;
         margin-bottom: 1%;
     }
