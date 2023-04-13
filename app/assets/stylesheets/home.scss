@@ -43,7 +43,7 @@ section {
 #introtext {
     padding-top: 3%;
     width: 60%;
-    font-size: 210%;
+    font-size: 150%;
     color: $secondary-yellow;
     font-family: 'Noto Sans Miao', sans-serif;
 }
@@ -53,8 +53,8 @@ section {
 }
 
 .stackcard {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: black;
     margin: 1px;
 }
@@ -68,6 +68,9 @@ section {
 
 }
 
-#stackimage {
-    width: 4rem;
+#stackimage {}
+
+.image {
+    height: 100%;
+    width: 100;
 }
