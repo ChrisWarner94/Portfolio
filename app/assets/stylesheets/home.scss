@@ -92,6 +92,24 @@ section {
 }
 
 //---------------------------- Media Queries ----------------------------//
+////////// ---------- height ---------- ////////// 
+@media only screen and (max-height: 700px) {
+    .techlogo {
+        height: 1.25rem;
+    }
+
+    .techname {
+        font-size: 80%;
+        width: 6rem;
+        padding-top: 0.15rem;
+    }
+
+    .stackpanel {
+        width: 90%;
+    }
+}
+
+////////// ---------- width ---------- ////////// 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
