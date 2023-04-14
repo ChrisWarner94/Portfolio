@@ -62,7 +62,6 @@ section {
 
 .techlogo {
     height: 1.5rem;
-    padding-right: 0.25rem;
 }
 
 .techname {
@@ -85,7 +84,7 @@ section {
     display: none;
     grid-template-columns: 1fr 1fr;
     margin-top: 9rem;
-    position: relative;
+    width: 100%;
 
 }
 
