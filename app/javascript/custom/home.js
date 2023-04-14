@@ -87,8 +87,8 @@ function fadeInRight(element, speed) {
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne, 35);
     await typeEffect(jobtitleheading, headingTwo, 35);
-    await fadeInBottom(introtext, 12);
-    await fadeInRight(stackpanel, 12);
+    await fadeInBottom(introtext, 25);
+    await fadeInRight(stackpanel, 25);
     //await fadeInRight(navbarcontainer, 12,);
 }
 
