@@ -33,7 +33,7 @@ section {
 .homeleftpanel {
     padding-top: 15%;
     height: 10rem;
-    width: 95%;
+    margin: auto;
 }
 
 .homerightpanel {
@@ -44,11 +44,10 @@ section {
 
 .homeheading {
     color: $primary-blue;
-    font-size: 200%;
-    width: 80%;
+    font-size: 240%;
     font-family: 'Rajdhani', sans-serif;
-    height: 3rem;
-    padding-bottom: 2rem;
+    height: 2.25rem;
+    padding-bottom: 0.1rem;
 }
 
 #introtext {
