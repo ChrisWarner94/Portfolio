@@ -1,6 +1,33 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
 
+// method for the smooth scroll to anchor on navlink click
+let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+for (let item of anchorlinks) {
+    item.addEventListener('click', (e) => {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
+}
+
+// method for navbar hiding and displaying based on user scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbarcontainer").style.top = "0";
+    } else {
+        document.getElementById("navbarcontainer").style.top = "-10%";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 function typeEffect(element, text, speed) {
     return new Promise((resolve) => {
@@ -42,43 +69,47 @@ function fadeInBottom(element, speed) {
     });
 }
 
+function fadeInRight(element, speed) {
+    return new Promise((resolve) => {
+        let opacity = 0;
+        let left = 20;
+        element.style.display = "grid"
+
+        element.style.opacity = opacity;
+        element.style.position = 'relative';
+        element.style.left = left + 'px';
+        const intervalId = setInterval(() => {
+            opacity += 0.05;
+            left -= 1;
+            element.style.opacity = opacity;
+            element.style.left = left + 'px';
+            if (opacity >= 1) {
+                clearInterval(intervalId);
+                resolve();
+            }
+        }, speed);
+    });
+
+}
+
+
 
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne, 35);
     await typeEffect(jobtitleheading, headingTwo, 35);
     await fadeInBottom(introtext, 6);
-}
-
-// method for navbar hiding and displaying based on user scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbarcontainer").style.top = "0";
-    } else {
-        document.getElementById("navbarcontainer").style.top = "-10%";
-    }
-    prevScrollpos = currentScrollPos;
+    await fadeInRight(stackpanel, 6);
+    await fadeInRight(navbarcontainer, 6,);
 }
 
 
 
 
-// method for the smooth scroll to anchor on navlink click
-let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
-for (let item of anchorlinks) {
-    item.addEventListener('click', (e) => {
-        let hashval = item.getAttribute('href')
-        let target = document.querySelector(hashval)
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-        history.pushState(null, null, hashval)
-        e.preventDefault()
-    })
-}
+
+
+
+
 
 
 

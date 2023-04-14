@@ -6,11 +6,11 @@
 }
 
 .link {
-    display: flex;
     width: 18rem;
     align-items: center;
     justify-content: center;
 }
+
 
 .linklist {
     margin: 0%;
@@ -20,7 +20,7 @@
 
 .navbarcontainer {
     width: 100%;
-    display: flex;
+    display: none;
     background-color: #14213d;
     position: fixed;
     top: 0;

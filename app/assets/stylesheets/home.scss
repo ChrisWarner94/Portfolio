@@ -23,7 +23,6 @@ section {
     overflow: hidden;
 }
 
-
 // container for all pages
 .pagecontainer {
     margin: 5%;
@@ -34,6 +33,12 @@ section {
     padding-top: 7%;
 }
 
+.homerightpanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .homeheading {
     color: $primary-blue;
     font-size: 500%;
@@ -42,7 +47,7 @@ section {
 
 #introtext {
     padding-top: 3%;
-    width: 60%;
+    width: 60rem;
     font-size: 150%;
     color: $secondary-yellow;
     font-family: 'Varela Round', sans-serif;
@@ -60,6 +65,7 @@ section {
     margin-top: 1%;
     font-size: 200%;
     font-family: 'Varela Round', sans-serif;
+    color: $primary-blue;
 
 }
 
@@ -70,9 +76,11 @@ section {
 
 
 .stackpanel {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     margin-top: 9rem;
     margin-right: 6rem;
+    position: relative;
+    padding-left: 6rem;
 
 }

@@ -2,19 +2,19 @@
   <div class="navbarcontainer" id="navbarcontainer">
     <div class="linkscontainer">
       <ul class="linklist">
-        <div class="link">
+        <div class="link" id="linkone">
           <li>
             <i class="fa-solid fa-person-digging icon"></i>
             <a href="#sectionProjects" class="navlinkhover">Projects</a>
           </li>
         </div>
-        <div class="link">
+        <div class="link" id="linktwo">
           <li>
             <i class="fa-solid fa-house icon"></i>
             <a href="#top-tag" class="navlinkhover">Home </a>
           </li>
         </div>
-        <div class="link">
+        <div class="link" id="linkthree">
           <li>
             <i class="fa-solid fa-address-book icon"></i>
             <a href="#sectionContact" class="navlinkhover">Contact</a>
@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div class="pagecontainer">
+  <div class="pagecontainer" id="homepagecontainer">
     <div class="homeleftpanel">
       <div class="homeheading" id="nameheading">
       </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="homerightpanel">
-      <div class="stackpanel">
+      <div class="stackpanel" id="stackpanel">
         <% @technologies.each do |tech| %>
           <div class="techcard">
             <div class="techname">
