@@ -24,14 +24,16 @@ section {
 }
 
 // container for all pages
-.pagecontainer {
+.homepagecontainer {
     margin: 5%;
-    display: flex;
 }
 
 
+
 .homeleftpanel {
-    padding-top: 7%;
+    padding-top: 15%;
+    height: 10rem;
+    width: 95%;
 }
 
 .homerightpanel {
@@ -42,16 +44,20 @@ section {
 
 .homeheading {
     color: $primary-blue;
-    font-size: 500%;
+    font-size: 200%;
+    width: 80%;
     font-family: 'Rajdhani', sans-serif;
+    height: 3rem;
+    padding-bottom: 2rem;
 }
 
 #introtext {
-    padding-top: 3%;
-    width: 60rem;
-    font-size: 150%;
+    padding-top: 30%;
+    width: 10rem;
+    font-size: 50%;
     color: $secondary-yellow;
     font-family: 'Varela Round', sans-serif;
+    position: fixed;
 }
 
 .techlogo {
@@ -66,6 +72,7 @@ section {
     font-size: 200%;
     font-family: 'Varela Round', sans-serif;
     color: $primary-blue;
+    font-weight: bold;
 
 }
 
@@ -82,4 +89,38 @@ section {
     position: relative;
     padding-left: 6rem;
 
+}
+
+//---------------------------- Media Queries ----------------------------//
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+#introtext {
+    width: 40rem;
+}
+
+.homecontainer {
+    display: block;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #introtext {
+        width: 50rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #introtext {
+        width: 60rem;
+    }
 }
