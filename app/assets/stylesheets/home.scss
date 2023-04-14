@@ -93,7 +93,7 @@ section {
 
 //---------------------------- Media Queries ----------------------------//
 ////////// ---------- height ---------- ////////// 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 400px) {
     .techlogo {
         height: 1.25rem;
     }
@@ -112,10 +112,39 @@ section {
 ////////// ---------- width ---------- ////////// 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .techlogo {
+        height: 1.25rem;
+    }
+
+    .techname {
+        font-size: 80%;
+        width: 6rem;
+        padding-top: 0.15rem;
+    }
+
+    .stackpanel {
+        width: 90%;
+    }
+
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    #introtext {
+        font-size: 150%;
+    }
+
+    .homeheading {
+        font-size: 350%;
+    }
+
+    .homeleftpanel {
+        padding-top: 7%;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
