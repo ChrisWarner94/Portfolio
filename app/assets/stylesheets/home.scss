@@ -13,6 +13,7 @@ section {
 html,
 body {
     height: 100%;
+    background-color: $tertiary-grey;
 }
 
 section {
@@ -22,9 +23,145 @@ section {
     overflow: hidden;
 }
 
-//container for sections to provide margin - not in use for home section due to navbar 
+// container for all pages
+.homepagecontainer {
+    margin: 5%;
+}
 
-.section-container {
-    margin: 2%;
-    background-color: black;
+
+
+.homeleftpanel {
+    padding-top: 12%;
+    height: 10rem;
+    margin: auto;
+}
+
+.homerightpanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeheading {
+    color: $primary-blue;
+    font-size: 240%;
+    font-family: 'Rajdhani', sans-serif;
+    height: 2.25rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+}
+
+#introtext {
+    padding-top: 7%;
+    font-size: 90%;
+    color: $secondary-yellow;
+    font-family: 'Varela Round', sans-serif;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.techlogo {
+    height: 2.0rem;
+}
+
+.techname {
+    width: 7rem;
+    margin-top: 1%;
+    font-size: 110%;
+    font-family: 'Varela Round', sans-serif;
+    color: $primary-blue;
+    font-weight: bold;
+
+}
+
+.techcard {
+    display: flex;
+    margin-bottom: 15%;
+}
+
+
+.stackpanel {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 9rem;
+    width: 100%;
+    place-items: center;
+
+}
+
+//---------------------------- Media Queries ----------------------------//
+////////// ---------- height ---------- ////////// 
+@media only screen and (max-height: 400px) {
+    .techlogo {
+        height: 1.25rem;
+    }
+
+    .techname {
+        font-size: 80%;
+        width: 6rem;
+        padding-top: 0.15rem;
+    }
+
+    .stackpanel {
+        width: 90%;
+    }
+}
+
+////////// ---------- width ---------- ////////// 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .techlogo {
+        height: 1.25rem;
+    }
+
+    .techname {
+        font-size: 80%;
+        width: 6rem;
+        padding-top: 0.15rem;
+    }
+
+    .stackpanel {
+        width: 90%;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    #introtext {
+        font-size: 100%;
+        padding-top: 4%;
+    }
+
+    .homeheading {
+        font-size: 200%;
+    }
+
+    .homeleftpanel {
+        padding-top: 3%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+.homecontainer {
+    display: block;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #introtext {
+        width: 60rem;
+    }
 }

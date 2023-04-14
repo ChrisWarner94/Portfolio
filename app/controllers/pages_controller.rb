@@ -1,9 +1,11 @@
 require 'open-uri'
 
 class PagesController < ApplicationController
-  #def home
+  def home
     
-  #   # arrays need for hangling github api data and cleansing
+    @technologies = Technology.all
+
+    # arrays need for hangling github api data and cleansing
     
   #   @commit_details = []
     
@@ -41,6 +43,6 @@ class PagesController < ApplicationController
   #   date_time = "#{day}-#{month}-#{year}"
 
 
-  # end
+  end
 end
 

@@ -6,56 +6,57 @@
 }
 
 .link {
-    display: flex;
     width: 18rem;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
-.link-list {
+
+.linklist {
     margin: 0%;
     padding-left: 0px;
     display: flex;
 }
 
-.navbar-container {
+.navbarcontainer {
     width: 100%;
     display: flex;
-    background-color: #14213d;
     position: fixed;
+    background-color: #14213d;
     top: 0;
     transition: top 0.5s;
+    box-shadow: 0 5px 0.75rem -4px rgba(0, 0, 0, 1);
+    z-index: 1;
 
 }
 
-.links-container {
+.linkscontainer {
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     width: 65%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
 }
 
 li {
     display: inline-block;
     vertical-align: middle;
     font-size: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
-
 }
 
 
 //underlining hover effect for nav links
-.nav-link-hover {
+.navlinkhover {
     position: relative;
     color: $secondary-yellow;
     text-decoration: none;
 }
 
-.nav-link-hover::after {
+.navlinkhover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -68,7 +69,7 @@ li {
     transition: transform 0.15s ease-out;
 }
 
-.nav-link-hover:hover::after {
+.navlinkhover:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -76,7 +77,10 @@ li {
 
 
 //---------------------------- Media Queries ----------------------------//
+////////// ---------- height ---------- ////////// 
 
+
+////////// ---------- width ---------- ////////// 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .link {
@@ -85,6 +89,8 @@ li {
 
     li {
         font-size: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 }
 
@@ -122,11 +128,7 @@ li {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     li {
-        font-size: 170%;
+        font-size: 140%;
     }
 
-    .links-container {
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
 }
