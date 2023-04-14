@@ -17,17 +17,7 @@ for (let item of anchorlinks) {
     })
 }
 
-// method for navbar hiding and displaying based on user scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbarcontainer").style.top = "0";
-    } else {
-        document.getElementById("navbarcontainer").style.top = "-10%";
-    }
-    prevScrollpos = currentScrollPos;
-}
+
 
 function typeEffect(element, text, speed) {
     return new Promise((resolve) => {
@@ -97,15 +87,25 @@ function fadeInRight(element, speed) {
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne, 35);
     await typeEffect(jobtitleheading, headingTwo, 35);
-    await fadeInBottom(introtext, 6);
-    await fadeInRight(stackpanel, 6);
-    await fadeInRight(navbarcontainer, 6,);
+    await fadeInBottom(introtext, 12);
+    await fadeInRight(stackpanel, 12);
+    //await fadeInRight(navbarcontainer, 12,);
 }
 
 
 
 
-
+// method for navbar hiding and displaying based on user scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbarcontainer").style.top = "0";
+    } else {
+        document.getElementById("navbarcontainer").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 
 
