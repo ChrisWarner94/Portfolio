@@ -36,9 +36,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 65%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
 }
 
 li {
@@ -124,11 +123,7 @@ li {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     li {
-        font-size: 170%;
+        font-size: 140%;
     }
 
-    .linkscontainer {
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
 }
