@@ -52,24 +52,24 @@ section {
 }
 
 #introtext {
-    padding-top: 30%;
-    width: 10rem;
-    font-size: 50%;
+    padding-top: 7%;
+    font-size: 90%;
     color: $secondary-yellow;
     font-family: 'Varela Round', sans-serif;
     position: fixed;
+    width: 100%;
 }
 
 .techlogo {
-    height: 2.5rem;
-    padding-right: 1rem;
+    height: 1.5rem;
+    padding-right: 0.25rem;
 }
 
 .techname {
-    padding-right: 2rem;
-    width: 12rem;
+    padding-right: 1rem;
+    width: 4rem;
     margin-top: 1%;
-    font-size: 200%;
+    font-size: 150%;
     font-family: 'Varela Round', sans-serif;
     color: $primary-blue;
     font-weight: bold;
@@ -103,20 +103,13 @@ section {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
-#introtext {
-    width: 40rem;
-}
 
 .homecontainer {
     display: block;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    #introtext {
-        width: 50rem;
-    }
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
