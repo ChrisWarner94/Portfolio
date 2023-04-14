@@ -109,7 +109,7 @@ async function runTypeEffect() {
     await typeEffect(nameheading, headingOne, 35);
     await typeEffect(jobtitleheading, headingTwo, 35);
     await fadeInBottom(introtext, 25);
-    await fadeInRight(stackpanel, 25);
+    await fadeInRight(stackpanel, 15);
     await fadeInRighta(link, 12,);
 }
 
