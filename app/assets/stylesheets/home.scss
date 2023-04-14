@@ -58,6 +58,8 @@ section {
     font-family: 'Varela Round', sans-serif;
     position: fixed;
     width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 .techlogo {
@@ -85,6 +87,8 @@ section {
     grid-template-columns: 1fr 1fr;
     margin-top: 9rem;
     width: 100%;
+    margin: auto;
+    place-items: center;
 
 }
 
