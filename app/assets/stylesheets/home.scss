@@ -53,7 +53,7 @@ section {
 
 #introtext {
     padding-top: 7%;
-    font-size: 90%;
+    font-size: 2vh;
     color: $secondary-yellow;
     font-family: 'Varela Round', sans-serif;
     position: fixed;
@@ -85,14 +85,14 @@ section {
 .stackpanel {
     display: none;
     grid-template-columns: 1fr 1fr;
-    margin-top: 9rem;
+    margin-top: 25vh;
     width: 100%;
     place-items: center;
 
 }
 
 //---------------------------- Media Queries ----------------------------//
-////////// ---------- height ---------- ////////// 
+////////// ---------- height ---------- //////////
 @media only screen and (max-height: 400px) {
     .techlogo {
         height: 1.25rem;
@@ -109,7 +109,8 @@ section {
     }
 }
 
-////////// ---------- width ---------- ////////// 
+
+////////// ---------- width ---------- //////////
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
