@@ -86,7 +86,7 @@ section {
 .stackpanel {
     display: none;
     grid-template-columns: 1fr 1fr;
-    margin-top: 23vh;
+    
     width: 100%;
     place-items: center;
     vertical-align:auto;
@@ -137,5 +137,5 @@ section {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
- 
+
 }
