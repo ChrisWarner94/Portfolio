@@ -86,30 +86,15 @@ section {
 .stackpanel {
     display: none;
     grid-template-columns: 1fr 1fr;
-    
+    position: absolute !important; //overides position relative
+    bottom: 0;
     width: 100%;
     place-items: center;
-    vertical-align:auto;
 
 }
 
 //---------------------------- Media Queries ----------------------------//
 ////////// ---------- height ---------- //////////
-@media only screen and (max-height: 400px) {
-    .techlogo {
-        height: 1.25rem;
-    }
-
-    .techname {
-        font-size: 80%;
-        width: 6rem;
-        padding-top: 0.15rem;
-    }
-
-    .stackpanel {
-        width: 90%;
-    }
-}
 
 
 ////////// ---------- width ---------- //////////
