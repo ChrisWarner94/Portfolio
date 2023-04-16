@@ -1,3 +1,15 @@
 @import "config/colours";
 
-.
+.projectstitle{
+ text-align: center;
+ color: $primary-blue;
+ font-family: 'Rajdhani', sans-serif;
+}
+
+.projectnavigation{
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  margin:auto;
+  vertical-align: middle;
+}
