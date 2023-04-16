@@ -2,20 +2,7 @@ const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
 
 // method for the smooth scroll to anchor on navlink click
-let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
-for (let item of anchorlinks) {
-    item.addEventListener('click', (e) => {
-        let hashval = item.getAttribute('href')
-        let target = document.querySelector(hashval)
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-        history.pushState(null, null, hashval)
-        e.preventDefault()
-    })
-}
 
 
 
@@ -112,23 +99,6 @@ async function runTypeEffect() {
     await fadeInRight(stackpanel, 15);
     await fadeInRighta(link, 12,);
 }
-
-
-
-
-// method for navbar hiding and displaying based on user scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbarcontainer").style.top = "0";
-    } else {
-        document.getElementById("navbarcontainer").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-}
-
-
 
 
 

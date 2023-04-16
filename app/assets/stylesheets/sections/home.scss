@@ -28,6 +28,11 @@ section {
     margin: 5%;
 }
 
+.backgroundblack{
+  width: 100%;
+  background-color: black;
+}
+
 
 
 .homeleftpanel {
@@ -74,7 +79,6 @@ section {
     font-family: 'Varela Round', sans-serif;
     color: $primary-blue;
     font-weight: bold;
-
 }
 
 .techcard {
@@ -95,11 +99,6 @@ section {
 }
 
 //---------------------------- Media Queries ----------------------------//
-////////// ---------- height ---------- //////////
-
-
-////////// ---------- width ---------- //////////
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
