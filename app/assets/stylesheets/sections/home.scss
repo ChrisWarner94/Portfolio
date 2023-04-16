@@ -29,13 +29,13 @@ section {
 }
 
 //caret for type effect
-.input-cursor {
+.inputcursorname, .inputcursorjobtitle {
      display: inline-block;
-     width: 2px;
-     height: 42px;
-     background-color: white;
-     margin-left: 8px;
-      animation: blink .4s linear infinite alternate;
+     width: 3px;
+     height: 26px;
+     background-color: black;
+     margin-left: 0px;
+     animation: blink .6s linear infinite alternate;
 
 }
 
@@ -71,7 +71,7 @@ section {
     font-family: 'Rajdhani', sans-serif;
     height: 2.25rem;
     padding-bottom: 1vh;
-    text-align: center;
+    text-align: left;
 }
 
 #introtext {

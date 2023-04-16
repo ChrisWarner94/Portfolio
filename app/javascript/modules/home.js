@@ -6,7 +6,7 @@ const headingTwo = "Full-Stack Developer"
 
 
 
-function typeEffect(element, text, speed) {
+function typeEffect(element, text) {
     return new Promise((resolve) => {
         let i = 0;
         function type() {
@@ -14,9 +14,15 @@ function typeEffect(element, text, speed) {
             element.innerHTML += char;
             i++;
             if (i > text.length - 1) {
-                resolve();
+              if (element === nameheading){
+                var target = document.getElementById("namecursor")
+                target.classList.remove("inputcursorname")
+                var targettwo = document.getElementById("jobtitlecursor")
+                targettwo.classList.add("inputcursorname")
+              }
+              resolve();
             } else {
-                setTimeout(type, speed);
+                setTimeout(type,(Math.floor(Math.random() * 325)));
             }
         }
         type();
@@ -93,14 +99,9 @@ function fadeInRighta(element, speed) {
 
 
 async function runTypeEffect() {
-    await typeEffect(nameheading, headingOne, 35);
-    await typeEffect(jobtitleheading, headingTwo, 35);
+    await typeEffect(nameheading, headingOne);
+    await typeEffect(jobtitleheading, headingTwo);
     await fadeInBottom(introtext, 25);
     await fadeInRight(stackpanel, 15);
     await fadeInRighta(link, 12,);
 }
-
-
-
-
-
