@@ -8,9 +8,7 @@
 
 }
 
-#projectname{
-  margin-bottom: 0;
-}
+
 
 .navcontainer{
   display: flex;
@@ -36,6 +34,7 @@
 }
 .navarrow{
   font-size: 3vh;
-  margin: 2vh;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
