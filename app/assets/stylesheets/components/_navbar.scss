@@ -2,21 +2,39 @@
 
 
 .icon {
-    color: $primary-blue;
+    color: $tertiary-grey;
 }
 
 .link {
-    width: 18rem;
+    width: 33.333333%;
     align-items: center;
     justify-content: center;
     display: none;
+    position: relative;
+
+    #linkone {
+        justify-content: left;
+        left: 0;
+
+    }
+
+    #linktwo {
+        justify-content: center;
+    }
+
+    #linkthree {
+        justify-content: right;
+        right: 0;
+    }
 }
 
 
 .linklist {
-    margin: 0%;
-    padding-left: 0px;
-    display: flex;
+    padding-left: 0;
+    width: 100%;
+    display: inline-flex;
+
+    margin: auto;
 }
 
 .navbarcontainer {
@@ -27,36 +45,40 @@
     top: 0;
     transition: top 0.5s;
     z-index: 1;
-    height: 4vh;
+    height: 6vh;
 
 }
+
+
 
 .bottomshadow {
     box-shadow: 0 5px 0.75rem -4px rgba(0, 0, 0, 1);
 }
 
 .linkscontainer {
-    margin: auto;
-    display: flex;
+    top: 0;
+    height: 6vh;
+    display: none;
     justify-content: space-evenly;
-    width: 65%;
-    margin-bottom: 0.5%;
-    margin-top: 0.5%;
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: black;
 }
 
 li {
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
-    font-size: 100vh;
+    font-size: 2.5vh;
     font-family: 'Rajdhani', sans-serif;
     text-decoration: none;
+    justify-content: space-between;
 }
 
 
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $primary-blue;
+    color: $tertiary-grey;
     text-decoration: none;
 }
 
@@ -68,7 +90,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $primary-blue;
+    background-color: $tertiary-grey;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
@@ -82,53 +104,18 @@ li {
 
 //---------------------------- Media Queries ----------------------------//
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .link {
-        width: 7rem;
-    }
+@media only screen and (max-width: 600px) {}
 
-    li {
-        font-size: 2.5vh;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-
-    .link {
-        width: 11rem;
-    }
-}
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .link {
-        width: 13rem;
-    }
-
-    li {
-        font-size: 150%;
-    }
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    li {
-        font-size: 170%;
-    }
-
-    .link {
-        width: 14rem;
-    }
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    li {
-        font-size: 140%;
-    }
-
-}
+@media only screen and (min-width: 1200px) {}

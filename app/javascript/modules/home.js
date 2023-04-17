@@ -17,6 +17,7 @@ async function runTypeEffect() {
     await typeEffect(jobtitleheading, headingTwo);
     await fadeInBottom(introtext, 25);
     await fadeInRight(stackpanel, 15);
+    await fadeInRighta(linkscontainer, 12);
     await fadeInRighta(linkone, 12,);
     await fadeInRighta(linktwo, 12,);
     await fadeInRighta(linkthree, 12,);
@@ -58,7 +59,7 @@ function fadeInRighta(element, speed) {
         element.style.display = "flex"
         element.style.opacity = opacity;
         element.style.position = 'relative';
-        element.style.bottom = top + 'px';
+        element.style.bottom = bottom + 'px';
         const intervalId = setInterval(() => {
             opacity += 0.05;
             bottom -= 1;
