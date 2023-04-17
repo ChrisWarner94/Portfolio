@@ -15,6 +15,7 @@ function placeCaret() {
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne);
     await typeEffect(jobtitleheading, headingTwo);
+    await fadeInBottomb(homeimage, 25);
     await fadeInBottom(introtext, 25);
     await fadeInRight(stackpanel, 15);
     await fadeInRighta(linkscontainer, 25);
@@ -40,7 +41,7 @@ function typeEffect(element, text) {
                 }
                 resolve();
             } else {
-                setTimeout(type, (Math.floor(Math.random() * 175)));
+                setTimeout(type, (Math.floor(Math.random() * 155)));
             }
         }
         type();
@@ -109,6 +110,27 @@ function fadeInBottom(element, speed) {
             top -= 1;
             element.style.opacity = opacity;
             element.style.top = top + 'px';
+            if (opacity >= 1) {
+                clearInterval(intervalId);
+                resolve();
+            }
+        }, speed);
+    });
+}
+
+function fadeInBottomb(element, speed) {
+    return new Promise((resolve) => {
+        let opacity = 0;
+        let left = 20;
+        element.style.display = "flex"
+        element.style.opacity = opacity;
+        element.style.position = 'relative';
+        element.style.left = left + 'px';
+        const intervalId = setInterval(() => {
+            opacity += 0.05;
+            left -= 1;
+            element.style.opacity = opacity;
+            element.style.left = left + 'px';
             if (opacity >= 1) {
                 clearInterval(intervalId);
                 resolve();

@@ -2,7 +2,7 @@
 
 
 .icon {
-    color: $tertiary-grey;
+    color: $secondary;
 }
 
 .link {
@@ -41,7 +41,7 @@
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: $tertiary-grey;
+    background-color: $secondary;
     top: 0;
     transition: top 0.5s;
     z-index: 1;
@@ -62,7 +62,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 2vh;
-    background-color: black;
+    background-color: $primary;
 }
 
 li {
@@ -82,7 +82,7 @@ li {
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $tertiary-grey;
+    color: $secondary;
     text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $tertiary-grey;
+    background-color: $secondary;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
