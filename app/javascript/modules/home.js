@@ -15,13 +15,13 @@ function placeCaret() {
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne);
     await typeEffect(jobtitleheading, headingTwo);
-    await fadeInBottomb(homeimage, 25);
-    await fadeInBottom(introtext, 25);
-    await fadeInRight(stackpanel, 15);
-    await fadeInRighta(linkscontainer, 25);
-    await fadeInRighta(linkone, 12,);
-    await fadeInRighta(linktwo, 12,);
-    await fadeInRighta(linkthree, 12,);
+    await fadeInBottomb(homeimage, 13);
+    await fadeInBottom(introtext, 12);
+    await fadeInRight(stackpanel, 7);
+    await fadeInRighta(linkscontainer, 12);
+    await fadeInRighta(linkone, 6,);
+    await fadeInRighta(linktwo, 6,);
+    await fadeInRighta(linkthree, 6);
 }
 
 
@@ -41,7 +41,7 @@ function typeEffect(element, text) {
                 }
                 resolve();
             } else {
-                setTimeout(type, (Math.floor(Math.random() * 155)));
+                setTimeout(type, (Math.floor(Math.random() * 105)));
             }
         }
         type();

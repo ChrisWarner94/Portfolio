@@ -3,40 +3,7 @@
 .projectstitle {
   text-align: center;
   color: $primary;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 2vh;
 
-}
-
-#projectname {
-  margin-bottom: 0;
-}
-
-
-.navcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projectnavigation {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 75%;
-  margin-top: 1vh;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Rajdhani', sans-serif;
-  width: auto;
-}
-
-.navarrow {
-  font-size: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
