@@ -17,7 +17,7 @@ async function runTypeEffect() {
     await typeEffect(jobtitleheading, headingTwo);
     await fadeInBottom(introtext, 25);
     await fadeInRight(stackpanel, 15);
-    await fadeInRighta(linkscontainer, 12);
+    await fadeInRighta(linkscontainer, 25);
     await fadeInRighta(linkone, 12,);
     await fadeInRighta(linktwo, 12,);
     await fadeInRighta(linkthree, 12,);
