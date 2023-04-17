@@ -40,7 +40,7 @@ function typeEffect(element, text) {
                 }
                 resolve();
             } else {
-                setTimeout(type, (Math.floor(Math.random() * 205)));
+                setTimeout(type, (Math.floor(Math.random() * 175)));
             }
         }
         type();

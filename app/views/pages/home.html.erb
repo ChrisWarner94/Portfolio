@@ -42,10 +42,7 @@
         <% @technologies.each do |tech| %>
           <div class="techcard">
             <div class="techname">
-              <%= tech.name %>
-            </div>
-            <div class="techlogo">
-              <%= image_tag (tech.logo), class: "techlogo"%>
+              <%= tech %>
             </div>
           </div>
         <% end  %>
@@ -53,7 +50,7 @@
     </div>
   </div>
 </section>
-<section class="section" id="sectioncontact">
+<section class="section" id="sectionproject">
   <div class="projectstitle">
     <h2 id="projectname">
       Projects
@@ -74,4 +71,6 @@
       </div>
     </div>
   </div>
+</section>
+<section class="section" id="sectioncontact">
 </section>
