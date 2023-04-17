@@ -2,14 +2,14 @@
 
 
 .icon {
-    color: $tertiary-grey;
+    color: $primary-blue;
 }
 
 .link {
     width: 18rem;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: none;
 }
 
 
@@ -23,12 +23,16 @@
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: $primary-blue;
+    background-color: $tertiary-grey;
     top: 0;
     transition: top 0.5s;
-    box-shadow: 0 5px 0.75rem -4px rgba(0, 0, 0, 1);
     z-index: 1;
+    height: 4vh;
 
+}
+
+.bottomshadow {
+    box-shadow: 0 5px 0.75rem -4px rgba(0, 0, 0, 1);
 }
 
 .linkscontainer {
@@ -52,7 +56,7 @@ li {
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $secondary-yellow;
+    color: $primary-blue;
     text-decoration: none;
 }
 
@@ -64,7 +68,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $secondary-yellow;
+    background-color: $primary-blue;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
