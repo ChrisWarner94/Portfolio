@@ -29,26 +29,38 @@ section {
 }
 
 //caret for type effect
-.inputcursorname, .inputcursorjobtitle {
-     display: inline-block;
-     width: 3px;
-     height: 26px;
-     background-color: black;
-     margin-left: 0px;
-     animation: blink .6s linear infinite alternate;
+.inputcursorname,
+.inputcursorjobtitle {
+    display: inline-block;
+    width: 3px;
+    height: 22px;
+    background-color: black;
+    margin-left: 0px;
+    animation: blink .4s linear infinite alternate;
 
 }
 
 @keyframes blink {
-  0% {opacity: 1;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.backgroundblack{
-  width: 100%;
-  background-color: black;
+.backgroundblack {
+    width: 100%;
+    background-color: black;
 }
 
 
@@ -71,13 +83,13 @@ section {
     font-family: 'Rajdhani', sans-serif;
     height: 2.25rem;
     padding-bottom: 1vh;
-    text-align: left;
+    text-align: center;
 }
 
 #introtext {
     padding-top: 3%;
     font-size: 2vh;
-    color: $secondary-yellow;
+    color: $primary-blue;
     font-family: 'Varela Round', sans-serif;
     position: fixed;
     width: 100%;
@@ -102,6 +114,10 @@ section {
 .techcard {
     display: flex;
     margin-bottom: 15%;
+    background-color: $secondary-grey;
+    border-radius: 13%;
+    box-shadow: 2px 2px 2px black;
+
 
 }
 
@@ -118,16 +134,10 @@ section {
 
 //---------------------------- Media Queries ----------------------------//
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-
-
-}
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -139,6 +149,4 @@ section {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
