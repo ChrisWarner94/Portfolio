@@ -1,41 +1,40 @@
 @import "config/colours";
 
-.projectstitle{
- text-align: center;
- color: $primary-blue;
- font-family: 'Rajdhani', sans-serif;
- font-size: 2vh;
+.projectstitle {
+  text-align: center;
+  color: $primary-blue;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2vh;
 
 }
 
-#projectname{
+#projectname {
   margin-bottom: 0;
 }
 
 
-.navcontainer{
+.navcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projectnavigation{
+.projectnavigation {
   display: inline-flex;
   justify-content: space-between;
   width: 75%;
   margin-top: 1vh;
-
-
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Rajdhani', sans-serif;
   width: auto;
 }
-.navarrow{
+
+.navarrow {
   font-size: 3vh;
   display: flex;
   justify-content: center;

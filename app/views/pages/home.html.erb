@@ -1,24 +1,24 @@
 <a id="top-tag"></a>
 <section class="section" id="sectionhome">
   <div class="navbarcontainer" id="navbarcontainer">
-    <div class="linkscontainer">
+    <div class="linkscontainer" id="linkscontainer">
       <ul class="linklist">
         <div class="link" id="linkone">
           <li>
             <i class="fa-solid fa-person-digging icon"></i>
-            <a href="#sectionProjects" class="navlinkhover">Projects</a>
+            <a href="#sectionProjects" class="navlinkhover textpaddingleft">Projects</a>
           </li>
         </div>
         <div class="link" id="linktwo">
           <li>
             <i class="fa-solid fa-house icon"></i>
-            <a href="#top-tag" class="navlinkhover">Home </a>
+            <a href="#top-tag" class="navlinkhover textpaddingleft">Home </a>
           </li>
         </div>
         <div class="link" id="linkthree">
           <li>
             <i class="fa-solid fa-address-book icon"></i>
-            <a href="#sectionContact" class="navlinkhover">Contact</a>
+            <a href="#sectionContact" class="navlinkhover textpaddingleft">Contact</a>
           </li>
         </div>
       </div>
@@ -28,7 +28,7 @@
     <div class="homeleftpanel">
       <div class="homeheading">
         <span id="nameheading" class="sentence"></span>
-        <span class="inputcursorname" id="namecursor"></span>
+        <span  id="namecursor"></span>
       </div>
       <div class="homeheading">
         <span id="jobtitleheading" class="sentence"></span>
@@ -42,10 +42,7 @@
         <% @technologies.each do |tech| %>
           <div class="techcard">
             <div class="techname">
-              <%= tech.name %>
-            </div>
-            <div class="techlogo">
-              <%= image_tag (tech.logo), class: "techlogo"%>
+              <%= tech %>
             </div>
           </div>
         <% end  %>
@@ -53,7 +50,7 @@
     </div>
   </div>
 </section>
-<section class="section" id="sectioncontact">
+<section class="section" id="sectionproject">
   <div class="projectstitle">
     <h2 id="projectname">
       Projects
@@ -74,4 +71,6 @@
       </div>
     </div>
   </div>
+</section>
+<section class="section" id="sectioncontact">
 </section>

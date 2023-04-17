@@ -3,7 +3,7 @@ require 'open-uri'
 class PagesController < ApplicationController
   def home
     
-    @technologies = Technology.all
+    @technologies = ["Ruby", "Rails", "C#", "Javascript", "HTML", "CSS", "PostgreSQL", "SQLite", "Git", "Github", "SCSS", "Bootstrap", "Heroku"]
 
     # arrays need for hangling github api data and cleansing
     
