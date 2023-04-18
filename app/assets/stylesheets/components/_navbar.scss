@@ -2,7 +2,7 @@
 
 
 .icon {
-    color: $secondary;
+    color: $tertiary;
 }
 
 .link {
@@ -65,6 +65,10 @@
     background-color: $primary;
 }
 
+.paddingright {
+    padding-right: 0.5rem;
+}
+
 li {
     display: flex;
     vertical-align: middle;
@@ -74,15 +78,12 @@ li {
     justify-content: space-between;
 }
 
-.textpaddingleft {
-    padding-left: 0.5rem;
-}
 
 
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $secondary;
+    color: $tertiary;
     text-decoration: none;
 }
 
@@ -94,7 +95,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $secondary;
+    background-color: $tertiary;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
