@@ -89,12 +89,12 @@ section {
 
 #introtext {
     padding-top: 3%;
-    font-size: 1.5vh;
+    font-size: 2vh;
     color: $tertiary;
     font-family: 'Inter', sans-serif;
     font-weight: 550;
     position: fixed;
-    width: 90%;
+    width: 95%;
     margin: auto;
     text-align: center;
 }
@@ -107,9 +107,9 @@ section {
 .techname {
     margin-top: 1%;
     font-size: 2.5vh;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: $tertiary;
-    font-weight: bold;
+    font-weight: 300;
     padding-left: 1vh;
     padding-right: 1vh;
 }
