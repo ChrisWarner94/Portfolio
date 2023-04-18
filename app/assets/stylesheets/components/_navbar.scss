@@ -2,7 +2,7 @@
 
 
 .icon {
-    color: $tertiary-grey;
+    color: $tertiary;
 }
 
 .link {
@@ -41,7 +41,7 @@
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: $tertiary-grey;
+    background-color: $secondary;
     top: 0;
     transition: top 0.5s;
     z-index: 1;
@@ -62,27 +62,28 @@
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 2vh;
-    background-color: black;
+    background-color: $primary;
+}
+
+.paddingright {
+    padding-right: 0.5rem;
 }
 
 li {
     display: flex;
     vertical-align: middle;
-    font-size: 2.5vh;
-    font-family: 'Rajdhani', sans-serif;
+    font-size: 2vh;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     justify-content: space-between;
 }
 
-.textpaddingleft {
-    padding-left: 0.5rem;
-}
 
 
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $tertiary-grey;
+    color: $tertiary;
     text-decoration: none;
 }
 
@@ -94,7 +95,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $tertiary-grey;
+    background-color: $tertiary;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }
