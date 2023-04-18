@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
+  # home page route
   root to: 'pages#home'
+  
+  # show project route
+  get '/projects/:id', to: 'projects#show'
+
+
   # test line
 end

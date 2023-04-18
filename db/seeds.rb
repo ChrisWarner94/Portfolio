@@ -7,3 +7,37 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "cleaning database"
+project.Destroy.all!
+puts "populating database"
+
+project_one = Project.create!(
+    name: "1"
+    picture_url: "images/homepage.png" ,
+    short_description: "Recipe app" ,
+    long_description: "Really good recipe app" ,
+    demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
+    host_link: "https://recipeeasy.herokuapp.com/" ,
+    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+)
+
+project_two = Project.create!(
+    name: "2"
+    picture_url: "images/homepage.png" ,
+    short_description: "Recipe app" ,
+    long_description: "Really good recipe app" ,
+    demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
+    host_link: "https://recipeeasy.herokuapp.com/" ,
+    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+)
+
+project_three = Project.create!(
+    name: "3"
+    picture_url: "images/homepage.png" ,
+    short_description: "Recipe app" ,
+    long_description: "Really good recipe app" ,
+    demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
+    host_link: "https://recipeeasy.herokuapp.com/" ,
+    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+)

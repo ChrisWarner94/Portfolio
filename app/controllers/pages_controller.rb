@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     
     @technologies = ["Ruby", "Rails", "C#", "Javascript", "HTML", "CSS", "PostgreSQL", "SQLite", "Git", "SCSS", "Bootstrap", "MVC"]
-    @projects = ["Recipeasy", "Enna", "Magic Motors"]
+    @projects = Project.all
 
     # arrays need for hangling github api data and cleansing
     
