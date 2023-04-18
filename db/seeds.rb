@@ -9,12 +9,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 puts "cleaning database"
-project.Destroy.all!
+Project.destroy_all
 puts "populating database"
 
 project_one = Project.create!(
-    name: "1"
-    picture_url: "images/homepage.png" ,
+    name: "1",
+    picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
@@ -23,8 +23,8 @@ project_one = Project.create!(
 )
 
 project_two = Project.create!(
-    name: "2"
-    picture_url: "images/homepage.png" ,
+    name: "2",
+    picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
@@ -33,11 +33,13 @@ project_two = Project.create!(
 )
 
 project_three = Project.create!(
-    name: "3"
-    picture_url: "images/homepage.png" ,
+    name: "3",
+    picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
     github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
 )
+
+puts "seeding complete"

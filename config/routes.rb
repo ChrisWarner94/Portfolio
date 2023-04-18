@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   
   # show project route
-  get '/projects/:id', to: 'projects#show'
+   resources :projects, only: [:show] do
+
+   end
 
 
   # test line

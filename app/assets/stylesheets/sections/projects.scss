@@ -1,8 +1,9 @@
 @import "config/colours";
 
 .projectscontainer {
-  background-color: black;
-
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
 }
 
 .projectstitle {
@@ -14,19 +15,15 @@
 
 }
 
-.projectselector {
+.projectcard {
   width: 90%;
-  display: flex;
-  margin-top: 3vh;
+  margin-top: 10%;
   margin: auto;
-  justify-content: space-evenly;
+  color: aqua;
+  height: 10vh;
 }
 
-.projectnamecontainer {
-  width: 33.33%;
-  font-size: 1vh;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  color: $primary;
+.projectimage {
+  height: 2vh;
+  width: 2vh;
 }
