@@ -2,8 +2,26 @@
 
 .projectstitle {
   text-align: center;
-  color: $primary;
+  color: $tertiary;
   font-family: 'Varela Round', sans-serif;
+  font-weight: 500;
   font-size: 2vh;
 
+}
+
+.projectselector {
+  width: 90%;
+  display: flex;
+  margin-top: 3vh;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.projectnamecontainer {
+  width: 33.33%;
+  font-size: 1vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: $primary;
 }
