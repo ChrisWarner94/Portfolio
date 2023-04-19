@@ -13,7 +13,7 @@ Project.destroy_all
 puts "populating database"
 
 project_one = Project.create!(
-    name: "1",
+    name: "Recipeasy",
     picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,
@@ -23,7 +23,7 @@ project_one = Project.create!(
 )
 
 project_two = Project.create!(
-    name: "2",
+    name: "Sexy Cars",
     picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,
@@ -33,7 +33,7 @@ project_two = Project.create!(
 )
 
 project_three = Project.create!(
-    name: "3",
+    name: "Enna",
     picture_url: "homepage.png" ,
     short_description: "Recipe app" ,
     long_description: "Really good recipe app" ,

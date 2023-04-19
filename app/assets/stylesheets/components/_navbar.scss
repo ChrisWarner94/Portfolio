@@ -83,7 +83,7 @@ li {
 //underlining hover effect for nav links
 .navlinkhover {
     position: relative;
-    color: $tertiary;
+    color: $secondary;
     text-decoration: none;
 }
 
@@ -95,7 +95,7 @@ li {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $tertiary;
+    background-color: $secondary;
     transform-origin: bottom right;
     transition: transform 0.15s ease-out;
 }

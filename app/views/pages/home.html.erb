@@ -26,29 +26,22 @@
   </div>
   <div class="homepagecontainer">
     <div class="homeleftpanel">
+      <div class="staticheading">Hi, my name is</div>
       <div class="homeheading">
         <span id="nameheading" class="sentence"></span>
         <span  id="namecursor"></span>
       </div>
+      <div class="staticheading">I am a</div>
       <div class="homeheading">
         <span id="jobtitleheading" class="sentence"></span>
         <span id="jobtitlecursor"></span>
       </div>
-      <div class="image" id="homeimage">
-        <%= image_tag ("ProfilePicture.jpg"), :height=> "100%", class: "roundedcorners"%>
-      </div>
       <div class="introtext" id="introtext">
       </div>
-    </div>
-    <div class="homerightpanel">
-      <div class="stackpanel" id="stackpanel">
-        <% @technologies.each do |tech| %>
-          <div class="techcard">
-            <div class="techname">
-              <%= tech %>
-            </div>
-          </div>
-        <% end  %>
+      <div class="buttonblue" id="buttonblue">
+        <p class="buttontext">
+          Check out my latest project
+        </p>
       </div>
     </div>
   </div>

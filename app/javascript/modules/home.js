@@ -1,9 +1,9 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
 
-// method for the smooth scroll to anchor on navlink click
 
-placeCaret();
+
+
 
 function placeCaret() {
     var targetthree = document.getElementById("namecursor")
@@ -12,12 +12,13 @@ function placeCaret() {
 
 }
 
+placeCaret();
+
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne);
     await typeEffect(jobtitleheading, headingTwo);
-    await fadeInBottomb(homeimage, 13);
     await fadeInBottom(introtext, 12);
-    await fadeInRight(stackpanel, 7);
+    await fadeInRighta(buttonblue, 12);
     await fadeInRighta(linkscontainer, 12);
     await fadeInRighta(linkone, 6,);
     await fadeInRighta(linktwo, 6,);

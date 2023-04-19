@@ -68,6 +68,7 @@ section {
 .homeleftpanel {
     padding-top: 15%;
     margin: auto;
+    width: 95%;
 }
 
 .homerightpanel {
@@ -76,27 +77,53 @@ section {
     align-items: center;
 }
 
+.staticheading {
+    font-family: 'Titillium Web', sans-serif;
+    color: $tertiary;
+    font-size: 2.5vh;
+    margin: auto;
+    padding-top: 1vh;
+}
+
 .homeheading {
     color: $primary;
     font-size: 3.5vh;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 550;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 950;
     height: 2.25rem;
     padding-bottom: 1vh;
-    text-align: center;
+    padding-top: 1vh;
 
 }
 
-#introtext {
-    padding-top: 3%;
-    font-size: 2vh;
+.buttontext {
+    padding: 1.5vh;
     color: $tertiary;
-    font-family: 'Inter', sans-serif;
-    font-weight: 550;
-    position: fixed;
-    width: 95%;
-    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    margin: auto;
+}
+
+.buttonblue {
+    background-color: $primary;
+    border-radius: 3%;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+    display: none;
+    text-align: center;
+}
+
+#introtext {
+    padding-top: 7%;
+    font-size: 2.25vh;
+    color: $tertiary;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    position: fixed;
+    margin: auto;
 }
 
 .techlogo {
@@ -106,31 +133,24 @@ section {
 
 .techname {
     margin-top: 1%;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-family: 'Inter', sans-serif;
-    color: $tertiary;
+    color: $primary;
     font-weight: 300;
     padding-left: 1vh;
     padding-right: 1vh;
 }
 
-.roundedcorners {
-    border-radius: 10%;
 
-}
 
 .techcard {
     display: flex;
     margin-bottom: 10%;
-    background-color: $primary;
+    background-color: $secondary;
     border-radius: 13%;
     padding-top: 10%;
 }
 
-#homeimage {
-    display: none;
-    width: 100%;
-}
 
 .image {
     height: 15vh;
@@ -145,10 +165,11 @@ section {
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute !important; //overides position relative
-    bottom: 0;
     width: 100%;
     place-items: center;
     background-color: $primary;
+    padding-bottom: 5vh;
+    margin-top: 30%;
 
 }
 
