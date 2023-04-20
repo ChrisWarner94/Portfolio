@@ -1,3 +1,4 @@
+// method to allow for smooth scroll on navbar link click event
 let anchorlinks = document.querySelectorAll('a[href^="#"]')
 
 for (let item of anchorlinks) {

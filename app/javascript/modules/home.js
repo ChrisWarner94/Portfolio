@@ -3,8 +3,6 @@ const headingTwo = "Full-Stack Developer"
 
 
 
-
-
 function placeCaret() {
     var targetthree = document.getElementById("namecursor")
     targetthree.classList.add("inputcursorname")

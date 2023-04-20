@@ -42,7 +42,7 @@
 
   .descriptionshort {
     text-align: center;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
 
   }
@@ -51,19 +51,25 @@
 
 .stackpanel {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
   background-color: $secondary;
   padding-bottom: 5vh;
   bottom: 0;
   height: 15%;
+  margin: auto;
+  justify-content: space-evenly;
+  text-align: left;
 
   .techcard {
     display: flex;
     margin-bottom: 5%;
     background-color: $secondary;
-    border-radius: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vh;
+    width: 26vw;
+    margin: auto;
   }
 
 
@@ -73,14 +79,21 @@
   }
 
   .techname {
+    display: flex;
     margin-top: 1%;
-    font-size: 1vh;
-    font-family: 'Inter', sans-serif;
+    font-size: 2vh;
+    font-family: 'Titillium Web', sans-serif;
     color: $primary;
     font-weight: 300;
-    padding-left: .5vh;
-    padding-right: .5vh;
   }
 
+
+}
+
+.mystack {
+  font-family: 'Ubuntu', sans-serif;
+  color: $primary;
+  font-size: 3vh;
+  text-align: center;
 
 }
