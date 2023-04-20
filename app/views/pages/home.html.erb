@@ -68,20 +68,22 @@
         <% end %>
       </div>
     <% end %>
-    <div class="stackpanel">
-      <% @technologies.each do |tech|  %>
-        <div class="techcard">
-          <div class="techname">
-            <%= tech.name %>
-          </div>
-          <div class="techlogo">
-            <%= image_tag (tech.logo_path), :height=> "100%"  %>
-          </div>
-        </div>
-      <% end %>
-    </div>
+
   </div>
 </section>
 <section class="section" id="sectioncontact">
   <h1>contact</h1>
+
+  <div class="stackpanel">
+    <% @technologies.each do |tech|  %>
+      <div class="techcard">
+        <div class="techname">
+          <%= tech.name %>
+        </div>
+        <div class="techlogo">
+          <%= image_tag (tech.logo_path), :height=> "100%"  %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </section>

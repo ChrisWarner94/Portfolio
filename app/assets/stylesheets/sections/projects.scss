@@ -51,17 +51,17 @@
 
 .stackpanel {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   place-items: center;
   background-color: $secondary;
   padding-bottom: 5vh;
   bottom: 0;
-  height: 30%;
+  height: 15%;
 
   .techcard {
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     background-color: $secondary;
     border-radius: 13%;
   }
@@ -74,12 +74,12 @@
 
   .techname {
     margin-top: 1%;
-    font-size: 2vh;
+    font-size: 1vh;
     font-family: 'Inter', sans-serif;
     color: $primary;
     font-weight: 300;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: .5vh;
+    padding-right: .5vh;
   }
 
 

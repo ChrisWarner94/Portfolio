@@ -46,72 +46,72 @@ puts "Creating technologies"
 
 tech_one = Technology.create!(
     name: "Ruby",
-    logo_path: "ruby.svg"
+    logo_path: "stack/ruby.svg"
 
 )
 
 tech_two = Technology.create!(
     name: "Rails",
-    logo_path: "rails.svg"
+    logo_path: "stack/rails.svg"
 
 )
 
 tech_three = Technology.create!(
     name: "C#",
-    logo_path: "Csharp.svg"
+    logo_path: "stack/Csharp.svg"
 
 )
 
 tech_four = Technology.create!(
     name: "Javascript",
-    logo_path: "javascript.svg"
+    logo_path: "stack/javascript.svg"
 
 )
 
 tech_five = Technology.create!(
     name: "HTML",
-    logo_path: "html.svg"
+    logo_path: "stack/html.svg"
 
 )
 
 tech_six = Technology.create!(
     name: "CSS",
-    logo_path: "css.svg"
+    logo_path: "stack/css.svg"
 
 )
 
 tech_seven = Technology.create!(
     name: "Git",
-    logo_path: "git.svg"
+    logo_path: "stack/git.svg"
 
 )
 
 tech_eight = Technology.create!(
     name: "SQLite",
-    logo_path: "sqlite.svg"
+    logo_path: "stack/sqlite.svg"
 
 )
 
 tech_nine = Technology.create!(
     name: "Postgresql",
-    logo_path: "postgresql.svg"
+    logo_path: "stack/postgresql.svg"
 
 )
 
 tech_ten = Technology.create!(
     name: "Sass",
-    logo_path: "sass.svg"
+    logo_path: "stack/sass.svg"
 
 )
 
 tech_eleven = Technology.create!(
     name: "Heroku",
-    logo_path: "heroku.svg"
+    logo_path: "stack/heroku.svg"
 
 )
 tech_twelve= Technology.create!(
     name: "Bootstrap",
-    logo_path: "bootstrap.svg"
+    logo_path: "stack/bootstrap.svg"
 
 )
 
