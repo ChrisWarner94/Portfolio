@@ -2,7 +2,7 @@
 
 .projectscontainer {
   height: 95vh;
-  width: 95vw;
+  width: 90vw;
   margin: auto;
 }
 
@@ -17,13 +17,28 @@
 
 .projectcard {
   width: 90%;
-  margin-top: 10%;
   margin: auto;
   color: aqua;
-  height: 10vh;
-}
+  height: 70%;
 
-.projectimage {
-  height: 2vh;
-  width: 2vh;
+  .projectimage {
+    height: 10vh;
+    width: 15vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectname {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .descriptionshort {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: $tertiary;
+
+  }
 }

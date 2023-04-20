@@ -15,7 +15,7 @@ puts "populating database"
 project_one = Project.create!(
     name: "Recipeasy",
     picture_url: "homepage.png" ,
-    short_description: "Recipe app" ,
+    short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
@@ -25,7 +25,7 @@ project_one = Project.create!(
 project_two = Project.create!(
     name: "Sexy Cars",
     picture_url: "homepage.png" ,
-    short_description: "Recipe app" ,
+    short_description: "Introducing Sexy Cars - the premier car rental app for luxury vehicles.",
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
@@ -35,7 +35,7 @@ project_two = Project.create!(
 project_three = Project.create!(
     name: "Enna",
     picture_url: "homepage.png" ,
-    short_description: "Recipe app" ,
+    short_description: "Introducing Enna - the innovative addiction tracking app that helps you take control of your habits.",
     long_description: "Really good recipe app" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
