@@ -1,7 +1,7 @@
 @import "config/colours";
 
 .projectscontainer {
-  height: 95vh;
+  height: 100vh;
   width: 90vw;
   margin: auto;
 }
@@ -19,7 +19,7 @@
   width: 90%;
   margin: auto;
   color: aqua;
-  height: 70%;
+  height: 25%;
 
   .projectimage {
     height: 10vh;
@@ -28,11 +28,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1.5vh;
   }
 
   .projectname {
     text-align: center;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1vh;
+    color: $primary;
+    font-size: 2.5vh;
   }
 
   .descriptionshort {
@@ -41,4 +46,41 @@
     color: $tertiary;
 
   }
+
+}
+
+.stackpanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  place-items: center;
+  background-color: $secondary;
+  padding-bottom: 5vh;
+  bottom: 0;
+  height: 30%;
+
+  .techcard {
+    display: flex;
+    margin-bottom: 10%;
+    background-color: $secondary;
+    border-radius: 13%;
+  }
+
+
+  .techlogo {
+    height: 2vh;
+    vertical-align: middle;
+  }
+
+  .techname {
+    margin-top: 1%;
+    font-size: 2vh;
+    font-family: 'Inter', sans-serif;
+    color: $primary;
+    font-weight: 300;
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+
+
 }

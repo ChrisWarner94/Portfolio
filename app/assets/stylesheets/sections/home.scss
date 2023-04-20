@@ -126,52 +126,12 @@ section {
     margin: auto;
 }
 
-.techlogo {
-    height: 2vh;
-    vertical-align: middle;
-}
-
-.techname {
-    margin-top: 1%;
-    font-size: 2vh;
-    font-family: 'Inter', sans-serif;
-    color: $primary;
-    font-weight: 300;
-    padding-left: 1vh;
-    padding-right: 1vh;
-}
 
 
 
-.techcard {
-    display: flex;
-    margin-bottom: 10%;
-    background-color: $secondary;
-    border-radius: 13%;
-    padding-top: 10%;
-}
 
 
-.image {
-    height: 15vh;
-    width: 25vw;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.5vh;
-}
 
-.stackpanel {
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: absolute !important; //overides position relative
-    width: 100%;
-    place-items: center;
-    background-color: $primary;
-    padding-bottom: 5vh;
-    margin-top: 30%;
-
-}
 
 //---------------------------- Media Queries ----------------------------//
 /* Extra small devices (phones, 600px and down) */
