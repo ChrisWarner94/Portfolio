@@ -35,6 +35,9 @@ gem 'sassc-rails'
 # import font awesome for HTML [https://fontawesome.com/]
 gem "font-awesome-sass", "~> 6.4.0"
 
+# import simple froms from [https://github.com/heartcombo/simple_form] 
+gem 'simple_form'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
