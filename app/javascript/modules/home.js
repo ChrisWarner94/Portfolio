@@ -1,7 +1,12 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
 
-
+window.addEventListener('popstate', function (event) {
+    if (event.state) {
+        placeCaret();
+        this.alert("hello")
+    }
+}, false);
 
 function placeCaret() {
     var targetthree = document.getElementById("namecursor")
@@ -15,14 +20,22 @@ placeCaret();
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne);
     await typeEffect(jobtitleheading, headingTwo);
-    await fadeInBottom(introtext, 12);
-    await fadeInRighta(buttonblue, 12);
-    await fadeInRighta(linkscontainer, 12);
-    await fadeInRighta(linkone, 6,);
-    await fadeInRighta(linktwo, 6,);
-    await fadeInRighta(linkthree, 6);
+    await fadeInBottom(introtext, 3);
+
+    await fadeInRighta(linkscontainer, 3);
+    await fadeInRighta(linkone, .0000000001,);
+    await fadeInRighta(linktwo, .0000000001,);
+    await fadeInRighta(linkthree, .0000000001);
+    await fadeInRighta(buttonblue, 3);
+    setAsVisible();
 }
 
+
+
+function setAsVisible() {
+    sectioncontact.style.display = "block"
+    sectionproject.style.display = "block"
+}
 
 function typeEffect(element, text) {
     return new Promise((resolve) => {
@@ -40,7 +53,7 @@ function typeEffect(element, text) {
                 }
                 resolve();
             } else {
-                setTimeout(type, (Math.floor(Math.random() * 105)));
+                setTimeout(type, (Math.floor(Math.random() * 55)));
             }
         }
         type();
