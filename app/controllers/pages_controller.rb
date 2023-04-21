@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     
     @technologies = Technology.all
     @projects = Project.all
-    @message = Message.new
+    
 
     # arrays need for hangling github api data and cleansing
     

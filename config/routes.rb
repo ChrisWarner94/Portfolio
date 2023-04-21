@@ -13,5 +13,6 @@ Rails.application.routes.draw do
    resources :projects, only: [:show] do
    end
    
+   resources :contact, only: [:create]
   # test line
 end
