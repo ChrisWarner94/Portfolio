@@ -38,6 +38,9 @@ gem "font-awesome-sass", "~> 6.4.0"
 # import simple froms from [https://github.com/heartcombo/simple_form] 
 gem 'simple_form'
 
+# mail form to send emails from contact section
+gem 'mail_form'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
