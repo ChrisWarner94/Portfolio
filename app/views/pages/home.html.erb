@@ -90,7 +90,7 @@
   <div class="contactheader">
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
-  <%= simple_form_for @contact do |f|  %>
+  <%= simple_form_for @contact, url: contacts_path do |f|  %>
     <%= f.input :name %>
     <%= f.input :message %>
     <%= f.button :submit %>

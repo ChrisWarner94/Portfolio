@@ -1,15 +1,14 @@
 class ContactsController < ApplicationController
     
     def new 
-        raise
         @contact = Contact.new
     end
     
     def create
         @contact = Contact.new(contact_params)
-        raise
         @contact.deliver
-  end
+
+    end
 
   
   private
