@@ -90,24 +90,9 @@
   <div class="contactheader">
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
-  <div class="contactfield">
-    <div class="namenumber">
-      <form>
-        <input type="text">
-      </form>
-      <form>
-        <input type="text">
-      </form>
-    </div>
-    <div class="email">
-      <form>
-        <input type="text">
-      </form>
-    </div>
-    <div class="message">
-      <form>
-        <input type="text">
-      </form>
-    </div>
-  </div>
+  <%= simple_form_for @contact do |f|  %>
+    <%= f.input :name %>
+    <%= f.input :message %>
+    <%= f.button :submit %>
+  <% end %>
 </section>
