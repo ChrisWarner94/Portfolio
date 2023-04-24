@@ -41,6 +41,9 @@ gem 'simple_form'
 # mail form to send emails from contact section
 gem 'mail_form'
 
+#env gem for secure passwords/keys
+gem 'dotenv-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
