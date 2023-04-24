@@ -93,6 +93,8 @@
   <%= simple_form_for @contact, url: contacts_path do |f|  %>
     <%= f.input :name %>
     <%= f.input :message %>
+    <%= f.input :phone_number %>
+    <%= f.input :email %>
     <%= f.button :submit %>
   <% end %>
 </section>
