@@ -89,31 +89,34 @@
   <div class="contactheader">
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
-
   <div class="contactformcontainer">
     <%= simple_form_for @contact, url: contacts_path do |f|  %>
       <div class="namenumber">
         <div class="namesection">
-          <h2 class="contactformheader ">Name</h2>
-          <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }  %>
+          <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
         </div>
         <div class="numbersection ">
-          <h2 class="contactformheader ">Number</h2>
-          <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }  %>
+          <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Number'   %>
         </div>
       </div>
       <div class="emailsection ">
-        <h2 class="contactformheader ">Email</h2>
-        <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' } %>
+        <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Email'  %>
       </div>
       <div class="messagesection">
-        <h2 class="contactformheader ">Message</h2>
-        <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }  %>
+        <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }, placeholder: 'Message'  %>
       </div>
       <div class="submitsection">
         <%= f.submit 'Send', label: false,  class: 'contactsubmit'  %>
       </div>
     <% end %>
   </div>
-
+  <div class="footer">
+    <ul class="listlinks">
+      <li><a href="" class="linkicon"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="" class="linkicon"><i class="fa-brands fa-square-github"></i></a></li>
+    </ul>
+    <p class="footerheading">
+      Built and designed by Christopher Warner
+    </p>
+  </div>
 </section>
