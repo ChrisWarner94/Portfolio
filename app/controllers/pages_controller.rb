@@ -5,7 +5,9 @@ class PagesController < ApplicationController
     
     @technologies = Technology.all
     @projects = Project.all
+
     @contact = Contact.new
+
     # arrays need for hangling github api data and cleansing
     
   #   @commit_details = []

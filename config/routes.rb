@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   
   # show project route
    resources :projects, only: [:show] do
-
    end
+
   resource :contacts
+
 
   # test line
 end
