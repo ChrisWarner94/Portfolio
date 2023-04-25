@@ -108,7 +108,7 @@
       </div>
       <div class="messagesection">
         <h2 class="contactformheader ">Message</h2>
-        <%= f.input :message, label: false, input_html: { class: 'messagebox' }  %>
+        <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }  %>
       </div>
       <div class="submitsection">
         <%= f.submit 'Send', label: false,  class: 'contactsubmit'  %>
