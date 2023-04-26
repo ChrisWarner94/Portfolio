@@ -38,6 +38,10 @@
       </div>
       <div class="introtext" id="introtext">
       </div>
+      <div class="homepagelinkscontainer" id="homepagelinkscontainer">
+        <a href="https://www.linkedin.com/in/christopher-warner-a18419244/" target="_blank" class="homepagelinkicon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ChrisWarner94" target="_blank" class="homepagelinkicon"><i class="fa-brands fa-square-github"></i></a>
+      </div>
       <div class="buttonblue" id="buttonblue">
         <p class="buttontext">
           Check out my latest project
@@ -90,7 +94,7 @@
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
   <div class="contactformcontainer">
-    <%= simple_form_for @contact, url: contacts_path do |f|  %>
+    <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' } do |f|  %>
       <div class="namenumber">
         <div class="namesection">
           <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
@@ -111,9 +115,9 @@
     <% end %>
   </div>
   <div class="footer">
-    <ul class="listlinks">
-      <li><a href="" class="linkicon"><i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="" class="linkicon"><i class="fa-brands fa-square-github"></i></a></li>
+    <ul class="footerlistlinks">
+      <li><a href="https://www.linkedin.com/in/christopher-warner-a18419244/" target="_blank" class="footerlinkicon"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/ChrisWarner94" target="_blank" class="footerlinkicon"><i class="fa-brands fa-square-github"></i></a></li>
     </ul>
     <p class="footerheading">
       Built and designed by Christopher Warner
