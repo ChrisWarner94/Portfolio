@@ -7,7 +7,9 @@ class ContactsController < ApplicationController
     def create
         @contact = Contact.new(contact_params)
         @contact.deliver
-      @contact = nil
+        
+      
+      
     end
 
   

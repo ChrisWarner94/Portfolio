@@ -94,7 +94,7 @@
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
   <div class="contactformcontainer">
-    <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' } do |f|  %>
+    <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' }, data: {controller: "reset-form", action: "turbo:submit-end->reset-form#reset"} do |f|  %>
       <div class="namenumber">
         <div class="namesection">
           <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
@@ -110,7 +110,7 @@
         <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }, placeholder: 'Message'  %>
       </div>
       <div class="submitsection">
-        <%= f.submit 'Send', label: false,  class: 'contactsubmit'  %>
+        <%= f.submit 'Send', label: false,  class: 'contactsubmit' , type: :submit%>
       </div>
     <% end %>
   </div>
