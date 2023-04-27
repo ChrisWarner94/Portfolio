@@ -33,7 +33,7 @@ project_two = Project.create!(
 )
 
 project_three = Project.create!(
-    name: "Enna",
+    name: christopher-warner.co.uk",
     picture_url: "homepage.png" ,
     short_description: "Introducing Enna - the innovative addiction tracking app that helps you take control of your habits.",
     long_description: "Really good recipe app" ,

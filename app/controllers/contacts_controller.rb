@@ -6,12 +6,9 @@ class ContactsController < ApplicationController
     
     def create
         @contact = Contact.new(contact_params)
-        @contact.save
-        if @contact.deliver
-          
-        else
-          
-        end
+        @contact.deliver
+        
+       
       
         
       

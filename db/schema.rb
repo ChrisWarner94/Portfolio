@@ -20,15 +20,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
     t.string "phone_number"
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.string "contact_name"
-    t.string "contact_number"
-    t.string "contact_email"
-    t.text "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "projects", force: :cascade do |t|
     t.string "picture_url"
     t.string "short_description"
