@@ -16,7 +16,7 @@ project_one = Project.create!(
     name: "Recipeasy",
     picture_url: "homepage.png" ,
     short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
-    long_description: "Really good recipe app" ,
+    long_description: "An all in one online cookbook complete with a meal planner and shopping list manager to make your life easier." ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
     github_link: "https://github.com/ChrisWarner94/Recipeasy" ,

@@ -1,13 +1,6 @@
 @import "config/colours";
 
 
-.projectdescription {
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: $tertiary;
-    padding-bottom: 1rem;
-}
-
 .projecttitle {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -27,6 +20,24 @@
     align-items: center;
 }
 
+.projectlinks {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+
+}
+
+.projectdescription {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: $tertiary;
+    padding-bottom: 1rem;
+}
+
 
 .git-box {
     width: 90%;
@@ -41,6 +52,7 @@
 .commit-cards-container {
     margin: auto;
     width: 95%;
+    font-size: 1.5vh;
 }
 
 .card-container {

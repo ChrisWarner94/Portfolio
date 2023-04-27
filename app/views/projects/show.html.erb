@@ -5,6 +5,18 @@
   <div class="projectimage">
     <%=  image_tag (@project.picture_url), :height=> "100%" %>
   </div>
+  <div class="projectlinks">
+    <% if @project.github_link.present? %>
+      <div class="linkcard">
+        <%= link_to "Github", @project.github_link, target: "_blank" %>
+      </div>
+    <% end %>
+    <% if @project.host_link.present? %>
+      <div class="linkcard">
+        <%= link_to "Demo", @project.host_link, target: "_blank" %>
+      </div>
+    <% end %>
+  </div>
   <div class="projectdescription">
     <%= @project.long_description %>
   </div>
