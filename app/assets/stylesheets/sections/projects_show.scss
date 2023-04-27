@@ -1,0 +1,102 @@
+@import "config/colours";
+
+
+.descriptionshort {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: $tertiary;
+    padding-bottom: 1rem;
+}
+
+.projecttitle {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5vh;
+    padding-bottom: 5vh;
+    padding-top: 4vh;
+    color: $primary;
+}
+
+
+.projectimage {
+    width: 80%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.git-box {
+    width: 90%;
+    background-color: $secondary;
+    height: 40rem;
+    border-radius: 1%;
+    overflow: auto;
+    scrollbar-color: $secondary $tertiary;
+    margin: auto;
+}
+
+.commit-cards-container {
+    margin: auto;
+    width: 95%;
+}
+
+.card-container {
+    margin: 3%;
+}
+
+.commit-card {
+    background-color: $primary;
+    border-radius: 1%;
+    margin: auto;
+    width: 85%;
+    height: 20%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-shadow: 3px 3px 3px black;
+
+
+}
+
+.git-log-title {
+    text-align: center;
+    width: 72%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: $primary;
+    font-size: 200%;
+
+}
+
+.commit-card {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.commit-card:hover {
+    top: -0.75rem;
+}
+
+.git-box a {
+    text-decoration: none;
+}
+
+
+
+#commit-message {
+    color: $tertiary;
+}
+
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 0.25rem;
+    color: $secondary;
+}

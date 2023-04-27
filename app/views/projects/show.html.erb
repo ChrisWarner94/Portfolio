@@ -1,1 +1,34 @@
-<%= @project.name %>
+<div class="projectcontainer">
+  <div class="projecttitle">
+    <%= @project.name %>
+  </div>
+  <div class="projectimage">
+    <%=  image_tag (@project.picture_url), :height=> "100%" %>
+  </div>
+  <div class="projectdescription">
+    <%= @project.long_description %>
+  </div>
+  <div class="git-box">
+    <h1 class="git-log-title">Commit log </h1>
+    <div class="commit-cards-container">
+      <% @commit_details.each do |date_time, owner, message, url| %>
+        <%= link_to url do %>
+          <div class= "commit-card">
+            <div class="card-container">
+              <div class="name-date">
+                <div class="commit-content" id="commit-date">
+                  <%= owner %>
+                </div>
+                <div class="commit-content" id="commit-owner">
+                  <%= date_time %>
+                </div>
+              </div>
+              <div class="commit-content" id="commit-message">
+                <%= message %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
