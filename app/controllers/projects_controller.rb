@@ -2,9 +2,7 @@ class ProjectsController < ApplicationController
 
     def show 
         @project = Project.find(params[:id])
-
-         #arrays need for hangling github api data and cleansing
-    
+        #array needed for hangling github api data and cleansing
         @commit_details = []
     
 

@@ -9,7 +9,7 @@
     <%= @project.long_description %>
   </div>
   <div class="git-box">
-    <h1 class="git-log-title">Commit log </h1>
+    <h1 class="git-log-title">Latest commits</h1>
     <div class="commit-cards-container">
       <% @commit_details.each do |date_time, owner, message, url| %>
         <%= link_to url do %>

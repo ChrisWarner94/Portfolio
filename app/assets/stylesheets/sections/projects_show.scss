@@ -1,7 +1,7 @@
 @import "config/colours";
 
 
-.descriptionshort {
+.projectdescription {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
@@ -19,8 +19,8 @@
 
 
 .projectimage {
-    width: 80%;
-    height: 20vh;
+    width: 70%;
+    height: 18vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 .git-box {
     width: 90%;
     background-color: $secondary;
-    height: 40rem;
+    height: 20rem;
     border-radius: 1%;
     overflow: auto;
     scrollbar-color: $secondary $tertiary;
@@ -52,11 +52,12 @@
     border-radius: 1%;
     margin: auto;
     width: 85%;
-    height: 20%;
+    height: 10%;
     padding-bottom: 1rem;
     margin-top: 2rem;
     font-family: 'Titillium Web', sans-serif;
     box-shadow: 3px 3px 3px black;
+    overflow: auto;
 
 
 }
@@ -68,7 +69,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     color: $primary;
-    font-size: 200%;
+    font-size: 150%;
 
 }
 
