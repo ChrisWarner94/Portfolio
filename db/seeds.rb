@@ -17,6 +17,7 @@ project_one = Project.create!(
     picture_url: "homepage.png" ,
     short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
     long_description: "Really good recipe app" ,
+    stack: "Ruby on Rails, HTML, CSS, Javascript, Bootstrap, Heroku, Postgresql" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
     github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
@@ -27,19 +28,21 @@ project_two = Project.create!(
     picture_url: "homepage.png" ,
     short_description: "Introducing Sexy Cars - the premier car rental app for luxury vehicles.",
     long_description: "Really good recipe app" ,
+    stack: "Ruby on Rails, HTML, CSS, Javascript, Bootstrap, Heroku, Postgresql" ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
-    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+    github_link: "https://github.com/ChrisWarner94/Sexy_Cars" ,
 )
 
 project_three = Project.create!(
-    name: christopher-warner.co.uk",
+    name: "christopher-warner.co.uk",
     picture_url: "homepage.png" ,
-    short_description: "Introducing Enna - the innovative addiction tracking app that helps you take control of your habits.",
+    short_description: "christopher-warner.co.uk - My personal portfolio site.",
     long_description: "Really good recipe app" ,
+    stack: "Ruby on Rails, HTML, CSS, Javascript, Postgresql" 
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
-    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+    github_link: "https://github.com/ChrisWarner94/Portfolio" ,
 )
 puts "Projects created"
 puts "Creating technologies"
