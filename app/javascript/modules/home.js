@@ -1,6 +1,7 @@
 const headingOne = "Christopher Warner"
 const headingTwo = "Full-Stack Developer"
 
+
 window.addEventListener('popstate', function (event) {
     if (event.state) {
         placeCaret();
