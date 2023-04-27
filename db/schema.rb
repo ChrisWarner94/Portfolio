@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -21,7 +20,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
     t.string "phone_number"
   end
 
-  #model removed using destroy
   create_table "messages", force: :cascade do |t|
     t.string "contact_name"
     t.string "contact_number"
