@@ -136,11 +136,35 @@ section {
 
 
 //---------------------------- Media Queries ----------------------------//
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .homeleftpanel {
+        padding-top: 2%;
+    }
+
+    .homeheading {
+        font-size: 8vh;
+    }
+
+    #introtext {
+        padding-top: 0.25vh;
+        font-size: 3vh;
+    }
+
+    .staticheading {
+        font-size: 4.5vh;
+    }
+
+    .homepagelinkscontainer {
+        width: 20vw
+    }
+
+    .buttonblue {
+        width: 50%;
+        margin-top: 2vh;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
