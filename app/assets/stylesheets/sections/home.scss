@@ -74,16 +74,15 @@ section {
 .staticheading {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
-    font-size: 2.5vh;
+    font-size: 1rem;
     margin: auto;
     padding-top: 1vh;
 }
 
 .homeheading {
     color: $primary;
-    font-size: 3.5vh;
+    font-size: 1.9rem;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 950;
     height: 2.25rem;
     padding-bottom: 1vh;
     padding-top: 1vh;
@@ -136,15 +135,65 @@ section {
 
 
 //---------------------------- Media Queries ----------------------------//
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .homeleftpanel {
+        padding-top: 2%;
+    }
+
+    .homeheading {
+        font-size: 34px;
+    }
+
+    #introtext {
+        padding-top: 0.25vh;
+        font-size: 3vh;
+    }
+
+    .staticheading {
+        font-size: 4.5vh;
+    }
+
+    .homepagelinkscontainer {
+        width: 20vw
+    }
+
+    .buttonblue {
+        width: 50%;
+        margin-top: 2vh;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .homeleftpanel {
+        padding-top: 1%;
+    }
+
+    .homeheading {
+        font-size: 26px;
+    }
+
+    #introtext {
+        padding-top: 0.25vh;
+        font-size: 3.5vh;
+    }
+
+    .staticheading {
+        font-size: 3.5vh;
+    }
+
+    .homepagelinkscontainer {
+        width: 10vw
+    }
+
+    .buttonblue {
+        width: 40%;
+        margin-top: 2vh;
+    }
+}
 
 
 
@@ -152,4 +201,31 @@ section {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .homeleftpanel {
+        padding-top: 2%;
+    }
+
+    .homeheading {
+        font-size: 4rem;
+    }
+
+    #introtext {
+        padding-top: 0.25vh;
+        font-size: 3vh;
+    }
+
+    .staticheading {
+        font-size: 2rem;
+    }
+
+    .homepagelinkscontainer {
+        width: 20vw
+    }
+
+    .buttonblue {
+        width: 50%;
+        margin-top: 2vh;
+    }
+
+}
