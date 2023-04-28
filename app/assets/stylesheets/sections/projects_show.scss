@@ -85,7 +85,11 @@
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
-    padding-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    font-size: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
 }
 
 
@@ -97,6 +101,7 @@
     overflow: auto;
     scrollbar-color: $secondary $tertiary;
     margin: auto;
+    margin-bottom: 3vh;
 }
 
 .commit-cards-container {
