@@ -48,6 +48,39 @@
 
 }
 
+.builttitle {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: $primary;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.buildstack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2vh;
+    width: 95%;
+}
+
+.techcard {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 1vh;
+
+    .techname {
+        width: 3vw;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .techlogo {
+        height: 2vh;
+        width: 2vw;
+    }
+}
+
 .projectdescription {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;

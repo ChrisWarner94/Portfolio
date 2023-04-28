@@ -14,6 +14,7 @@ puts "populating database"
 puts "Adding projects"
 project_one = Project.create!(
     name: "Recipeasy",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS", "Heroku", "Bootstrap"],
     picture_url: "homepage.png" ,
     short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
     long_description: "An all in one online cookbook complete with a meal planner and shopping list manager." ,
@@ -24,6 +25,7 @@ project_one = Project.create!(
 
 project_two = Project.create!(
     name: "Sexy Cars",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS", "Heroku", "Bootstrap"],
     picture_url: "homepage.png" ,
     short_description: "Introducing Sexy Cars - the premier car rental app for luxury vehicles.",
     long_description: "A mock luxury car rental app." ,
@@ -34,6 +36,7 @@ project_two = Project.create!(
 
 project_three = Project.create!(
     name: "christopher-warner.co.uk",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "Sass"],
     picture_url: "homepage.png" ,
     short_description: "My personal portfolio site.",
     long_description: "Really good recipe app" ,

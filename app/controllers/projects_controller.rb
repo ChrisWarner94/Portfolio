@@ -1,9 +1,18 @@
 class ProjectsController < ApplicationController
 
+  require 'json'
+
     def show 
+        # provides chosen project to view
         @project = Project.find(params[:id])
+
         #array needed for hangling github api data and cleansing
         @commit_details = []
+
+        # acts as array holder for tech stack as projects.stack.each will not work as array is stored/returned within a string accoriding to error message despite being an array in the db
+        # this is a workaround
+        @techstack = JSON.parse(@project.stack)
+
     
 
         # API call

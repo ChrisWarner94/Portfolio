@@ -1,5 +1,5 @@
 <%= link_to root_path, method: :get do %>
-  <div>Hey!</div data-no-turbolink>
+  <div>Hey!</div>
 <% end %>
 <div class="projectcontainer">
   <div class="projecttitle">
@@ -17,6 +17,21 @@
     <% if @project.host_link.present? %>
       <div class="linkcard">
         <%= link_to "Demo", @project.host_link, target: "_blank" %>
+      </div>
+    <% end %>
+  </div>
+  <div class="builttitle">
+    <h2>Built with</h2>
+  </div>
+  <div class="buildstack">
+    <% @techstack.each do |tech|  %>
+      <div class="techcard">
+        <div class="techname">
+          <%= tech %>
+        </div>
+        <div class="techlogo">
+          <%=  image_tag ("stack/#{tech}.svg"), :height=> "100%" %>
+        </div>
       </div>
     <% end %>
   </div>
