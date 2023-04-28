@@ -69,6 +69,14 @@
     font-size: 1.5vh;
 }
 
+.resumebutton {
+    width: 95%;
+    height: 36vh;
+    background-color: $primary;
+    margin: auto;
+
+}
+
 .contactformcontainer {
     margin: auto;
     width: 95%;
@@ -103,11 +111,30 @@
 
 .inputboxwidth {
     width: 50vw;
+    background-color: $secondary;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: $primary;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    font-size: 2.5vh;
+    font-family: 'Titillium Web', sans-serif;
+    border-width: thin;
+    color: $tertiary;
 }
 
 .messagebox {
     width: 60vw;
-    height: 8vh;
+    background-color: $secondary;
+    font-size: 2.5vh;
+    font-family: 'Titillium Web', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: $primary;
+    border-width: thin;
+    color: $tertiary;
 }
 
 .contactsubmit {
@@ -120,8 +147,18 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 2vh;
     border-radius: 5%;
+    border-style: none;
+}
+
+.messagebox:focus {
+    outline: $secondary;
+}
+
+input:focus {
+    outline: $secondary;
+
 }
 
 .submitsection {
-    padding-top: 2vh;
+    padding-top: 4vh;
 }

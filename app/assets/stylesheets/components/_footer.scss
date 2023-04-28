@@ -1,0 +1,35 @@
+@import "config/colours";
+
+.footer {
+    height: 6vh;
+    width: 100%;
+    background-color: $primary;
+    bottom: 0%;
+    position: relative;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerheading {
+    color: $tertiary;
+    font-size: 1.5vh;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    padding-right: 2vw;
+}
+
+.footerlistlinks {
+    font-size: 4vh;
+    display: flex;
+    margin-top: 0vh;
+    margin-left: 1vw;
+    padding-left: 0;
+}
+
+.footerlinkicon {
+    margin: 2vw;
+    font-size: 3vh;
+    color: $tertiary;
+    vertical-align: middle;
+}

@@ -38,6 +38,10 @@
       </div>
       <div class="introtext" id="introtext">
       </div>
+      <div class="homepagelinkscontainer" id="homepagelinkscontainer">
+        <a href="https://www.linkedin.com/in/christopher-warner-a18419244/" target="_blank" class="homepagelinkicon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ChrisWarner94" target="_blank" class="homepagelinkicon"><i class="fa-brands fa-square-github"></i></a>
+      </div>
       <div class="buttonblue" id="buttonblue">
         <p class="buttontext">
           Check out my latest project
@@ -73,47 +77,39 @@
   </div>
 </section>
 <section class="section" id="sectioncontact">
-  <h1 class="mystack">My stack</h1>
-  <div class="stackpanel">
-    <% @technologies.each do |tech|  %>
-      <div class="techcard">
-        <div class="techname">
-          <%= tech.name %>
-        </div>
-        <div class="techlogo">
-          <%= image_tag (tech.logo_path), :height=> "100%"  %>
-        </div>
-      </div>
-    <% end %>
-  </div>
+<div class="resumebutton">
+</div>
   <div class="contactheader">
     <h2>Feel free to get in touch if you would like to colobarate</h2>
   </div>
-
   <div class="contactformcontainer">
-    <%= simple_form_for @contact, url: contacts_path do |f|  %>
+    <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' }, data: {controller: "reset-form", action: "turbo:submit-end->reset-form#reset"} do |f|  %>
       <div class="namenumber">
         <div class="namesection">
-          <h2 class="contactformheader ">Name</h2>
-          <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }  %>
+          <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
         </div>
         <div class="numbersection ">
-          <h2 class="contactformheader ">Number</h2>
-          <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }  %>
+          <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Number'   %>
         </div>
       </div>
       <div class="emailsection ">
-        <h2 class="contactformheader ">Email</h2>
-        <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' } %>
+        <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Email'  %>
       </div>
       <div class="messagesection">
-        <h2 class="contactformheader ">Message</h2>
-        <%= f.input :message, label: false, input_html: { class: 'messagebox' }  %>
+        <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }, placeholder: 'Message'  %>
       </div>
       <div class="submitsection">
-        <%= f.submit 'Send', label: false,  class: 'contactsubmit'  %>
+        <%= f.submit 'Send', label: false,  class: 'contactsubmit' , type: :submit%>
       </div>
     <% end %>
   </div>
-
+  <div class="footer">
+    <ul class="footerlistlinks">
+      <li><a href="https://www.linkedin.com/in/christopher-warner-a18419244/" target="_blank" class="footerlinkicon"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/ChrisWarner94" target="_blank" class="footerlinkicon"><i class="fa-brands fa-square-github"></i></a></li>
+    </ul>
+    <p class="footerheading">
+      Built and designed by Christopher Warner
+    </p>
+  </div>
 </section>

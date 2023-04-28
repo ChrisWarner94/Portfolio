@@ -14,9 +14,10 @@ puts "populating database"
 puts "Adding projects"
 project_one = Project.create!(
     name: "Recipeasy",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS", "Heroku", "Bootstrap"],
     picture_url: "homepage.png" ,
     short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
-    long_description: "Really good recipe app" ,
+    long_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
     github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
@@ -24,22 +25,24 @@ project_one = Project.create!(
 
 project_two = Project.create!(
     name: "Sexy Cars",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS", "Heroku", "Bootstrap"],
     picture_url: "homepage.png" ,
     short_description: "Introducing Sexy Cars - the premier car rental app for luxury vehicles.",
-    long_description: "Really good recipe app" ,
+    long_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
-    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+    github_link: "https://github.com/ChrisWarner94/Sexy_Cars" ,
 )
 
 project_three = Project.create!(
-    name: "Enna",
+    name: "christopher-warner.co.uk",
+    stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS"],
     picture_url: "homepage.png" ,
-    short_description: "Introducing Enna - the innovative addiction tracking app that helps you take control of your habits.",
-    long_description: "Really good recipe app" ,
+    short_description: "My personal portfolio site.",
+    long_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
-    github_link: "https://github.com/ChrisWarner94/Recipeasy" ,
+    github_link: "https://github.com/ChrisWarner94/Portfolio" ,
 )
 puts "Projects created"
 puts "Creating technologies"

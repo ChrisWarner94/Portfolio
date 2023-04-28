@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_28_104516) do
   create_table "contacts", force: :cascade do |t|
     t.string "name"
     t.string "message"
@@ -19,16 +18,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
     t.datetime "updated_at", null: false
     t.string "email"
     t.string "phone_number"
-  end
-
-  #model removed using destroy
-  create_table "messages", force: :cascade do |t|
-    t.string "contact_name"
-    t.string "contact_number"
-    t.string "contact_email"
-    t.text "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "projects", force: :cascade do |t|
@@ -41,6 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_24_115718) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "stack"
   end
 
   create_table "technologies", force: :cascade do |t|

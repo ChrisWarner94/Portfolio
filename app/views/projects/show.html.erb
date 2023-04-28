@@ -1,1 +1,64 @@
-<%= @project.name %>
+<%= link_to root_path, method: :get do %>
+  <div>Hey!</div>
+<% end %>
+<div class="projectcontainer">
+  <div class="projecttitle">
+    <%= @project.name %>
+  </div>
+  <div class="projectimage">
+    <%=  image_tag (@project.picture_url), :height=> "100%" %>
+  </div>
+  <div class="projectlinks">
+    <% if @project.github_link.present? %>
+      <div class="linkcard">
+        <%= link_to "Github", @project.github_link, target: "_blank" %>
+      </div>
+    <% end %>
+    <% if @project.host_link.present? %>
+      <div class="linkcard">
+        <%= link_to "Demo", @project.host_link, target: "_blank" %>
+      </div>
+    <% end %>
+  </div>
+  <div class="builttitle">
+    <h2>Built with</h2>
+  </div>
+  <div class="buildstack">
+    <% @techstack.each do |tech|  %>
+      <div class="techcard">
+        <div class="techname">
+          <%= tech %>
+        </div>
+        <div class="techlogo">
+          <%=  image_tag ("stack/#{tech}.svg"), :height=> "100%" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="projectdescription">
+    <%= @project.long_description %>
+  </div>
+  <div class="git-box">
+    <h1 class="git-log-title">Latest commits</h1>
+    <div class="commit-cards-container">
+      <% @commit_details.each do |date_time, owner, message, url| %>
+        <%= link_to url do %>
+          <div class= "commit-card">
+            <div class="card-container">
+              <div class="name-date">
+                <div class="commit-content" id="commit-date">
+                  <%= owner %>
+                </div>
+                <div class="commit-content" id="commit-owner">
+                  <%= date_time %>
+                </div>
+              </div>
+              <div class="commit-content" id="commit-message">
+                <%= message %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
