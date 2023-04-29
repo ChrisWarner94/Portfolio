@@ -50,21 +50,40 @@
     color: $tertiary;
 
   }
+}
 
-  ////////////-------------------- Media Queries --------------------////////////
+////////////-------------------- Media Queries --------------------////////////
 
-  @media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .projectscontainer {
+    display: flex;
+  }
+
+  .projectstitle {
+    font-size: 3vh;
+  }
+}
 
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .projectscontainer {
+    display: flex;
+  }
+}
 
 
 
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .projectscontainer {
+    display: flex;
+  }
+}
 
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {}
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .projectscontainer {
+    display: flex;
+  }
 }
