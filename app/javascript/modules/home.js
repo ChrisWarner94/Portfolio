@@ -55,7 +55,7 @@ function typeEffect(element, text) {
                 }
                 resolve();
             } else {
-                setTimeout(type, (Math.floor(Math.random() * 55)));
+                setTimeout(type, (Math.floor(Math.random() * 155)));
             }
         }
         type();
