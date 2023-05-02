@@ -1,5 +1,9 @@
 @import "config/colours";
 
+img {
+  border-radius: 2%;
+}
+
 #sectionproject {
   display: none;
 }
@@ -24,6 +28,60 @@
   margin: auto;
   height: 25%;
   margin-top: 5vh;
+  background-color: $primary;
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+
+  .projectimage {
+    height: 10vh;
+    width: 15vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5vh;
+  }
+
+  .projectname {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1vh;
+    color: $tertiary;
+    font-size: 2.5vh;
+    z-index: 1;
+  }
+
+  .descriptionshort {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: $tertiary;
+
+  }
+}
+
+////////////-------------------- Media Queries --------------------////////////
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .projectscontainer {
+    display: flex;
+  }
+
+  .projectstitle {
+    font-size: 3vh;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .projectscontainer {
+    display: flex;
+  }
+
+  .projectcard {
+    width: 33%;
+  }
 
   .projectimage {
     height: 10vh;
@@ -43,12 +101,69 @@
     color: $primary;
     font-size: 2.5vh;
   }
+}
 
-  .descriptionshort {
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: $tertiary;
 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .projectscontainer {
+    display: flex;
   }
+
+  .projectcard {
+    width: 33%;
+  }
+
+  .projectimage {
+    height: 10vh;
+    width: 15vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5vh;
+  }
+
+  .projectname {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1vh;
+    color: $primary;
+    font-size: 2.5vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .projectscontainer {
+    display: flex;
+  }
+
+  .projectcard {
+    width: 25%;
+    height: 75%;
+
+    .projectimage {
+      height: 6VW;
+      width: 15vw;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1.5vh;
+    }
+
+    .projectname {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Ubuntu', sans-serif;
+      padding-bottom: 1vh;
+      color: $tertiary;
+      font-size: 2.5vh;
+    }
+  }
+
 
 }
