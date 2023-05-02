@@ -1,12 +1,9 @@
 @import "config/colours";
 
 .footer {
-    height: 6vh;
     width: 100%;
     background-color: $primary;
     bottom: 0%;
-    position: relative;
-    margin-top: 4vh;
     display: flex;
     justify-content: space-between;
 }
@@ -28,7 +25,6 @@
 }
 
 .footerlinkicon {
-    margin: 2vw;
     font-size: 3vh;
     color: $tertiary;
     vertical-align: middle;
