@@ -16,7 +16,7 @@ project_one = Project.create!(
     name: "Recipeasy",
     stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS", "Heroku", "Bootstrap"],
     picture_url: "homepage.png" ,
-    short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier!",
+    short_description: "Introducing Recipeasy - the ultimate meal planning app designed to make your life easier! ",
     long_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
     demo_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,
     host_link: "https://recipeeasy.herokuapp.com/" ,
@@ -35,7 +35,7 @@ project_two = Project.create!(
 )
 
 project_three = Project.create!(
-    name: "christopher-warner.co.uk",
+    name: "Portfolio",
     stack: ["Ruby", "Rails", "Javascript", "HTML", "CSS","Postgresql", "SCSS"],
     picture_url: "portfoliohomepage.png" ,
     short_description: "My personal portfolio site.",
