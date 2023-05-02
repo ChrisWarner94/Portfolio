@@ -60,11 +60,16 @@
     <% @projects.each do |project| %>
       <div class="projectcard">
         <%= link_to project_path(project) do %>
-          <div class="projectname">
-            <%= project.name %>
-          </div>
           <div class="projectimage">
-            <%= image_tag (project.picture_url), :height=> "100%"  %>
+            <%= image_tag (project.picture_url), class: 'fit-image' %>
+          </div>
+          <div class="linksnamecontainer">
+            <div class="projectname">
+              <%= project.name %>
+            </div>
+            <div class="projectcardlinks">
+
+            </div>
           </div>
           <div class="descriptionshort">
             <%= project.short_description %>
