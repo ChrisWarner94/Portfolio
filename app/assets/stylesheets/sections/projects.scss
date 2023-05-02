@@ -46,7 +46,8 @@ img {
     text-align: center;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 1vh;
+    padding-bottom: 3vh;
+    padding-top: 2vh;
     color: $tertiary;
     font-size: 2.5vh;
     z-index: 1;
@@ -143,7 +144,7 @@ img {
 
   .projectcard {
     width: 25%;
-    height: 75%;
+    height: 55%;
 
     .projectimage {
       height: 6VW;
