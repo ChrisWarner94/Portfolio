@@ -1,5 +1,9 @@
 @import "config/colours";
 
+img {
+  border-radius: 2%;
+}
+
 #sectionproject {
   display: none;
 }
@@ -24,6 +28,9 @@
   margin: auto;
   height: 25%;
   margin-top: 5vh;
+  background-color: $primary;
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 
   .projectimage {
     height: 10vh;
@@ -40,8 +47,9 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 1vh;
-    color: $primary;
+    color: $tertiary;
     font-size: 2.5vh;
+    z-index: 1;
   }
 
   .descriptionshort {
@@ -70,6 +78,29 @@
   .projectscontainer {
     display: flex;
   }
+
+  .projectcard {
+    width: 33%;
+  }
+
+  .projectimage {
+    height: 10vh;
+    width: 15vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5vh;
+  }
+
+  .projectname {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1vh;
+    color: $primary;
+    font-size: 2.5vh;
+  }
 }
 
 
@@ -79,6 +110,29 @@
   .projectscontainer {
     display: flex;
   }
+
+  .projectcard {
+    width: 33%;
+  }
+
+  .projectimage {
+    height: 10vh;
+    width: 15vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5vh;
+  }
+
+  .projectname {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 1vh;
+    color: $primary;
+    font-size: 2.5vh;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -86,4 +140,30 @@
   .projectscontainer {
     display: flex;
   }
+
+  .projectcard {
+    width: 25%;
+    height: 75%;
+
+    .projectimage {
+      height: 6VW;
+      width: 15vw;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1.5vh;
+    }
+
+    .projectname {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Ubuntu', sans-serif;
+      padding-bottom: 1vh;
+      color: $tertiary;
+      font-size: 2.5vh;
+    }
+  }
+
+
 }
