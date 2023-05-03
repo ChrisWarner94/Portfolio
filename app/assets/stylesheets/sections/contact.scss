@@ -1,8 +1,6 @@
 @import "config/colours";
 
-#sectioncontact {
-    display: none;
-}
+#sectioncontact {}
 
 .contactsectioncontainer {
     width: 90%;
@@ -12,6 +10,14 @@
     margin: auto;
 }
 
+.abouttext {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    color: $primary;
+
+}
 
 .contactfield {
     margin: auto;
@@ -28,8 +34,8 @@
 }
 
 .resumebutton {
-    width: 95%;
-    height: 36vh;
+    width: 40%;
+    height: 80%;
     background-color: $primary;
     margin: auto;
 
