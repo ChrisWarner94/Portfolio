@@ -3,31 +3,38 @@
 .footer {
     width: 100%;
     background-color: $primary;
-    bottom: 0%;
     display: flex;
     justify-content: space-between;
+    height: 10%;
 }
 
 .footerheading {
     color: $tertiary;
-    font-size: 1.5vh;
+    font-size: 90%;
     font-family: 'Titillium Web', sans-serif;
     font-weight: lighter;
     padding-right: 2vw;
+    margin: auto 0 auto 0;
+    text-align: right;
 }
 
 .footerlistlinks {
     font-size: 4vh;
     display: flex;
-    margin-top: 0vh;
-    margin-left: 1vw;
+    margin-top: auto;
+    margin: auto;
+    margin-left: 2vw;
     padding-left: 0;
+    width: 8%;
+    justify-content: space-between;
+    margin-right: 10%;
 }
 
 .footerlinkicon {
-    font-size: 3vh;
+    font-size: 200%;
     color: $tertiary;
     vertical-align: middle;
+    margin-right: 1rem;
 }
 
 ////////////-------------------- Media Queries --------------------////////////
@@ -36,12 +43,48 @@
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footerlistlinks {
+        width: 7%;
+    }
+
+    .footerheading {
+        font-size: 100%;
+    }
+
+    .footerlinkicon {
+        font-size: 250%;
+    }
+}
 
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footerlistlinks {
+        width: 5%;
+    }
+
+    .footerheading {
+        font-size: 120%;
+    }
+
+    .footerlinkicon {
+        font-size: 250%;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .footerlistlinks {
+        width: 5%;
+    }
+
+    .footerheading {
+        font-size: 120%;
+    }
+
+    .footerlinkicon {
+        font-size: 250%;
+    }
+}
