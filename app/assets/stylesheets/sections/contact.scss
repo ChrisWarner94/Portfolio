@@ -4,56 +4,14 @@
     display: none;
 }
 
-
-.stackpanel {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
+.contactsectioncontainer {
+    width: 90%;
+    height: 90%;
     background-color: $secondary;
-    padding-bottom: 3vh;
-    bottom: 0;
-    height: 15%;
+    display: inline-block;
     margin: auto;
-    justify-content: space-evenly;
-    text-align: left;
-
-    .techcard {
-        display: flex;
-        margin-bottom: 5%;
-        background-color: $secondary;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 1vh;
-        width: 26vw;
-        margin: auto;
-    }
-
-
-    .techlogo {
-        height: 2vh;
-        vertical-align: middle;
-    }
-
-    .techname {
-        display: flex;
-        margin-top: 1%;
-        font-size: 2vh;
-        font-family: 'Titillium Web', sans-serif;
-        color: $primary;
-        font-weight: 300;
-    }
-
-
 }
 
-.mystack {
-    font-family: 'Ubuntu', sans-serif;
-    color: $primary;
-    font-size: 3vh;
-    text-align: center;
-    margin-top: 2vh;
-
-}
 
 .contactfield {
     margin: auto;
@@ -110,7 +68,7 @@
 }
 
 .inputboxwidth {
-    width: 50vw;
+    width: 70%;
     background-color: $secondary;
     border-top: none;
     border-left: none;
@@ -125,7 +83,7 @@
 }
 
 .messagebox {
-    width: 60vw;
+    width: 75%;
     background-color: $secondary;
     font-size: 2.5vh;
     font-family: 'Titillium Web', sans-serif;
@@ -174,7 +132,15 @@ input:focus {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contactsectioncontainer {
+        display: flex;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .contactsectioncontainer {
+        display: flex;
+    }
+}
