@@ -76,6 +76,11 @@
 </section>
 <section class="section" id="sectioncontact">
   <div class="contactsectioncontainer">
+    <div class="buttoncv">
+      <p class="buttontext">
+        Download my CV
+      </p>
+    </div>
     <div class="contactformcontainer">
       <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' }, data: {controller: "reset-form", action: "turbo:submit-end->reset-form#reset"} do |f|  %>
         <div class="namenumber">
