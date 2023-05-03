@@ -8,14 +8,14 @@
 
 .contactsectioncontainer {
     width: 90%;
-    height: 90%;
+    height: 100%;
     background-color: $secondary;
     margin: auto;
 }
 
 .buttoncv {
     background-color: $primary;
-    margin: 20% auto 20% auto;
+    margin: 10% auto 20% auto;
     width: 50%;
     border-radius: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
@@ -121,11 +121,25 @@ input:focus {
 
 ////////////-------------------- Media Queries --------------------////////////
 
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .contactformcontainer {
+        padding-top: 0;
+    }
+
+    .pagetitle {
+        margin-top: 0;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contactsectioncontainer {
+        display: flex;
+    }
+
+
+}
 
 
 
