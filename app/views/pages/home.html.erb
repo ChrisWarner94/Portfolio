@@ -27,8 +27,8 @@
   </div>
 </section>
 <section class="section" id="sectionprojects">
-  <div class="projectstitle">
-    <h2 id="projectname">
+  <div class="pagetitle">
+    <h2>
       Projects
     </h2>
   </div>
@@ -55,32 +55,51 @@
     <% end %>
   </div>
 </section>
+<section class="section" id="sectionabout">
+  <div class="pagetitle">
+    <h2>
+      About Me
+    </h2>
+  </div>
+  <div class="abouttext">
+    <p>I'm a person who enjoys a few different hobbies. I have a passion for coding, and I love nothing more than diving into a challenging project and seeing it through to completion. I find it incredibly satisfying to use my programming skills to bring new ideas to life.<br>
+      <br>
+
+      When I'm not coding, you can often find me gaming. Whether it's an RPG, a shooter, or a strategy game, I'm always up for trying something new.<br>
+      <br>
+
+      But gaming isn't my only hobby, I also enjoy fishing. It's a relaxing pastime that allows me to enjoy the great outdoors and connect with nature. Whether I'm fishing in a river or a lake there's something about the peacefulness of being on the water that I find incredibly rejuvenating.<br>
+      <br>
+
+      Overall, I'm someone who loves to learn new things and explore new opportunities. Whether it's through coding, gaming, or fishing, I'm always looking for ways to challenge myself and expand my horizons.</p>
+  </div>
+</section>
 <section class="section" id="sectioncontact">
-  <div class="resumebutton">
+  <div class="pagetitle" id="titlecontact">
+    <h2>Feel free to get in touch</h2>
   </div>
-  <div class="contactheader">
-    <h2>Feel free to get in touch if you would like to colobarate</h2>
-  </div>
-  <div class="contactformcontainer">
-    <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' }, data: {controller: "reset-form", action: "turbo:submit-end->reset-form#reset"} do |f|  %>
-      <div class="namenumber">
-        <div class="namesection">
-          <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
+  <div class="contactsectioncontainer">
+    <div class="contactformcontainer">
+      <%= simple_form_for @contact, url: contacts_path, html: { autocomplete: 'off' }, data: {controller: "reset-form", action: "turbo:submit-end->reset-form#reset"} do |f|  %>
+        <div class="namenumber">
+          <div class="namesection">
+            <%= f.input :name, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Name'   %>
+          </div>
+          <div class="numbersection ">
+            <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Number'   %>
+          </div>
         </div>
-        <div class="numbersection ">
-          <%= f.input :phone_number, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Number'   %>
+        <div class="emailsection ">
+          <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Email'  %>
         </div>
-      </div>
-      <div class="emailsection ">
-        <%= f.input :email, label: false, input_html: { class: 'inputboxwidth' }, placeholder: 'Email'  %>
-      </div>
-      <div class="messagesection">
-        <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }, placeholder: 'Message'  %>
-      </div>
-      <div class="submitsection">
-        <%= f.submit 'Send', label: false,  class: 'contactsubmit' , type: :submit%>
-      </div>
-    <% end %>
+        <div class="messagesection">
+          <%= f.input :message,  as: :text, label: false, input_html: { class: 'messagebox' }, placeholder: 'Message'  %>
+        </div>
+        <div class="submitsection">
+          <%= f.submit 'Send', label: false,  class: 'contactsubmit' , type: :submit%>
+        </div>
+      <% end %>
+    </div>
   </div>
 </section>
 <a id="bottom-tag"></a>

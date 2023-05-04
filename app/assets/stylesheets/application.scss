@@ -14,6 +14,16 @@
  *= require_self
  */
 
+@import "config/colours";
+
 a {
     text-decoration: none;
+}
+
+.pagetitle {
+    text-align: center;
+    color: $tertiary;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 2vh;
 }

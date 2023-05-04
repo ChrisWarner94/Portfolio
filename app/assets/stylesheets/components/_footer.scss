@@ -5,7 +5,13 @@
     background-color: $primary;
     display: flex;
     justify-content: space-between;
-    height: 10%;
+    height: 6%;
+    border-top: thin;
+    border-color: $tertiary;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .footerheading {
@@ -53,7 +59,7 @@
     }
 
     .footerlinkicon {
-        font-size: 250%;
+        font-size: 200%;
     }
 }
 
@@ -70,7 +76,7 @@
     }
 
     .footerlinkicon {
-        font-size: 250%;
+        font-size: 200%;
     }
 }
 
@@ -85,6 +91,6 @@
     }
 
     .footerlinkicon {
-        font-size: 250%;
+        font-size: 200%;
     }
 }

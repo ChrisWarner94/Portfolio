@@ -38,7 +38,7 @@ img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 
   .projectimage {
-    height: 40%;
+    height: 70%;
     width: 100%;
     margin: auto;
     display: flex;
@@ -53,7 +53,7 @@ img {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 3vh;
-    padding-top: 2vh;
+    padding-top: 1vh;
     color: $tertiary;
     font-size: 2.5vh;
     z-index: 1;
@@ -64,6 +64,7 @@ img {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
     font-size: 16px;
+    display: none;
 
   }
 }
