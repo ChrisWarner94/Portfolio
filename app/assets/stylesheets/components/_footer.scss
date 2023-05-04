@@ -6,6 +6,12 @@
     display: flex;
     justify-content: space-between;
     height: 6%;
+    border-top: thin;
+    border-color: $tertiary;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .footerheading {
