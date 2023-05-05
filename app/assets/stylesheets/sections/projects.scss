@@ -30,12 +30,12 @@ img {
 .projectcard {
   width: 90%;
   margin: auto;
-  height: 30rem;
+  height: 70%;
   margin-top: 5vh;
   background-color: $secondary;
   border-radius: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 
   .projectimage {
     height: 70%;
@@ -48,15 +48,26 @@ img {
 
   }
 
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 3vh;
-    padding-top: 1vh;
-    color: $tertiary;
+  .linksnamecontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  .projectcardlinks {
+    margin: auto 0 auto 0;
     font-size: 2.5vh;
-    z-index: 1;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    color: $primary;
+  }
+
+  .projectname {
+    font-family: 'Ubuntu', sans-serif;
+    color: $primary;
+    font-size: 2.5vh;
   }
 
   .descriptionshort {
@@ -64,9 +75,11 @@ img {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
     font-size: 16px;
-    display: none;
-
+    margin-top: 5%;
+    padding-bottom: 5%;
   }
+
+
 }
 
 ////////////-------------------- Media Queries --------------------////////////
@@ -76,9 +89,6 @@ img {
     display: flex;
   }
 
-  .projectstitle {
-    font-size: 3vh;
-  }
 }
 
 
@@ -88,28 +98,6 @@ img {
     display: flex;
   }
 
-  .projectcard {
-    width: 33%;
-  }
-
-  .projectimage {
-    height: 10vh;
-    width: 15vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.5vh;
-  }
-
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 1vh;
-    color: $primary;
-    font-size: 2.5vh;
-  }
 }
 
 
@@ -120,28 +108,6 @@ img {
     display: flex;
   }
 
-  .projectcard {
-    width: 33%;
-  }
-
-  .projectimage {
-    height: 10vh;
-    width: 15vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.5vh;
-  }
-
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 1vh;
-    color: $primary;
-    font-size: 2.5vh;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -149,31 +115,5 @@ img {
   .projectscontainer {
     display: flex;
   }
-
-  .projectcard {
-    width: 25%;
-    height: 55%;
-
-    .projectimage {
-      width: 100%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit: cover;
-      border-bottom: 1px solid $tertiary;
-      padding-bottom: 0;
-    }
-
-    .projectname {
-      text-align: center;
-      text-decoration: none;
-      font-family: 'Ubuntu', sans-serif;
-      padding-bottom: 1vh;
-      color: $tertiary;
-      font-size: 2.5vh;
-    }
-  }
-
 
 }
