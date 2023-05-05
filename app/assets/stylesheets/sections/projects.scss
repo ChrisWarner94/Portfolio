@@ -46,7 +46,10 @@ img {
     align-items: center;
     padding-bottom: 1.5vh;
 
+
   }
+
+
 
   .linksnamecontainer {
     display: flex;
@@ -75,11 +78,19 @@ img {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
     font-size: 16px;
-    margin-top: 5%;
     padding-bottom: 5%;
+    width: 90%;
+    margin: 5% auto 0 auto;
   }
 
 
+}
+
+.projectstack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+  margin: auto;
 }
 
 ////////////-------------------- Media Queries --------------------////////////

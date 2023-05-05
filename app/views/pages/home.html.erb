@@ -52,6 +52,21 @@
           <div class="descriptionshort">
             <%= project.short_description %>
           </div>
+
+          <% @techstack = JSON.parse(project.stack) %>
+          <div class="projectstack">
+            <% @techstack.each do |tech|  %>
+              <div class="techcard">
+                <div class="techname">
+                  <%= tech %>
+                </div>
+                <div class="techlogo">
+                  <%=  image_tag ("stack/#{tech}.svg"), :height=> "100%" %>
+                </div>
+              </div>
+            <% end %>
+
+          </div>
         <% end %>
       </div>
     <% end %>
