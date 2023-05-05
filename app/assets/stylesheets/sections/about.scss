@@ -1,9 +1,83 @@
 @import "config/colours";
 
 .abouttext {
-    font-size: 16px;
+    font-size: 1.2;
     width: 90%;
     margin: auto;
     font-family: 'Titillium Web', sans-serif;
     color: $primary;
+    margin-bottom: 20%;
+}
+
+.hobbyicons {
+    font-size: 300%;
+    color: $primary;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {}
+
+.abouttext {
+    font-size: 1.25em;
+    width: 90%;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    color: $primary;
+}
+
+.hobbyicons {
+    font-size: 400%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .abouttext {
+        font-size: 1.65em;
+        width: 90%;
+        margin: auto;
+        font-family: 'Titillium Web', sans-serif;
+        color: $primary;
+        margin-bottom: 15%;
+    }
+
+    .hobbyicons {
+        font-size: 500%;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .abouttext {
+        font-size: 1.85em;
+        width: 90%;
+        margin: auto;
+        font-family: 'Titillium Web', sans-serif;
+        color: $primary;
+        margin-bottom: 17%;
+    }
+
+    .hobbyicons {
+        font-size: 600%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .abouttext {
+        font-size: 1.95em;
+        width: 90%;
+        margin: auto;
+        font-family: 'Titillium Web', sans-serif;
+        color: $primary;
+        margin-bottom: 10%;
+    }
+
+    .hobbyicons {
+        font-size: 650%;
+    }
 }
