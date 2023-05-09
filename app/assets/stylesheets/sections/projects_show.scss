@@ -63,23 +63,7 @@
     width: 95%;
 }
 
-.techcard {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 1vh;
 
-    .techname {
-        width: 3vw;
-        font-family: 'Titillium Web', sans-serif;
-    }
-
-    .techlogo {
-        height: 2vh;
-        width: 2vw;
-    }
-}
 
 .projectdescription {
     text-align: center;

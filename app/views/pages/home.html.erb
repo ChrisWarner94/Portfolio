@@ -39,22 +39,26 @@
           <div class="projectimage">
             <%= image_tag (project.picture_url), class: 'fit-image' %>
           </div>
-          <div class="linksnamecontainer">
-            <div class="projectname">
-              <%= project.name %>
+          <div class="darkgrey">
+            <div class="linksnamecontainer">
+              <div class="projectname">
+                <%= project.name %>
+              </div>
+              <div class="projectcardlinks">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
             </div>
-            <div class="projectcardlinks">
-              <i class="fa-solid fa-link"></i>
-              <i class="fa-brands fa-github"></i>
+            <div class="descriptionshort">
+              <%= project.short_description %>
             </div>
-
           </div>
-          <div class="descriptionshort">
-            <%= project.short_description %>
+          <div class="stackheading">
+            <h4>Built with</h4>
           </div>
-
           <% @techstack = JSON.parse(project.stack) %>
           <div class="projectstack">
+
             <% @techstack.each do |tech|  %>
               <div class="techcard">
                 <div class="techname">
@@ -65,7 +69,6 @@
                 </div>
               </div>
             <% end %>
-
           </div>
         <% end %>
       </div>
