@@ -9,6 +9,14 @@ img {
   height: 100%;
 }
 
+.linkcoloursecondary {
+  color: $secondary;
+}
+
+.linkcoloursecondary:hover {
+  color: $tertiary;
+}
+
 #sectionproject {
   display: none;
 }
@@ -68,7 +76,7 @@ img {
   .projectcardlinks {
     margin: auto 0 auto 0;
     font-size: 2.5vh;
-    width: 25%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
     color: $secondary;
@@ -135,7 +143,13 @@ img {
     .projectimage {
       height: 33vw;
     }
+
+    .projectcardlinks {
+      width: 25%;
+    }
   }
+
+
 }
 
 
@@ -146,6 +160,10 @@ img {
 
     .projectimage {
       height: 33vw;
+    }
+
+    .projectcardlinks {
+      width: 25%;
     }
   }
 }
@@ -164,8 +182,11 @@ img {
     .projectimage {
       height: 15vw;
     }
-  }
 
+    .projectcardlinks {
+      width: 25%;
+    }
+  }
 
 }
 
@@ -181,6 +202,9 @@ img {
     .projectimage {
       height: 13vw;
     }
-  }
 
+    .projectcardlinks {
+      width: 25%;
+    }
+  }
 }
