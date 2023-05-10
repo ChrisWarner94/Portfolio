@@ -37,7 +37,7 @@
     border-radius: 5%;
     padding: 1vh;
     font-size: 1.75vh;
-    width: 12vw;
+    width: 6vw;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
@@ -63,23 +63,7 @@
     width: 95%;
 }
 
-.techcard {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 1vh;
 
-    .techname {
-        width: 3vw;
-        font-family: 'Titillium Web', sans-serif;
-    }
-
-    .techlogo {
-        height: 2vh;
-        width: 2vw;
-    }
-}
 
 .projectdescription {
     text-align: center;

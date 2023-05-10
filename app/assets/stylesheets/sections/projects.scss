@@ -9,12 +9,19 @@ img {
   height: 100%;
 }
 
+.linkcoloursecondary {
+  color: $secondary;
+}
+
+.linkcoloursecondary:hover {
+  color: $tertiary;
+}
+
 #sectionproject {
   display: none;
 }
 
 .projectscontainer {
-  height: 100vh;
   width: 90vw;
   margin: auto;
 }
@@ -28,35 +35,57 @@ img {
 
 }
 
+.stackheading {
+  margin: auto;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: $primary;
+
+}
+
 .projectcard {
   width: 90%;
   margin: auto;
-  height: 25%;
+  height: 70%;
   margin-top: 5vh;
   background-color: $secondary;
   border-radius: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+  margin-bottom: 4vh;
 
   .projectimage {
-    height: 70%;
     width: 100%;
+    height: 40vw;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1.5vh;
 
   }
 
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 3vh;
-    padding-top: 1vh;
-    color: $tertiary;
+
+
+  .linksnamecontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 2vh;
+  }
+
+  .projectcardlinks {
+    margin: auto 0 auto 0;
     font-size: 2.5vh;
-    z-index: 1;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    color: $secondary;
+  }
+
+  .projectname {
+    font-family: 'Ubuntu', sans-serif;
+    color: $secondary;
+    font-size: 2.5vh;
   }
 
   .descriptionshort {
@@ -64,51 +93,78 @@ img {
     font-family: 'Titillium Web', sans-serif;
     color: $tertiary;
     font-size: 16px;
-    display: none;
+    padding-bottom: 5%;
+    width: 90%;
+    margin: 5% auto 0 auto;
+  }
 
+
+}
+
+.darkgrey {
+  background-color: $primary;
+  height: 9rem;
+}
+
+.projectstack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+  margin: auto;
+  height: 12rem;
+}
+
+.techcard {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 1vh;
+
+  .techname {
+    width: 3vw;
+    font-family: 'Titillium Web', sans-serif;
+    color: $primary;
+  }
+
+  .techlogo {
+    height: 2vh;
+    width: 2vw;
+    margin: auto 0 auto 0;
   }
 }
 
 ////////////-------------------- Media Queries --------------------////////////
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-  .projectscontainer {
-    display: flex;
+  .projectcard {
+    width: 70%;
+
+    .projectimage {
+      height: 33vw;
+    }
+
+    .projectcardlinks {
+      width: 25%;
+    }
   }
 
-  .projectstitle {
-    font-size: 3vh;
-  }
+
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .projectscontainer {
-    display: flex;
-  }
-
   .projectcard {
-    width: 33%;
-  }
+    width: 70%;
 
-  .projectimage {
-    height: 10vh;
-    width: 15vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.5vh;
-  }
+    .projectimage {
+      height: 33vw;
+    }
 
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 1vh;
-    color: $primary;
-    font-size: 2.5vh;
+    .projectcardlinks {
+      width: 25%;
+    }
   }
 }
 
@@ -121,27 +177,17 @@ img {
   }
 
   .projectcard {
-    width: 33%;
+    width: 32%;
+
+    .projectimage {
+      height: 15vw;
+    }
+
+    .projectcardlinks {
+      width: 25%;
+    }
   }
 
-  .projectimage {
-    height: 10vh;
-    width: 15vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1.5vh;
-  }
-
-  .projectname {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 1vh;
-    color: $primary;
-    font-size: 2.5vh;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -151,29 +197,14 @@ img {
   }
 
   .projectcard {
-    width: 25%;
-    height: 55%;
+    width: 30%;
 
     .projectimage {
-      width: 100%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit: cover;
-      border-bottom: 1px solid $tertiary;
-      padding-bottom: 0;
+      height: 13vw;
     }
 
-    .projectname {
-      text-align: center;
-      text-decoration: none;
-      font-family: 'Ubuntu', sans-serif;
-      padding-bottom: 1vh;
-      color: $tertiary;
-      font-size: 2.5vh;
+    .projectcardlinks {
+      width: 25%;
     }
   }
-
-
 }

@@ -39,16 +39,35 @@
           <div class="projectimage">
             <%= image_tag (project.picture_url), class: 'fit-image' %>
           </div>
-          <div class="linksnamecontainer">
-            <div class="projectname">
-              <%= project.name %>
+          <div class="darkgrey">
+            <div class="linksnamecontainer">
+              <div class="projectname">
+                <%= project.name %>
+              </div>
+              <div class="projectcardlinks">
+                <a href="<%= project.host_link %>" class="linkcoloursecondary" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <a href="<%= project.github_link %>" class="linkcoloursecondary" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
-            <div class="projectcardlinks">
-
+            <div class="descriptionshort">
+              <%= project.short_description %>
             </div>
           </div>
-          <div class="descriptionshort">
-            <%= project.short_description %>
+          <div class="stackheading">
+            <h4>Built with</h4>
+          </div>
+          <% @techstack = JSON.parse(project.stack) %>
+          <div class="projectstack">
+            <% @techstack.each do |tech|  %>
+              <div class="techcard">
+                <div class="techname">
+                  <%= tech %>
+                </div>
+                <div class="techlogo">
+                  <%=  image_tag ("stack/#{tech}.svg"), :height=> "100%" %>
+                </div>
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
