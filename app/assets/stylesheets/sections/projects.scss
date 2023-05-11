@@ -11,6 +11,7 @@ img {
 
 .linkcoloursecondary {
   color: $secondary;
+  font-size: 2rem;
 }
 
 .linkcoloursecondary:hover {
@@ -205,6 +206,12 @@ img {
 
     .projectcardlinks {
       width: 25%;
+    }
+  }
+
+  .techcard {
+    .techlogo {
+      height: 1.5rem;
     }
   }
 }
