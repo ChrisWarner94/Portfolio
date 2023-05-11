@@ -123,7 +123,7 @@ section {
 }
 
 .homepagelinkicon {
-    font-size: 6vh;
+    font-size: 3rem;
     color: $primary;
 }
 
@@ -133,20 +133,15 @@ section {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     .homeleftpanel {
-        padding-top: 10%;
+        padding-top: 5%;
     }
 
     .homeheading {
-        font-size: 5vh;
-    }
-
-    #introtext {
-        padding-top: 0.25vh;
-        font-size: 3vh;
+        font-size: 3rem;
     }
 
     .staticheading {
-        font-size: 3.5vh;
+        font-size: 2.5rem;
     }
 
     .homepagelinkscontainer {
@@ -164,11 +159,11 @@ section {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .homeleftpanel {
-        padding-top: 20%;
+        padding-top: 5vh;
     }
 
     .homeheading {
-        font-size: 5vh;
+        font-size: 4vh;
     }
 
     #introtext {
@@ -181,7 +176,7 @@ section {
     }
 
     .homepagelinkscontainer {
-        width: 20vw;
+        width: 20vh;
         margin-top: 25vh;
     }
 
