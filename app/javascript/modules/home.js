@@ -26,6 +26,7 @@ async function runTypeEffect() {
     await fadeInRighta(linktwo, .0000000001,);
     await fadeInRighta(linkthree, .0000000001);
     await fadeInRighta(linkfour, .0000000001);
+    await fadeInRighta(linkfive, .0000000001);
     await fadeInRighta(homepagelinkscontainer, 3);
     await fadeInRighta(buttonblue, 3);
     setAsVisible();
