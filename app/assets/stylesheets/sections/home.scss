@@ -88,7 +88,11 @@ section {
     color: $tertiary;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    width: 100%;
+    margin: auto;
+}
+
+.textcentre {
+    margin: auto;
 }
 
 .buttonblue {
@@ -100,16 +104,6 @@ section {
     margin-top: 10vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
     display: none;
-    text-align: center;
-
-    a {
-        text-align: center;
-    }
-
-    p {
-        margin: auto;
-    }
-
 }
 
 .buttonblue:hover {
