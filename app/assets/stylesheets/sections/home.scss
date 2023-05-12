@@ -91,6 +91,10 @@ section {
     margin: auto;
 }
 
+.textcentre {
+    margin: auto;
+}
+
 .buttonblue {
     background-color: $primary;
     border-radius: 3%;
@@ -100,7 +104,24 @@ section {
     margin-top: 10vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
     display: none;
-    text-align: center;
+}
+
+.buttonblue:hover {
+    background-color: $tertiary;
+    color: $primary;
+
+    a {
+        color: $primary;
+    }
+
+    p {
+        color: $primary;
+    }
+}
+
+.hovereffect:hover {
+
+    color: $tertiary;
 }
 
 #introtext {
@@ -125,8 +146,8 @@ section {
 .homepagelinkicon {
     font-size: 3rem;
     color: $primary;
+    height: 4rem;
 }
-
 
 //---------------------------- Media Queries ----------------------------//
 
@@ -246,8 +267,16 @@ section {
     }
 
     .buttonblue {
-        width: 20%;
+        width: 30%;
         margin-top: 5vh;
+    }
+
+    .homepagelinkicon {
+        font-size: 4rem;
+    }
+
+    .buttontext {
+        font-size: 1.5rem;
     }
 
 }
