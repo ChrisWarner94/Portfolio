@@ -34,6 +34,7 @@ async function runTypeEffect() {
 
 
 
+
 function setAsVisible() {
     sectioncontact.style.display = "block"
     sectionproject.style.display = "block"

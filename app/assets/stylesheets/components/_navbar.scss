@@ -1,6 +1,31 @@
 @import "config/colours";
 
 
+
+.menumobilecontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.hamburgericon {
+    color: $tertiary;
+    font-size: 280%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.logo {
+    width: 15%;
+    color: $tertiary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .icon {
     color: $tertiary;
 }
@@ -32,7 +57,7 @@
 .linklist {
     padding-left: 0;
     width: 100%;
-    display: inline-flex;
+    display: none;
 
     margin: auto;
 }
@@ -113,19 +138,51 @@ li {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .linklist {
+        display: inline-flex;
+    }
+
+    .menumobilecontainer {
+        display: none;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .linklist {
+        display: inline-flex;
+    }
+
+    .menumobilecontainer {
+        display: none;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .linklist {
+        display: inline-flex;
+    }
+
+    .menumobilecontainer {
+        display: none;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
     .linklist {
         width: 60%;
+    }
+
+    .linklist {
+        display: inline-flex;
+    }
+
+    .menumobilecontainer {
+        display: none;
     }
 }
