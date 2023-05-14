@@ -1,188 +1,101 @@
-@import "config/colours";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
+.header {
+    border-bottom: 1px solid #E2E8F0;
+}
 
-.menumobilecontainer {
+.navbar {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-}
-
-.hamburgericon {
-    color: $tertiary;
-    font-size: 280%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 20%;
+    padding: 1rem 1.5rem;
 }
 
-.logo {
-    width: 15%;
-    color: $tertiary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.icon {
-    color: $tertiary;
-}
-
-.link {
-    width: 20%;
-    align-items: center;
-    justify-content: center;
+.hamburger {
     display: none;
-    position: relative;
+}
 
-    #linkone {
-        justify-content: left;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
         left: 0;
-
     }
 
-    #linktwo {
-        justify-content: center;
+    .nav-item {
+        margin: 2.5rem 0;
     }
 
-    #linkthree {
-        justify-content: right;
-        right: 0;
-    }
-}
-
-
-.linklist {
-    padding-left: 0;
-    width: 100%;
-    display: none;
-
-    margin: auto;
-}
-
-.navbarcontainer {
-    width: 100%;
-    display: flex;
-    position: fixed;
-    background-color: $secondary;
-    top: 0;
-    transition: top 0.5s;
-    z-index: 1;
-    height: 6vh;
-
-}
-
-
-
-.bottomshadow {
-    box-shadow: 0 5px 0.75rem -4px rgba(0, 0, 0, 1);
-}
-
-.linkscontainer {
-    top: 0;
-    height: 6vh;
-    display: none;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 2vh;
-    background-color: $primary;
-}
-
-.paddingright {
-    padding-right: 0.5rem;
-}
-
-li {
-    display: flex;
-    vertical-align: middle;
-    font-size: 2vh;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    justify-content: space-between;
-}
-
-
-
-//underlining hover effect for nav links
-.navlinkhover {
-    position: relative;
-    color: $secondary;
-    text-decoration: none;
-}
-
-.navlinkhover::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: $secondary;
-    transform-origin: bottom right;
-    transition: transform 0.15s ease-out;
-}
-
-.navlinkhover:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-
-//---------------------------- Media Queries ----------------------------//
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    .linklist {
-        display: inline-flex;
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
 
-    .menumobilecontainer {
-        display: none;
-    }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .linklist {
-        display: inline-flex;
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
-    .menumobilecontainer {
-        display: none;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .linklist {
-        display: inline-flex;
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    .menumobilecontainer {
-        display: none;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-    .linklist {
-        width: 60%;
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
-    .linklist {
-        display: inline-flex;
-    }
-
-    .menumobilecontainer {
-        display: none;
-    }
 }
