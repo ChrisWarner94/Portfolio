@@ -1,13 +1,19 @@
 @import "config/colours";
 
 
+.navbarcontainer {
+    position: fixed;
+    width: 100%;
+}
 
-.navbar {
-    display: none;
+.navbarcontainer .navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
     background-color: $primary;
+    top: 0;
+
 }
 
 .hamburger {
@@ -61,7 +67,7 @@
         margin: 0;
         position: fixed;
         left: -100%;
-        top: 6rem;
+        top: 4.4rem;
         flex-direction: column;
         width: 100%;
         text-align: center;
