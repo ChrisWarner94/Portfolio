@@ -2,8 +2,9 @@
 
 
 .navbarcontainer {
-    position: fixed;
+    position: sticky;
     width: 100%;
+    transition: top 0.5s;
 }
 
 .navbarcontainer .navbar {
@@ -13,6 +14,7 @@
     padding: 1rem 1.5rem;
     background-color: $primary;
     top: 0;
+
 
 }
 
