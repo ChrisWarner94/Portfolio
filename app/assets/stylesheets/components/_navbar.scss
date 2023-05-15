@@ -15,7 +15,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: $tertiary;
+    background-color: $secondary;
     transform-origin: bottom right;
     transition: transform .25s ease-out;
 }
@@ -26,7 +26,7 @@
 }
 
 .hamburgericon {
-    color: $secondary;
+    color: $tertiary;
     font-size: 150%;
     padding-right: 1rem;
     display: flex;
@@ -70,29 +70,28 @@
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     z-index: 1;
+    width: 60%;
 
 }
 
 .nav-item {
     margin-left: 5rem;
     display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .nav-link {
     font-size: 1.6rem;
-    font-weight: 400;
-    color: $tertiary;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.nav-link:hover {
+    font-weight: 200;
     color: $secondary;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .nav-logo {
@@ -100,6 +99,7 @@
     font-weight: 500;
     color: $tertiary;
     font-family: 'Ubuntu', sans-serif;
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -142,5 +142,92 @@
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .nav-menu {
+        margin: 0;
+        position: fixed;
+        left: -100%;
+        top: 4.4rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .nav-menu.active {
+        left: 0;
+        background-color: $primary;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-logo {
+        display: block;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav-menu {
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+
+        li {
+            margin-left: 0;
+        }
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .nav-menu {
+        margin: auto;
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav-menu {
+        margin: auto;
     }
 }
