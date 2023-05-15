@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "config/colours";
 
 
 .header {
@@ -12,10 +6,11 @@
 }
 
 .navbar {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background-color: $primary;
 }
 
 .hamburger {
@@ -29,13 +24,18 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: $tertiary;
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+
 }
 
 .nav-item {
@@ -45,7 +45,7 @@
 .nav-link {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: $tertiary;
 }
 
 .nav-link:hover {
@@ -55,17 +55,18 @@
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: $tertiary;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
+        margin: auto;
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 6rem;
         flex-direction: column;
-        background-color: #fff;
-        width: 100%;
+        width: 70%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
@@ -75,10 +76,12 @@
 
     .nav-menu.active {
         left: 0;
+        background-color: $primary;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
     .hamburger {
@@ -97,5 +100,4 @@
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
 }

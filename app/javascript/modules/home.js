@@ -21,7 +21,7 @@ placeCaret();
 async function runTypeEffect() {
     await typeEffect(nameheading, headingOne);
     await typeEffect(jobtitleheading, headingTwo);
-    await fadeInRighta(linkscontainer, 3);
+    await fadeInRighta(navbar, 3);
     await fadeInRighta(linkone, .0000000001,);
     await fadeInRighta(linktwo, .0000000001,);
     await fadeInRighta(linkthree, .0000000001);
