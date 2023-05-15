@@ -1,10 +1,18 @@
 @import "config/colours";
 
+.hamburgericon {
+    color: $secondary;
+    font-size: 150%;
+}
 
 .navbarcontainer {
-    position: sticky;
     width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: $secondary;
+    top: 0;
     transition: top 0.5s;
+    z-index: 1;
 }
 
 .navbarcontainer .navbar {
@@ -14,6 +22,7 @@
     padding: 1rem 1.5rem;
     background-color: $primary;
     top: 0;
+    width: 100%;
 
 
 }
@@ -51,6 +60,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: $tertiary;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-link:hover {
