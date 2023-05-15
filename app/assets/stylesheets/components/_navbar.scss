@@ -84,7 +84,7 @@
     margin-left: 5rem;
     display: flex;
     align-items: center;
-    vertical-align: middle;
+    width: 20%;
 }
 
 .nav-link {
@@ -147,7 +147,7 @@
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 772px) {
     .nav-menu {
         margin: 0;
         position: fixed;
