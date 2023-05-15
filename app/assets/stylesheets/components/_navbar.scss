@@ -81,10 +81,10 @@
 }
 
 .nav-item {
-    margin-left: 5rem;
     display: flex;
     align-items: center;
     width: 20%;
+    justify-content: center;
 }
 
 .nav-link {
@@ -218,6 +218,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .nav-menu {
         margin: auto;
+        width: 90%;
     }
 
     .nav-link {
