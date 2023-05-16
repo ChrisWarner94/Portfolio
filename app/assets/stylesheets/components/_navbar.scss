@@ -81,10 +81,10 @@
 }
 
 .nav-item {
-    margin-left: 5rem;
     display: flex;
     align-items: center;
-    vertical-align: middle;
+    width: 20%;
+    justify-content: center;
 }
 
 .nav-link {
@@ -147,7 +147,7 @@
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 772px) {
     .nav-menu {
         margin: 0;
         position: fixed;
@@ -218,6 +218,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .nav-menu {
         margin: auto;
+        width: 90%;
     }
 
     .nav-link {
