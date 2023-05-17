@@ -11,7 +11,7 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-#gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+# gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -33,15 +33,15 @@ gem 'jbuilder'
 gem 'sassc-rails'
 
 # import font awesome for HTML [https://fontawesome.com/]
-gem "font-awesome-sass", "~> 6.4.0"
+gem 'font-awesome-sass', '~> 6.4.0'
 
-# import simple froms from [https://github.com/heartcombo/simple_form] 
+# import simple froms from [https://github.com/heartcombo/simple_form]
 gem 'simple_form'
 
 # mail form to send emails from contact section
 gem 'mail_form'
 
-#env gem for secure passwords/keys
+# env gem for secure passwords/keys
 gem 'dotenv-rails'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

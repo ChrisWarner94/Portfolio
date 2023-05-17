@@ -8,13 +8,12 @@ Rails.application.routes.draw do
 
   # home page route
   root to: 'pages#home'
-  
+
   # show project route
-   resources :projects, only: [:show] do
-   end
+  resources :projects, only: [:show] do
+  end
 
   resource :contacts
-
 
   # test line
 end

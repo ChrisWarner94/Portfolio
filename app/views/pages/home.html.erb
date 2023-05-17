@@ -80,9 +80,10 @@
           <div class="stackheading">
             <h4>Built with</h4>
           </div>
-          <% @techstack = JSON.parse(project.stack) %>
+          <% @techstack = project.stack %>
           <div class="projectstack">
             <% @techstack.each do |tech|  %>
+            <% tech.to_s %>
               <div class="techcard">
                 <div class="techname">
                   <%= tech %>
