@@ -106,6 +106,12 @@
     border-width: thin;
 }
 
+.contactsubmit:hover{
+  background-color: $tertiary;
+  color: $primary;
+  border-color: $primary;
+}
+
 .messagebox:focus {
     outline: $secondary;
 }
