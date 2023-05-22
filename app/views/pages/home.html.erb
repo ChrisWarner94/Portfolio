@@ -59,7 +59,7 @@
   <div class="projectscontainer">
     <% @projects.each do |project| %>
       <div class="projectcard">
-        <%= link_to project_path(project) do %>
+
           <div class="projectimage">
             <%= image_tag (project.picture_url), class: 'fit-image' %>
           </div>
@@ -94,7 +94,7 @@
               </div>
             <% end %>
           </div>
-        <% end %>
+      
       </div>
     <% end %>
   </div>
